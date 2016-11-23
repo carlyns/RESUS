@@ -1,0 +1,654 @@
+header {
+	}
+
+body {
+	font-family: Roboto Slab;
+	font-size: 100%;
+	font-weight: 300;
+	margin: 0;
+}
+
+::-moz-selection {
+	background: orange;
+}
+
+::selection {
+	background: orange;
+}
+
+a {
+	color: #821479;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.logo {
+	text-align: center;
+	width: 180px;
+	padding-top: 1%;
+	background-color: white;
+	margin: 5% auto 5% auto;
+	color: #821479;
+
+}
+
+.logo a {
+}
+
+#logoheader {
+	display:none;
+}
+
+.resus {
+	font-family: Passion One;
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 4em;
+	line-height: .25em;
+	margin-bottom: 0;
+}
+
+.resus a {
+	color: black;
+	text-decoration: none;
+}
+
+.resus a:hover {
+	color: #821479;
+ }
+
+#keywords {
+	font-family: Roboto Slab;
+	font-size: 0.2em;
+	font-weight: 300;
+	letter-spacing: normal;
+}
+
+.tagline {
+	font-size: 1.5em;
+	margin: 3%;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: 300;
+	text-align: center;
+}
+
+h2 {
+	font-family: Passion One;
+	font-weight: 200;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	margin-top: 10%;
+}
+
+h3 {
+	font-family: Passion One;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-weight: 200;
+}
+
+
+.resusabout {
+}
+
+.about {
+	width: 29%;
+	float: left;
+	padding: 2%;
+	font-size: 0.8em;
+	text-align: center;
+	line-height: 1.25em;
+}
+
+.about a{
+	color: black;
+}
+
+.about a:hover {
+	color: #821479;
+	text-decoration: none;
+ }
+
+.about img{
+	width: 100%;
+	max-width: 100px;
+}
+
+.summary {
+	font-family: Roboto Slab;
+	font-weight: 300;
+	text-transform: none;
+	font-size: 0.7em;
+	letter-spacing: 0.01em;
+}
+
+.initiatives {
+	padding: 5%;
+	clear: both;
+}
+
+.initiatives a {
+	color: #821479;
+}
+
+.initiatives a:hover {
+	color: #464C51;
+	text-decoration: none;
+}
+
+.initiatives h2 {
+	margin-top: 0;
+	margin-bottom: 3%;
+	font-size: 1.7em;
+}
+
+.initiatives h3 {
+	margin-top: 0;
+	margin-bottom: 5%;
+	font-size: 1.4em;
+	line-height: 0.9em;
+	text-transform: lowercase;
+}
+
+.initiatives .description {
+	font-size: 0.6em;
+	font-family: helvetica neue;
+	letter-spacing: normal;
+}
+
+.initiatives img {
+	width: 100%;
+}
+
+.project {
+
+}
+
+.description {
+	font-family: Roboto Slab;
+	font-weight: 300;
+	text-transform: none;
+	font-size: 0.7em;
+}
+
+.quotes {
+	display: none;
+}
+
+.news {
+	max-width: 700px;
+	border-top: dotted #821479 1px;
+	border-bottom: dotted #821479 1px;
+	margin: 0 10%;
+	font-size: 0.9em;
+}
+
+.news h2 {
+	margin-top:3%;
+}
+
+footer {
+	background-color: #F2F2F2;
+	font-family: helvetica neue;
+	clear: both;
+	text-align: center;
+	font-size: 0.8em;
+	margin-top: 5%;
+	margin-bottom: 0;
+	padding: 2% 0;
+}
+
+footer a {
+	color: black;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+
+#logofooter {
+
+}
+
+#logofooter img{
+	width: 20%;
+	margin: 0 0 3% 0;
+	max-width: 100px;
+}
+
+.social {
+}
+
+.social img {
+	padding: 0.5%;
+}
+
+.contactinfo {
+	clear: both;
+	text-align: center;
+}
+
+/*-----------ABOUT PAGES--------------------*/
+.grid4 {
+	width: 90%;
+	margin: 0 0 5% 0;
+}
+
+.grid4 img{
+	max-width: 170px;
+	margin: 0 0 0 5%;
+}
+
+.getinvolved h3 {
+	margin-bottom:0;
+}
+.getinvolved p {
+	margin-top: 0;
+}
+
+.changemakers {
+	clear: both;
+}
+
+.changemakers img{
+	max-width: 150px;
+}
+
+.grid4 p {
+	padding: 0 0 5% 0;
+}
+
+
+.grid2 {
+}
+
+.grid2 img{
+	width: 50%;
+	max-width: 150px;
+	margin: 0 10%;
+}
+
+#mission {
+	background-color: #821479;
+	color: white;
+	clear: both;
+	padding: 5% 10%;
+	font-size: 1.2em;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.role {
+	text-align: center;
+}
+
+#carlyn {
+	width: 100%;
+	float: none;
+	margin: 0 auto;
+}
+
+#taylor {
+	width: 100%;
+	float: none;
+	margin: 0 auto;
+}
+
+#reach a {
+	color: black;
+	text-decoration: none;
+}
+
+#reach a:hover {
+	text-decoration: underline;
+}
+
+.context .grid4 {
+}
+.updatetypes {
+	font-size: 0.7em;
+}
+
+#subscribe h2 a {
+	color: black;
+}
+
+#subscribe h2 a:hover {
+	text-decoration: none;
+	color: #821479;
+}
+
+#mc_embed_signup {
+	background:#fff;
+	clear:left;
+	font:14px Helvetica,Arial,sans-serif;
+	margin: 0 5%;
+}
+
+#coming {
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 0 20%;
+}
+#coming img{
+	width: 100%;
+}
+
+
+
+/*-----------PROJECT PAGES--------------------*/
+.equity {
+	margin: 0 5%;
+	background-color: #464C51;
+	color: white;
+	padding: 2% 3%;
+}
+
+.equity h3 {
+	letter-spacing: 0.05em;
+}
+
+.equity ul {
+	padding-left: 7%;
+}
+
+.equity a {
+	color: white;
+	text-decoration: none;
+}
+
+.equity a:hover {
+	text-decoration: underline;
+}
+
+
+.questions {
+	margin: 3% 5% 0 5%;
+	background-color: #464C51;
+	color: white;
+	padding: 2% 3%;
+}
+
+.questions h3 {
+	letter-spacing: 0.05em;
+}
+
+.questions a {
+	color: white;
+	text-decoration: none;
+}
+
+.questions a:hover {
+	text-decoration: underline;
+}
+
+
+.questions ul {
+	padding-left: 7%;
+}
+
+.questions li {
+}
+
+
+.collaborate {
+	font-family: Passion One;
+}
+
+.collaborate h3 {
+	letter-spacing: 0.05em;
+}
+
+.collaborate a {
+	text-decoration: none;
+	color: #B3CBB9;
+
+}
+
+.collaborate a:hover {
+	color: white;
+}
+
+.maincolumn {
+	margin: 0 5%;
+}
+
+.projectimg img {
+	width: 100%;
+	padding: 3% 0;
+}
+
+
+
+.caption {
+	font-family: helvetica neue;
+	text-align: center;
+	font-size: 0.9em;
+	padding-bottom: 5%;
+}
+
+iframe {
+	width: 100%;
+	text-align: center;
+	margin-left: 5%;
+}
+
+.projectnews {
+	margin: 5%;
+}
+
+
+/*-----------MEDIA QUERIES START HERE--------------------*/
+@media screen and (min-width: 650px) {
+
+.logo {
+	margin: 5% auto 3% 3%;
+	float: left;
+}
+
+#logoheader {
+	display: block;
+	float: right;
+	margin: 1% 5% 0 0;
+}
+
+#logoheader img {
+	width: 100px;
+}
+
+.tagline {
+	font-size: 2em;
+	clear: both;
+}
+
+h1 {
+}
+
+h2 {
+	margin-top: 5%;
+}
+
+.resusabout {
+	width: 26%;
+	float: left;
+	margin:0 2% 0 2%;
+}
+
+.about {
+	width: 100%;
+	line-height: 1.8em;
+	text-align: left;
+}
+
+.about img {
+	max-width: 125px;
+
+}
+
+.summary {
+	font-size: 80%
+}
+
+
+.initiatives {
+	clear: none;
+	float: right;
+	width: 64%;
+	padding: 0 0 0 2%;
+	margin:0 2%;
+}
+
+.initiatives .description {
+	font-size: 0.7em;
+}
+
+.quotes {
+	clear: both;
+	padding-top: 10%;
+	display: block;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+#morequotes {
+	display: none;
+}
+
+.source {
+	font-style: normal;
+}
+
+.news{
+	clear: both;
+	margin: 3% auto 5% auto;
+	max-width: 600px;
+	font-size: 1em;
+
+}
+
+#logofooter {
+	display:none;
+}
+
+footer {
+	clear: both;
+}
+
+
+/*-----------DESKTOP: ABOUT PAGES--------------------*/
+
+.container {
+	clear: both;
+
+}
+
+.grid4 {
+	width: 29%;
+	margin-right: 4%;
+	float: left;
+}
+
+.grid4:last-child {
+	margin-right: 0;
+}
+
+.grid4 img{
+	width: 100%;
+}
+
+.grid2 {
+	width: 44%;
+	margin-right: 4%;
+	float: left;
+}
+
+.grid2 img{
+	margin: 0 25%;
+}
+
+#carlyn {
+	width: 40%;
+	float: left;
+	margin: 0 4%;
+}
+
+#taylor {
+	width: 40%;
+	float: right;
+	margin: 0 4%;
+}
+
+#getinvolved{
+	clear: both;
+	padding-top: 3%;
+}
+
+#idols {
+	clear: both;
+}
+
+
+/*-----------DESKTOP: PROJECT PAGES--------------------*/
+
+.equity {
+	width: 22%;
+	float: left;
+	margin: 8% 3% 5% 1%;
+	padding: 0 2%;
+}
+
+iframe {
+	width: 150px;
+	margin-left: 0;
+}
+.questions {
+	float: right;
+	width: 60%;
+	margin: 0 1% 5% 3%;
+
+}
+
+.maincolumn {
+	clear: none;
+	float: right;
+	width: 66%;
+	margin: 0 1% 0 3%;
+}
+
+.projectnews {
+	clear: both;
+	margin: 5% 1%;
+	border: solid #821479 1px;
+	border-radius: 20px;
+	padding: 2% 5%;
+}
+
+/*-----------MORE QUOTES--------------------*/
+
+@media screen and (min-width: 900px) {
+
+#morequotes {
+	display: block;
+}
+
+.questions {
+	clear: both;
+}
+
+.questions {
+	width: 22%;
+	float: left;
+	margin: 0 3% 5% 1%;
+	padding: 0 2%;
+	clear: left;
+}

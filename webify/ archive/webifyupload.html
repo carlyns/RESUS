@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div id="formDiv">
+
+<form id="myForm">
+
+    <input name="picToLoad" type="file" /><br/>
+    <input type="button" value="Submit" onclick="picUploadJs(this.parentNode)" />
+
+</form>
+</div>
+
+
+<div id="status" style="display: none">
+  <!-- div will be filled with innerHTML after form submission. -->
+  Uploading. Please wait...
+</div>
+
+
+<script>
+
+function picUploadJs(frmData) {
+
+  document.getElementById('status').style.display = 'inline';
+
+  google.script.run
+    .withSuccessHandler(updateOutput)
+    .processForm(frmData)
+};
+  // Javascript function called by "submit" button handler,
+  // to show results.
+
+  function updateOutput() {
+
+    var outputDiv = document.getElementById('status');
+    outputDiv.innerHTML = "The File was UPLOADED!";
+  }
+
+</script>

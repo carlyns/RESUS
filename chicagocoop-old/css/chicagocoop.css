@@ -1,0 +1,94 @@
+body {
+	font-family: Andada, sans-serif;
+	/* OR NOBILE ... */
+}
+.title {
+	font-size: 2em;
+}
+h1, h2, h3 {
+	font-family: Fjalla One, serif;
+}
+h2 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	margin: 0;
+}
+a:hover {
+	text-decoration: underline;
+	/* CHANGE TO HIGHLIGHT*/
+}
+
+.maincat {
+	font-size: 1.1em;
+	text-transform: capitalize;
+	border-top: solid 1px pink;
+}
+.subcat {
+}
+
+.menu a {
+	color: pink;
+}
+.menu li {
+	list-style-type: none;
+}
+
+.usertype {
+	background-color: grey;
+	padding: 20% 5% 5% 5%;
+}
+.usertype h3 {
+	text-align: center;
+}
+.usertype button {
+	margin: 0 auto;
+}
+
+.exploring {
+	background-color: green;
+}
+
+.existing {
+	background-color: orange;
+
+}
+
+.blogposts {
+	background-color: lightgrey;
+	padding: 20% 5% 5% 5%;
+}
+
+.map {
+	background-color: grey;
+	padding: 20% 5% 5% 5%;
+}
+
+.coopmap {
+	width: 50%;
+	height: 400px;
+	background-color: black;
+	margin: 0 auto;
+}
+
+.availshortlist {
+	background-color: lightgrey;
+	padding: 20% 5% 5% 5%;
+}
+
+.team {
+	background-color: grey;
+	padding: 20% 5% 5% 5%;
+}
+
+footer {
+	background-color: black;
+	padding: 5%;
+	color: white;
+}
+
+footer p {
+	text-align: center;
+}

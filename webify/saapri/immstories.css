@@ -1,0 +1,191 @@
+header {
+   border-top: 0.5em solid #1B1B1E;
+    background: url("https://download.unsplash.com/photo-1429371527702-1bfdc0eeea7d");
+    background-size: cover;
+	background-position: center;
+	height: 400px;
+	/*startA: to anchor text at bottom of an area*/
+	position: relative;
+	/*endA: to anchor text at bottom of an area*/
+
+}
+
+
+body {
+   font-family: radley;
+   font-size: 120%;
+   margin: 0;
+   color: #1B1B1E;
+   line-height: 1.5em;
+}
+
+.container {
+	padding: 0 5% 5% 5%;
+}
+
+h1, h2 {
+   font-family: open sans;
+   text-transform: capitalize;
+   font-weight: 800;
+   line-height: 2em;
+
+}
+
+
+h1 {
+	color: black;
+	background-color: white;
+	font-size: 1.5em;
+	padding: 0 5%;
+	/*startB: to anchor text at bottom of an area*/
+	position: absolute;
+	bottom: 0;
+	/*endB: to anchor text at bottom of an area*/
+
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.2em;
+	padding: 5% 0 0 0;
+	line-height: 1.5em;
+	height: 2em;
+}
+
+.logo {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.logo img{
+	width: 100%;
+}
+
+.liberty {
+	margin: 0;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding: 4em 2em;
+	font-family: open sans;
+	color: white;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1.2em;
+	background-attachment: fixed;
+	background-image: url(https://download.unsplash.com/reserve/MTuhqSiPQbeVnaIYU16X_P1160798_adj.jpg);
+	background-repeat: no-repeat;
+} 
+
+
+.photo {
+	width: 80%;
+	margin: 5% auto;
+	
+}
+
+.photo img {
+	width: 100%;
+}
+
+.photo p {
+	font-size: .75em;
+	line-height: .5em;
+	text-align: right;
+}
+
+footer {
+	background-color: #6D676E;
+	font-size: 75%;
+	text-align: center;
+	color: #EDEEC0;
+	padding: 2% 10%;
+   border-bottom: 0.5em solid #1B1B1E;
+}
+
+footer a {
+	font-weight: 600;
+	color: #EDEEC0;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+a {
+	color: #96031A;
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 1%;
+}
+
+
+.quotemark {
+	font-size: 4em;
+	font-family: radley;
+	float: left; 
+	line-height: .5em;
+	padding: 1% 0 0 0;
+}
+
+blockquote {
+	color: #96031A;
+	font-family: open sans;
+	font-style: italic;
+	font-weight: 700;
+}
+
+
+
+
+@media screen and (min-width: 650px) {
+	
+	header {
+		height: 600px;
+	}
+	
+	h1 {
+		color: white;
+		background-color: black;
+		padding: 0 10%;
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		line-height: 2.5em;
+	}
+
+	.container{
+		padding: 0 10% 5% 10%;
+		margin: 0 auto;
+		/* adding this background color helps highlight padding/margin errors
+		background: #EDEEC0;
+		 */
+	}
+	
+	body {
+   		font-size: 120%;
+	}
+	
+	.logo {
+		max-width: 300px;
+	}
+	
+	.liberty {
+		padding: 5em 3em 2em 3em;
+		font-size: 2em;
+	}
+	
+	.photo {
+		margin: 5% auto;
+	}

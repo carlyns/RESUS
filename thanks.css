@@ -1,0 +1,36 @@
+body {
+	font-size: 100%;
+	font-family: Lato;
+	margin: 0;
+	background-color: #D8CFAF; /* beige */
+	color: #26241f;/* brown */
+	text-align: center;
+}
+
+.thanks .confirmmsg {
+	font-size: 0.8em;
+	background-color: #476A6F; /* blue */
+	outline: 3px double #D8CFAF; /* beige */
+	outline-offset: -15px;
+	color: #D8CFAF; /* beige */
+	padding: 4% 4% 3% 4%;
+	width: 50%;
+	margin: 5% auto;
+}
+.thanks a {
+	text-decoration: none;
+	color: #26241f; /* brown */
+	font-weight: 200;
+}
+.thanks a:hover {
+	text-decoration: underline;
+}
+
+/*-----------
+MEDIA QUERIES
+--------------*/
+
+@media screen and (min-width: 500px) {
+	body {
+		font-size: 2em;
+	}
