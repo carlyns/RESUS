@@ -1,0 +1,315 @@
+body {
+	font-family: Helvetica Neue, sans-serif;
+	margin: 0;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+h1 {
+	color: rgba(114,173,165,1);
+	font-size: 2em;
+}
+a {
+	color: grey;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+nav {
+	text-align: center;
+	box-shadow: 10px 3px 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 1);
+	z-index: 1;
+}
+nav h1 a {
+	color: rgba(114,173,165,1);
+}
+nav h1, nav h2 {
+	display: inline;
+}
+nav ul {
+	padding: 0px; /* THIS GETS RID OF LEFT LIST INDENT*/
+}
+nav li {
+	display: inline;
+	padding: 0 3%;
+	font-size: 0.8em;
+}
+
+.menu {
+	clear: both;
+
+}
+.mainbkimg {
+	background-image: url("imgs/housingmatch bkgrd-dark.jpg");
+	/* MUST BE DOWNLOADED VERSION
+	https://images.unsplash.com/photo-1445510861639-5651173bc5d5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7e71ac574830c04c8640224780da368a
+	https://images.unsplash.com/photo-1414124488080-0188dcbb8834?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=cc6da4cbf6f5228e67e7ac7fc7149c9e */
+	background-size: cover;
+	background-position: center;
+	height: 340px;
+	position: relative;
+
+}
+.mainmsg {
+	text-align: left;
+	font-size: 1.5em;
+	width: 70%;
+	padding-left: 10%;
+	text-shadow: 2px 2px rgba(1, 1, 1, 0.7);
+	color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	top: 110px;
+}
+.value {
+	font-size: 0.8em;
+	text-shadow: none;
+	font-weight: lighter;
+}
+.about {
+	font-size: 1.3em;
+	text-align: center;
+	clear: both;
+	overflow: auto;
+}
+
+.teaser {
+	font-size: 1.3em;
+	text-align: center;
+	clear: both;
+	overflow: auto;
+}
+.message {
+	border-top: 3px double rgba(114,173,165,1);
+	border-bottom: 3px double rgba(114,173,165,1);
+	padding: 2% 20%;
+	margin: 5% 0;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.benefit {
+	width: 31%;
+	float: left;
+	font-size: 0.8em;
+	padding: 1%;
+}
+.benefit .icon {
+	font-size: 3em;
+}
+.teaser .benefit p {
+	width: 80px;
+	margin: 20px auto;
+}
+.start {
+	font-size: 1.5em;
+	text-align: center;
+}
+.howitworks {
+	background-color: rgba(114,173,165,1);
+	color: white;
+	text-shadow: 1px 1px grey;
+}
+.howitworks .start {
+	padding: 5%;
+}
+.steps {
+	clear: both;
+}
+.steps h3 {
+	font-size: 1.5em;
+}
+.steps .icon {
+	font-size: 5em;
+}
+.step {
+	width: 250px;
+	text-align: center;
+	margin: 0 auto 70px auto;
+}
+.circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 0 auto;
+	box-shadow: 5px 5px 20px rgba(100,100,100,0.5);
+	font-size: 2.5em;
+}
+.mainimg {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 650px;
+}
+img {
+	width: 100%;
+}
+.buttons {
+	text-align: center;
+}
+.buttons p {
+}
+.oneweek {
+	text-decoration: underline;
+}
+#signup {
+	font-size: 1.2em;
+}
+#mc_embed_signup {
+	font-size: 1.2em;
+}
+.mc-field-group input {
+	height: 50px;
+	width: 275px;
+	margin-bottom: 3%;
+	font-size: 0.8em;
+	font-family: PT Sans Narrow, Helvetica Neue, sans-serif;
+
+}
+.button {
+	font-family: PT Sans Narrow, Helvetica Neue, sans-serif;
+	color: rgba(114,173,165,1);
+	background-color: black;
+	box-shadow: 5px 5px 5px grey;
+	border-radius: 0.5em;
+	overflow: auto;
+	text-align: center;
+	padding: 3%;
+	font-size: 0.9em;
+}
+.button h2 {
+	margin: 0;
+}
+.social {
+	text-align: center;
+	width: 250px;
+	margin: 0 auto;
+}
+.icons a {
+	color: black;
+}
+.icons a:hover {
+	text-decoration: none;
+}
+.social .icon {
+	font-size: 2em;
+}
+
+footer {
+	text-align: center;
+	margin-bottom: 3%;
+	line-height: 0.8em;
+}
+
+
+/*-----------
+MEDIA QUERIES FOR LARGER BREAKPOINTS BEGIN HERE
+--------------*/
+
+@media screen and (min-width: 700px) {
+	body {
+	}
+	nav h1 {
+	}
+	nav h1 a {
+		float: left;
+		width: 275px;
+	}
+	.menu a {
+		font-size: 1em;
+	}
+	nav {
+		padding-left: 3%;
+	}
+	nav ul {
+		display: flex;
+		align-items: baseline;
+	}
+	nav li {
+		font-size: 1em;
+		padding: 0 4%;
+
+	}
+	.menu {
+		clear: none;
+		float: left;
+		width: 60%;
+		padding: 0;
+		margin: 0;
+	}
+	h2, h3 {
+		font-size: 1.5em;
+	}
+	.mainbkimg {
+		height: 500px;
+	}
+	.mainmsg {
+		margin-top: 50px; /* PUSHES EVERYTHING DOWN TO ACCOMODATE FIXED NAVBAR */
+		top: 150px;
+		font-size: 2.5em;
+	}
+	.message {
+		font-size: 2em;
+	}
+	.benefit {
+		font-size: 1em;
+	}
+	.homeowning {
+		font-size: 2em;
+	}
+	.teaser .benefit p {
+		width: 150px;
+	}
+	.howitworks {
+		font-size: 1.2em;
+	}
+	.circle {
+		width: 60px;
+		height: 60px;
+	}
+	.step {
+		float: left;
+		padding: 7%;
+		margin: 0 auto;
+	}
+	.row {
+		width: 700px;
+		overflow: auto;
+		margin: 0 auto;
+	}
+	.rewards {
+		width: 300px;
+		overflow: auto;
+		margin: 0 auto;
+	}
+	.start {
+		clear: both;
+	}
+	#pdflink {
+		color: white;
+		text-decoration: underline;
+	}
+	.signup {
+		font-size: 1.8em;
+	}
+	#signup {
+		text-align: center;
+	}
+	.button {
+		width: 400px;
+		margin: 0 auto;
+		font-size: 0.8em;
+		padding: 1%;
+	}
+	.social {
+		font-size: 1.5em;
+		width: 500px;
+	}
+
+}

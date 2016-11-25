@@ -1,0 +1,22 @@
+// ADD FUN CSS TRANSITIONS TO BUTTONS
+
+// REDESIGN LAUNCH PAGE TO MATCH MOCKUPS, KEEP MAILCHIMP SIGNUP
+
+// TRY SASS HERE!
+
+// NEVER DID UX TESTING!!  DO IT.
+
+// REFINE GOOGLE ADWORDS / KEYWORD STRATEGY.
+<meta name="keywords" content="housing,affordable,american dream, renting, property, home ownership, chicago">
+
+
+// different piggy and building icons
+<div class="benefit">
+  <img src="imgs/piggy noun-benpixels.png" alt="affordability">
+  <p>affordability</p>
+</div>
+
+<div class="benefit">
+  <img src="imgs/noun_apartment_16813.png" alt="private apartment">
+<p>private apartments</p>
+</div>
