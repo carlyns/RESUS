@@ -1,6 +1,9 @@
+/* nice palette: https://coolors.co/297373-e6e6e6-39393a-fbb13c-undefined */
+
 body {
 	font-family: Helvetica Neue, sans-serif;
 	margin: 0;
+	color: #39393A; /* onyx */
 }
 .container {
 	width: 90%;

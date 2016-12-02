@@ -1,0 +1,325 @@
+/* nice palette: https://coolors.co/297373-e6e6e6-39393a-fbb13c-undefined */
+
+* {
+  box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+  font-family: helvetica neue, sans-serif;
+  margin: 0;
+  color: #39393A; /* onyx */
+}
+header {
+  margin: 2% 5%;
+  overflow: auto;
+}
+.housingmatchicon {
+}
+.housingmatchicon img {
+  float: left;
+  width: 80px;
+  padding-right: 10px;
+}
+.fireplacetitle {
+  float: left;
+  width: 50%;
+}
+.fireplacetitle h1 {
+  margin: 0;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: #FBB13C; /* yellow orange */
+}
+a:hover {
+  text-decoration: underline;
+  color: #39393A; /* onyx */
+}
+.fireplacetitle a:hover{
+  text-decoration: underline;
+}
+.tagline {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+nav {
+  float: right;
+  width: 20%;
+}
+nav h3 {
+  text-align: right;
+  margin: 0;
+  color: #FBB13C; /* yellow orange */
+  font-weight: 200;
+}
+.container {
+  margin: 0 5%;
+}
+.summary {
+  margin-bottom: 3%;
+}
+
+button {
+  width: 200px;
+  padding: 5px;
+  border: 2px solid #FBB13C; /* yellow orange */
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 20px;
+  clear: both;
+  background-color: white;
+  transition: background-color 0.25s ease-in;
+  color: #39393A; /* onyx */
+  font-family: helvetica neue, sans-serif;
+}
+button:hover {
+  background-color: #FBB13C; /* yellow orange */
+}
+button p {
+  margin: 5px 0 0 0;
+}
+.bttnsm {
+  width: 70px;
+  font-size: 0.8em;
+}
+.bttnmed {
+}
+.bttnbig  {
+}
+.featuresworking {
+  border: 1px dashed #FBB13C; /* yellow orange */
+  margin-bottom: 5%;
+}
+.feature h2 {
+  font-weight: 300;
+}
+.subheading {
+  font-size: 3em;
+  text-align: center;
+}
+.featuresworking h2 {
+}
+.feat {
+  color: #FBB13C; /* yellow orange */
+  font-weight: 200;
+}
+
+section {
+  clear: both;
+  overflow: auto;
+  padding: 1% 3%;
+}
+.sectionbox {
+  background-color: #E6E6E6; /* platinum */
+}
+.feature {
+  border-bottom: 1px dashed #FBB13C; /* yellow orange */
+  width: 80%;
+  margin: 0 auto;
+}
+.feature:last-child {
+  border-bottom: none;
+
+}
+.navicon {
+  font-size: 2em;
+  float: right;
+  position: relative;
+  bottom: 60px;
+}
+.icon-chevron-with-circle-up {
+  color: #39393A; /* onyx */
+  font-size: 2em;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 3;
+}
+.offsetforanchor {
+  position: relative;
+  bottom: 500px;
+}
+
+/*------ FORM LAYOUT AND STYLING -----*/
+.row-form {
+  clear: both;
+}
+form {
+  clear: both;
+  margin-bottom: 3%;
+}
+input {
+  border: 1px solid darkgrey;
+  /* height affects checkboxes! */
+  font-size: 1.3em;
+  padding-left: 2%; /* affects checkboxes! */
+}
+.col6 {
+  width: 90%;
+}
+.dropdown-style {
+  width: 100%;
+  max-width: 700px;
+  height: 30px;
+}
+.form-basic-info input {
+  border: 1px solid blue;
+  margin-bottom: 1%;
+}
+.location .col12 {
+  height: 100px;
+  width: 90%;
+}
+  @media screen and (min-width: 700px) {
+    .col6 {
+      margin-right: 2%;
+      float: left;
+      margin-bottom: 2%;
+    }
+    .col12 {
+      max-width: 700px;
+    }
+    .col6 {
+      width: 40%;
+    }
+  }
+
+.overview {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 3% 5%;
+  position: relative;
+}
+
+.overview::after { /* snippet from https://css-tricks.com/snippets/css/transparent-background-images/  */
+  content: "";
+  background-image: url(https://images.unsplash.com/photo-1422479278902-8cef24992df0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=b3792fa660f10a17b1abfe7109b68a49);
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.overview h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+.overview button {
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+.overview .benefit {
+  width: 25%;
+  float: left;
+  overflow: auto;
+  text-align: center;
+  font-size: 0.8em;
+}
+.benefit img {
+  width: 50px;
+  margin: 0 auto;
+}
+
+
+/* browse section styling ----------- */
+  /* FLEX-WRAP SO AVATARS GO TO NEXT ROW */
+
+.light-weight-p {
+  font-weight: 200;
+}
+.browse .avatar-row { /* why is this including the button and the h2????? */
+  clear: both;
+  /*  display: flex; THIS MAKES ALL THE CHILDREN BECOME %WIDTHS!  */
+  height: 320px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.right-side-info { /* define the type of avatar box that has buttons or text on the right side */
+  width: 200px;
+  height: 300px;
+  border: 2px solid grey;
+  float: left;
+  padding: 5px;
+  margin-right: 50px;
+}
+.right-side-info .avatar {
+  margin: 0;
+}
+.right-side-info img {
+  border-radius: 10px;
+}
+
+/* discover section styling ----------- */
+.discover .avatar-row {
+  border: 2px solid grey;
+  height: 130px;
+  overflow: auto;
+  clear: both;
+  display: flex;
+  padding: 2%;
+}
+.avatar {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+.avatar img {
+  width: 100%;
+  filter: saturate(40%);
+}
+.button-below-avatar {
+  width: 90px;
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+
+}
+.avatar-row .socialmediaicons {
+}
+.socialicon {
+  font-size: 2em;
+  float: left;
+}
+
+.invite textarea {
+  height: 100px;
+  width: 80%;
+  font-size: 1em;
+}
+
+.display {
+  color: #297373; /* myrtle green */
+}
+
+
+footer {
+  margin: 0 5%;
+  text-align: center;
+  font-size: 0.7em;
+
+}
+
+
+
+
+/* convert this breakpoint to SASS variable!! */
+@media screen and (min-width: 700px) {
+  .overview h2 {
+    font-size: 3em;
+  }
+  .benefit img {
+    width: 90px; /* move to desktop, reduce for mobile */
+  }
+  .overview .benefit {
+    font-size: normal;
+  }
+}
