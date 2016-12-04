@@ -10,25 +10,6 @@ body {
   margin: 0;
   color: #39393A; /* onyx */
 }
-header {
-  margin: 2% 5%;
-  overflow: auto;
-}
-.housingmatchicon {
-}
-.housingmatchicon img {
-  float: left;
-  width: 80px;
-  padding-right: 10px;
-}
-.fireplacetitle {
-  float: left;
-  width: 50%;
-}
-.fireplacetitle h1 {
-  margin: 0;
-  font-weight: 500;
-}
 a {
   text-decoration: none;
   color: #FBB13C; /* yellow orange */
@@ -40,14 +21,82 @@ a:hover {
 .fireplacetitle a:hover{
   text-decoration: underline;
 }
+
+header {
+  margin: 0;
+  padding: 10px 5%;
+  overflow: auto;
+  font-size: 0.8em;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  border-bottom: 3px solid #e6e6e6;
+}
+  @media screen and (min-width: 500px) {
+    header {
+      font-size: 1em;
+      height: 100px;
+      position: static;
+    }
+  }
+
+/* do i even want a sticky nav when screen size is so small??
+position: fixed;
+
+.belowstickynav {
+  position: relative;
+  top: 77px;
+}
+  @media screen and (min-width: 500px) {
+    .belowstickynav {
+      top: 0px;
+    }
+  }
+---------------- */
+
+
+
+.housingmatchicon {
+  float: left;
+  width: 50px;
+  overflow: auto;
+  padding-top: 10px;
+}
+  @media screen and (min-width: 500px) {
+    .housingmatchicon {
+      width: 80px;
+      padding-top: 0;
+    }
+  }
+.housingmatchicon img {
+  width: 100%;
+  padding-right: 10px;
+}
+.fireplacetitle {
+  float: left;
+  width: 50%;
+}
+.fireplacetitle h1 {
+  margin: 0;
+  font-weight: 500;
+}
 .tagline {
   font-size: 0.8em;
   font-weight: 400;
+  margin-top: 0;
 }
+
 nav {
   float: right;
-  width: 20%;
+  width: 30%;
+  margin-top: 15px;
 }
+  @media screen and (min-width: 500px) {
+    nav {
+      width: 20%;
+    }
+  }
 nav h3 {
   text-align: right;
   margin: 0;
@@ -79,17 +128,17 @@ button:hover {
 }
 button p {
   margin: 5px 0 0 0;
+  text-align: left;
 }
 .bttnsm {
   width: 70px;
   font-size: 0.8em;
 }
 .bttnmed {
-}
-.bttnbig  {
+
 }
 .featuresworking {
-  border: 1px dashed #FBB13C; /* yellow orange */
+  border: 2px dashed #FBB13C; /* yellow orange */
   margin-bottom: 5%;
 }
 .feature h2 {
@@ -109,19 +158,21 @@ button p {
 section {
   clear: both;
   overflow: auto;
-  padding: 1% 3%;
+  padding: 1% 0;
 }
 .sectionbox {
   background-color: #E6E6E6; /* platinum */
+  padding: 0 3% 3% 3%;
 }
 .feature {
-  border-bottom: 1px dashed #FBB13C; /* yellow orange */
+  border-bottom: 2px dashed #FBB13C; /* yellow orange */
+  padding-bottom: 50px;
   width: 80%;
   margin: 0 auto;
 }
 .feature:last-child {
   border-bottom: none;
-
+  padding-bottom: 0;
 }
 .navicon {
   font-size: 2em;
@@ -133,9 +184,11 @@ section {
   color: #39393A; /* onyx */
   font-size: 2em;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 5px;
+  right: 10px;
   z-index: 3;
+  background-color: white;
+  border-radius: 50%;
 }
 .offsetforanchor {
   position: relative;
@@ -156,42 +209,16 @@ input {
   font-size: 1.3em;
   padding-left: 2%; /* affects checkboxes! */
 }
-.col6 {
-  width: 90%;
-}
 .dropdown-style {
   width: 100%;
   max-width: 700px;
-  height: 30px;
-}
+} /* lookup how to style dropdown, fontsize doesn't render*/
 .form-basic-info input {
   border: 1px solid blue;
   margin-bottom: 1%;
 }
-.location .col12 {
-  height: 100px;
-  width: 90%;
-}
-  @media screen and (min-width: 700px) {
-    .col6 {
-      margin-right: 2%;
-      float: left;
-      margin-bottom: 2%;
-    }
-    .col12 {
-      max-width: 700px;
-    }
-    .col6 {
-      width: 40%;
-    }
-  }
 
 .overview {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0;
-  padding: 3% 5%;
   position: relative;
 }
 
@@ -211,11 +238,13 @@ input {
 }
 .overview h2 {
   font-size: 2em;
-  margin-top: 0;
+  margin-top: 30px;
 }
 .overview button {
   margin-right: 2%;
   margin-bottom: 2%;
+  width: 80%;
+  font-size: 1.5em;
 }
 .overview .benefit {
   width: 25%;
@@ -231,20 +260,19 @@ input {
 
 
 /* browse section styling ----------- */
-  /* FLEX-WRAP SO AVATARS GO TO NEXT ROW */
 
 .light-weight-p {
   font-weight: 200;
 }
-.browse .avatar-row { /* why is this including the button and the h2????? */
+.browse .avatar-row {
   clear: both;
-  /*  display: flex; THIS MAKES ALL THE CHILDREN BECOME %WIDTHS!  */
+  display: flex;
   height: 320px;
-  overflow-x: scroll;
+  overflow-x: scroll;/* if i don't have these ,it includes the h2 */
   overflow-y: hidden;
 }
 .right-side-info { /* define the type of avatar box that has buttons or text on the right side */
-  width: 200px;
+  min-width: 200px; /* added this to fix the horizontal scroll probelm!  */
   height: 300px;
   border: 2px solid grey;
   float: left;
@@ -257,6 +285,21 @@ input {
 .right-side-info img {
   border-radius: 10px;
 }
+
+/* group section styling ----------- */
+.onegroup {
+  border: 2px solid #FBB13C; /* yellow orange */
+  padding: 0 2%;
+  margin: 2% 2% 2% 0;
+  width: 120px;
+  min-height: 120px;
+  float: left;
+}
+.onegroup:last-child {
+  border: 2px dashed #FBB13C; /* yellow orange */
+
+}
+
 
 /* discover section styling ----------- */
 .discover .avatar-row {
@@ -283,29 +326,76 @@ input {
   margin-right: 20px;
 
 }
-.avatar-row .socialmediaicons {
-}
-.socialicon {
-  font-size: 2em;
-  float: left;
+.socialmediaicons .socialicon {
+  padding: 2% 2% 2% 0;;
 }
 
+
+/* analyze section styling ----------- */
+
+.building img {
+  width: 100%;
+  padding-left: 2%;
+}
+.col6 {
+  width: 100%;
+}
+  @media screen and (min-width: 800px) {
+    .col6 {
+      width: 50%;
+      max-width: 500px;
+      float: left;
+    }
+  }
+
+/* rewards section styling ----------- */
+.icon-gift {
+  font-size: 5em;
+  text-align: center;
+  margin: 15% 0;
+}
+
+/* invite section styling ----------- */
+.socialicon { /* the ones in buttons */
+  font-size: 2em;
+  float: left;
+  padding-right: 5px;
+}
 .invite textarea {
   height: 100px;
   width: 80%;
   font-size: 1em;
 }
-
-.display {
-  color: #297373; /* myrtle green */
+.invite button  {
+  width: 100%;
 }
+.bttnbig {
+  margin-bottom: 15px;
+}
+  @media screen and (min-width: 800px) {
+    .invite button  {
+      width: 200px;
+      margin-right: 3%;
+    }
+  }
 
+/* follow-contact section styling ----------- */
+.outside-container {
+  padding: 3% 5%;
+}
+.centered-text {
+  text-align: center;
+}
+.icon-heart, .icon-paper-plane {
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 0 1%;
+}
 
 footer {
   margin: 0 5%;
-  text-align: center;
+  padding: 2% 0;
   font-size: 0.7em;
-
 }
 
 
