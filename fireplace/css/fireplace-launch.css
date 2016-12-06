@@ -21,7 +21,14 @@ a:hover {
 .fireplacetitle a:hover{
   text-decoration: underline;
 }
-
+h3 {
+  font-size: 1em;
+}
+  @media screen and (min-width: 500px) {
+    h3 {
+      font-size: 1.2em;
+    }
+  }
 header {
   margin: 0;
   padding: 10px 5%;
@@ -134,8 +141,22 @@ button p {
   width: 70px;
   font-size: 0.8em;
 }
-.bttnmed {
-
+.submitbttn {
+  width: 200px;
+  padding: 5px;
+  border: 2px solid #FBB13C; /* yellow orange */
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 20px;
+  clear: both;
+  background-color: white;
+  transition: background-color 0.25s ease-in;
+  color: #39393A; /* onyx */
+  font-family: helvetica neue, sans-serif;
+  margin-top: 30px;
+}
+.submitbttn:hover {
+  background-color: #FBB13C; /* yellow orange */
 }
 .featuresworking {
   border: 2px dashed #FBB13C; /* yellow orange */
@@ -145,15 +166,20 @@ button p {
   font-weight: 300;
 }
 .subheading {
-  font-size: 3em;
+  font-size: 1.7em;
   text-align: center;
-}
-.featuresworking h2 {
 }
 .feat {
   color: #FBB13C; /* yellow orange */
   font-weight: 200;
 }
+  @media screen and (min-width: 500px) {
+    .subheading {
+      font-size: 3em;
+    }
+  }
+
+
 
 section {
   clear: both;
@@ -257,6 +283,22 @@ input {
   width: 50px;
   margin: 0 auto;
 }
+.overview h3 {
+  font-size: 1.5em;
+}
+  /* convert this breakpoint to SASS variable!! */
+  @media screen and (min-width: 700px) {
+    .overview h2 {
+      font-size: 3em;
+    }
+    .benefit img {
+      width: 90px; /* move to desktop, reduce for mobile */
+    }
+    .overview .benefit {
+      font-size: normal;
+    }
+  }
+
 
 
 /* browse section styling ----------- */
@@ -291,14 +333,27 @@ input {
   border: 2px solid #FBB13C; /* yellow orange */
   padding: 0 2%;
   margin: 2% 2% 2% 0;
-  width: 120px;
-  min-height: 120px;
-  float: left;
+  float: none;
+  width: 100%;
+  height: auto;
 }
+.onegroup p {
+  margin: 1%;
+}
+
 .onegroup:last-child {
   border: 2px dashed #FBB13C; /* yellow orange */
-
 }
+  @media screen and (min-width: 700px) {
+    .onegroup {
+      width: 120px;
+      min-height: 120px;
+      float: left;
+    }
+    .onegroup p {
+      margin: 10px;
+    }
+  }
 
 
 /* discover section styling ----------- */
@@ -360,6 +415,7 @@ input {
   font-size: 2em;
   float: left;
   padding-right: 5px;
+  padding-left: 10px;
 }
 .invite textarea {
   height: 100px;
@@ -374,11 +430,13 @@ input {
 }
   @media screen and (min-width: 800px) {
     .invite button  {
-      width: 200px;
+      width: 220px;
       margin-right: 3%;
     }
   }
-
+.copylink {
+  margin: 30px 0;
+}
 /* follow-contact section styling ----------- */
 .outside-container {
   padding: 3% 5%;
@@ -396,20 +454,4 @@ footer {
   margin: 0 5%;
   padding: 2% 0;
   font-size: 0.7em;
-}
-
-
-
-
-/* convert this breakpoint to SASS variable!! */
-@media screen and (min-width: 700px) {
-  .overview h2 {
-    font-size: 3em;
-  }
-  .benefit img {
-    width: 90px; /* move to desktop, reduce for mobile */
-  }
-  .overview .benefit {
-    font-size: normal;
-  }
 }

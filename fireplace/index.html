@@ -47,7 +47,6 @@
 		<h2>find people. </br>
 		... then love where you live.</h2>
 		<a href="#profileform"><button class="bttnmed">Start a Profile</button></a>
-		<p>You can start your profile now, and once we officially launch, we’ll notify you to complete it!  </p>
 
 		<h3>Design a co-op that offers all this and more: </h3>
 		<!-- <div class="flex-row-2"> -->
@@ -84,6 +83,42 @@
 				<p>&#9733 preview only &#9733</p>
 
 				<div class="avatar-row">
+					<div class="right-side-info">
+						<div class="avatar">
+							<img src="http://placekitten.com/85/85" alt="avatar placeholder image">
+						</div>
+						<p>Sonia S. <span class="light-weight-p">in Logan Square</span></p>
+						<p><span class="light-weight-p">primary co-op goal: </span>to keep neighborhood affordable</p>
+						<p><span class="light-weight-p">living preferences: </span>private apartment</p>
+						<p><span class="light-weight-p">dealbreaker: </span>not disclosed</p>
+					</div>
+					<div class="right-side-info">
+						<div class="avatar">
+							<img src="http://placekitten.com/240/240" alt="avatar placeholder image">
+						</div>
+						<p>Ronny D. <span class="light-weight-p">in Edgewater</span></p>
+						<p><span class="light-weight-p">primary co-op goal: </span>to afford property</p>
+						<p><span class="light-weight-p">living preferences: </span>shared, communal</p>
+						<p><span class="light-weight-p">dealbreaker: </span>no pets</p>
+					</div>
+					<div class="right-side-info">
+						<div class="avatar">
+							<img src="http://placekitten.com/105/105" alt="avatar placeholder image">
+						</div>
+						<p>Laura M. <span class="light-weight-p">in McKinley Park</span></p>
+						<p><span class="light-weight-p">primary co-op goal: </span>to make an investment</p>
+						<p><span class="light-weight-p">living preferences: </span>scattered site, single family</p>
+						<p><span class="light-weight-p">dealbreaker: </span>not disclosed</p>
+					</div>
+					<div class="right-side-info">
+						<div class="avatar">
+							<img src="http://placekitten.com/235/235" alt="avatar placeholder image">
+						</div>
+						<p>John K. <span class="light-weight-p">in Englewood</span></p>
+						<p><span class="light-weight-p">primary co-op goal: </span>to live with better neighbors</p>
+						<p><span class="light-weight-p">living preferences: </span>private apartment</p>
+						<p><span class="light-weight-p">dealbreaker: </span>no open-door policy</p>
+					</div>
 					<div class="right-side-info">
 						<div class="avatar">
 							<img src="http://placekitten.com/85/85" alt="avatar placeholder image">
@@ -303,8 +338,8 @@
 	<section class="sectionbox" id="profileform">
 		<h2 class="subheading">start your profile</h2>
 
-		<h2>Get Notified When We Launch!</h2>
-		<form>
+		<h3>Get Notified When We Launch!</h3>
+		<form action="https://formspree.io/cso@RESUSstudio.com">
 			<div class="row-form">
 				<input class="col12" type="text" name="firstname" id="firstname" placeholder="First name">
 				<input class="col12" type="text" name="lastname" id="lastname" placeholder="Last name">
@@ -317,7 +352,7 @@
 			</div>
 
 			<div class="row-form">
-				<h3>What kind of housing community do you prefer?</h3>
+				<h4>What kind of housing community do you prefer?</h4>
 				<select class="dropdown-style" name="housing-type" id="housingtype" >
 					<!-- option tag will take what's btwn as 'value' -->
 					<option>2 unit building</option>
@@ -331,10 +366,14 @@
 					<option>share a single free-standing house</option>
 					<option>dorm-style units with shared common spaces (like kitchen, bathrooms, living)</option>
 				</select>
-			</div>		</form>
+			</div>
+
+			<input type="submit" name="startform" class="submitbttn">
+
+		</form>
 
 
-		<a href="profile-create.html"><button class="bttnmed">Continue</button></a>
+
 	</section>
 
 
@@ -344,22 +383,23 @@
 		<form>
 			<textarea name="inviteemails" placeholder="Add email addresses"></textarea>
 		</form>
+		<!-- manually email w mailchimp invite link to 'confirm invitation' -->
 
-		<button class="bttnmed"><div class="socialicon icon-envelope-square"></div><p>Send an Invite</p></button>
+		<a href="#"><button class="bttnmed"><div class="socialicon icon-envelope-square"></div><p>Send an Invite</p></button></a>
 
-		<h3>Direct Link: fireplace.RESUSstudio.com</h3>
-		<button class="bttnbig"><div class="socialicon icon-facebook-square"></div><p>Share on Facebook</p></button>
-		<button class="bttnbig"><div class="socialicon icon-twitter-square"></div><p>Share on Twitter</p></button>
-		<button class="bttnbig"><div class="socialicon icon-linkedin-square"></div><p>Share on LinkedIn</p></button>
+		<h3 class="copylink">Copy Link: fireplace.RESUSstudio.com</h3>
+		<a href="http://www.facebook.com/sharer.php?u=http://fireplace.RESUSstudio.com" target="_blank"><button class="bttnbig"><div class="socialicon icon-facebook-square"></div><p>Share on Facebook</p></button></a>
+		<a href="http://twitter.com/share?text=Fireplace%20is%20a%20group%20match%20tool%20to%20help%20friends%20own%20affordable%20property%20together.%20Sign%20up%20for%20the%20Beta.&url=http://fireplace.RESUSstudio.com" target="_blank"><button class="bttnbig"><div class="socialicon icon-twitter-square"></div><p>Share on Twitter</p></button></a>
+		<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://fireplace.RESUSstudio.com" target="_blank"><button class="bttnbig"><div class="socialicon icon-linkedin-square"></div><p>Share on LinkedIn</p></button></a>
 	</section>
 
 	</div> <!-- end of "container" -->
 
 	<div class="sectionbox outside-container centered-text">
 
-	<h3>Like<span class="icon-heart"></span>Our Affiliated <a href="#">Facebook Page</a></h3>
+	<h3>Like<span class="icon-heart"></span>Our Affiliated Facebook Page: <a href="https://www.facebook.com/Exploring-Housing-Cooperatives-420807511344699/" target="_blank">Exploring Housing Cooperatives</a></h3>
 
-	<h3>Send Questions to<span class="icon-paper-plane"></span><a href="mailto:cso@RESUSstudio.com" target="_blank">cso@RESUSstudio.com</a></h3>
+	<h3>Send Questions to<span class="icon-paper-plane"></span><a href="mailto:info@RESUSstudio.com" target="_blank">info@RESUSstudio.com</a></h3>
 	</div>
 	<footer class="centered-text">
 
