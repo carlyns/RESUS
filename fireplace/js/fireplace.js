@@ -37,17 +37,25 @@ $('.submitbttn').on("click",function(){
   });
 
 
-  // show "Thanks!  We'll be in touch!"
+  // show popout button?
   function displayThanks() {
-    $('#profileform form').html(
-      '<p>' + 'Thanks!  We will be in touch' + '</p>'
+    $('#profileform h2').html(
+      'you\'ve started a profile'
+    );
+    $('#profileform h3').html(
+      '<p>' + 'Thanks, ' + firstN + '!  </p>'
       + '<p>' + lastinitial + '</p>'
-      + '<p>' + housingtype + '</p>'
+      + '<p>Ooh, ' + housingtype + '... nice choice.  We\'re excited for you to get started. <br> We\'ll notify you when the tool is up and running. </p>'
     );
   }
   displayThanks();
+});
 
 
+
+// stop refresh on submit click
+$('form').submit(function(e) {
+  e.preventDefault();
 });
 
 

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
 
-  <link rel="shortcut icon" href="housingmatchfav.ico" type="image/ico" width="16" height="16"> <!-- noun project favicon by Catherine Chestnut-->
+  <link rel="shortcut icon" href="fireplace.ico" type="image/ico" width="16" height="16"> <!-- noun project favicon by Catherine Chestnut-->
 
 	<meta name="description" content="Compatibility among friends for decent, affordable housing.">
 
@@ -28,7 +28,7 @@
 <body>
 <header id="top">
 	<div class="housingmatchicon">
-		<a href="index.html"><img src="imgs/noun_catherine-chestnut.png" alt="housing match icon"></a>
+		<a href="index.html"><img src="fireplace.png" alt="housing match icon"></a>
 	</div>
 	<div class="fireplacetitle">
 		<h1><a href="index.html">fireplace</a></h1>
@@ -47,6 +47,8 @@
 		<h2>find people. </br>
 		... then love where you live.</h2>
 		<a href="#profileform"><button class="bttnmed">Start a Profile</button></a>
+
+		<!-- Owning a home is getting harder for the middle class - from freelancers to part-time workers. -->
 
 		<h3>Design a co-op that offers all this and more: </h3>
 		<!-- <div class="flex-row-2"> -->
@@ -339,7 +341,13 @@
 		<h2 class="subheading">start your profile</h2>
 
 		<h3>Get Notified When We Launch!</h3>
-		<form action="https://formspree.io/cso@RESUSstudio.com">
+		<form action="https://formspree.io/cso@RESUSstudio.com" method="post">
+			<!-- MIGHT NEED TO REFRESH BUT DOUBT IT.
+						MAYBE IT NEEDS TO BE A PUBLISHED SITE
+					IF THOSE TWO FAIL, THEN JUST ADD A POPUP AND ALLOW THE REFRESH
+				 -->
+
+
 			<div class="row-form">
 				<input class="col12" type="text" name="firstname" id="firstname" placeholder="First name">
 				<input class="col12" type="text" name="lastname" id="lastname" placeholder="Last name">
@@ -348,7 +356,7 @@
 				<input class="col12" type="text" name="email" id="email" placeholder="Email Address">
 				<input class="col12" type="password" name="password" id="password" placeholder ="Password">
 				<br>
-				<label class="col12" for="remember"><input type="checkbox" name="save creds" id="savescreds"/>Remember Me</label>
+				<label class="col12" for="save creds"><input type="checkbox" name="save creds" id="savescreds"/>Remember Me</label>
 			</div>
 
 			<div class="row-form">
@@ -368,7 +376,7 @@
 				</select>
 			</div>
 
-			<input type="submit" name="startform" class="submitbttn">
+			<input type="submit" class="submitbttn">
 
 		</form>
 
