@@ -3,23 +3,33 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="initial-scale=1.0, width=device-width" user-scalable="yes"/>
-	<!-- user-scalable="yes" allows the device to zoom in and out.  delete if unwanted.  -->
-	<meta name="keywords" content="webify, pdf, unsearchable, content, publications, research, SEO, nonprofit, visibility, mobile, mobile-friendly, responsive">
-	<meta name="description" content="web-friendly, searchable versions of your static documents">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" user-scalable="no"/>
+	<meta name="description" content="Optimize your static pdf research documents and publications for web-friendly, mobile viewing.">
 
 	<link rel="stylesheet" href="webify.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-  <link rel="shortcut icon" href="webify/w.ico" type="image/ico" width="16" height="16"><!-- PROBABLY DON'T NEED WEBIFY BEFORE W.ICO FILE PATH -->
+  <link rel="shortcut icon" href="webify/w.ico" type="image/ico" width="16" height="16">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- jquery is not linked later -->
+
+	<script> // GOOGLE ANALYTICS TRACKING (STARTS WITH UA-)
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-73028603-1', 'auto');
+	  ga('send', 'pageview');
+	// THERE IS AN ERROR IN THE CONSOLE
+	</script>
 
 
-  <title>WEBIFY by RESUS</title>
+  <title>Mobile-Friendly Research Publications | Webify</title>
 
 </head>
 
@@ -31,46 +41,40 @@
 		<h1><span class="webify">Webify</span> Your Publications</h1>
 	</div>
 
-<!-- Wasn't working at first because I didn't have JQuery in the head!  JS was active. -->
 	<nav>
-				<a class="toggle" href="javascript:;"><i class="fa fa-bars"></i></a>
+		<a class="toggle" href="javascript:;"><i class="fa fa-bars"></i></a>
+		<!-- adding 'href="javascript:;"' so it links to anchors on page -->
+		<!-- should replace 3bar icon with SVG for accessibility -->
 
-				<!--COMMENT: replace 3bar icon with image file for access
+		<div class="dropdown">
+			<ul>
+				<li><a href="#benefits">Benefits</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+				<li><a href="#timeframe">Timeframe</a></li>
+				<li><a href="#start">Get Started!</a></li>
+				<li><a href="#faq">FAQ</a></li>
+			</ul>
+		</div>
 
-				COMMENT: WHEN IN BUILD MODE, href=# makes the toggle jump to the top of the page!! TO MAKE IT TAKON ON TOGGLE BEHAVIOR, replace it with javascript:; VERY COOL.-->
-
-			<div class="dropdown">
-				<ul>
-					<li><a href="#benefits">Benefits</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#pricing">Pricing</a></li>
-					<li><a href="#timeframe">Timeframe</a></li>
-					<li><a href="#start">Get Started!</a></li>
-					<li><a href="#faq">FAQ</a></li>
-				</ul>
-			</div>
-
-			<div class="backtotop">
-					<a href="#top"><i class="fa fa-arrow-up"></i></a>
-					<!-- COMMENT: wasn't working because i was putting the anchor before this!  ugh. -->
-			</div>
-	</nav> <!--    ----->
+		<div class="backtotop">
+				<a href="#top"><i class="fa fa-arrow-up"></i></a>
+		</div>
+	</nav>
 </div>
-
-
 
 
 <header id="top">
 
-<div class="tagline">optimize your publications for mobile viewing<!--web-friendly, searchable versions of your static documents--></div>
+	<div class="tagline"><h1>optimize your static publications for mobile viewing</h1><!--web-friendly, searchable versions of your static documents--></div>
 
 
-<div id="description">Many of society's most important documents are static pdfs ... 33% are <i>never even downloaded. </i>
-</br>
-</br>
-Don't be left out!
-</br>
-</div>
+	<div id="description">
+		<p>Many of society's most important documents are static pdfs ... 33% are <i>never even downloaded. </i></p>
+		<p>We can convert them for you.</p>
+
+		<p>Pop this up as a Modal: This winter we're doing a FREE promotional trial for any 501c3 nonfprofit!  Complete the form by through March 21, 2017 to be eligible!</p>
+	</div>
 
 </header>
 
@@ -79,51 +83,50 @@ Don't be left out!
 <div class="benefits" id="benefits">
 <h2>WHAT ARE THE BENEFITS?</h2>
 
-		<div class="bulletpt">
-		<div class="icon"><img src="webify/60 search.png" alt="search icon"></div>
+	<div class="bulletpt">
+		<div class="icon"><img src="webify/60 search.png" alt="web searches"></div>
 		<p>Ensure your published content is accessible to the public/researchers on mobile devices.</p>
 	</div>
 
 	<div class="bulletpt">
-		<div class="icon"><img src="webify/60 funders.png" alt="funder icon"></div>
+		<div class="icon"><img src="webify/60 funders.png" alt="funders"></div>
 		<p>Demonstrate to funders that the research they supported has been disseminated widely.</p>
 	</div>
 
 	<div class="bulletpt">
-		<div class="icon"><img src="webify/60 eye.png" alt="visibility icon"></div>
+		<div class="icon"><img src="webify/60 eye.png" alt="visibility"></div>
 		<p>Ensure content shows up in search results for increased visibility.</p>
 	</div>
 
 	<div class="bulletpt">
-		<div class="icon"><img src="webify/60 connect.png" alt="connect icon"></div>
+		<div class="icon"><img src="webify/60 connect.png" alt="connect with the work"></div>
 		<p>Allow people to connect to your organization through the published work itself.</p>
 	</div>
 
 <hr>
 
 
-	<h3>Some documents you might consider webifying:</h3>
+<h3>Some documents you might consider webifying:</h3>
 
   <ul>
-  <div class="documents">
-		<li>research publications</li>
-		<li>findings reports</li>
-		<li>strategic vision plans</li>
-		<li>tool kits</li>
-	</div>
+	  <div class="documents">
+			<li>research publications</li>
+			<li>findings reports</li>
+			<li>strategic vision plans</li>
+			<li>tool kits</li>
+		</div>
 
-	<div class="documents">
-		<li>fact sheets</li>
-		<li>board meeting agendas & minutes</li>
-		<li>brochures</li>
-	</div>
+		<div class="documents">
+			<li>fact sheets</li>
+			<li>board meeting agendas & minutes</li>
+			<li>brochures</li>
+		</div>
 
-	<div class="documents">
-		<li>annual reports</li>
-		<li>class/workshop directories & catalogs</li>
-	</div>
+		<div class="documents">
+			<li>annual reports</li>
+			<li>class/workshop directories & catalogs</li>
+		</div>
 	</ul>
-
 
 	<div class="docs">
 		<img class="docs" src="webify/200 docs.png" alt="documents icon">
@@ -143,7 +146,7 @@ Don't be left out!
 
 	<div class="bulletpt">
 	<div class="icon"><img src="webify/60 wand.png" alt="wand icon"></div>
-	<p>We'll work within your current website's design.</p>
+	<p>We'll work within your current website's design & structure.</p>
 	</div>
 
 	<div class="bulletpt">
@@ -166,18 +169,19 @@ Don't be left out!
 
 
 <div class="pricing" id="pricing">
-<h2>PRICING</h2>
+	<h2>PRICING</h2>
 
-<p class="reqtitle">it doesn't matter if it's 1 document ... or 1000 documents*</p>
+	<p class="reqtitle">it doesn't matter if it's 1 document ... or 1000 documents*</p>
 
 	<div class="breakdown">
-		<h3><span class="fee">$250</span></br>a ONE-TIME base setup fee</h3>
+		<h3><span class="fee">$150</span></br>a ONE-TIME base setup fee</h3>
 	 	<p>This covers working with your in-house web team, publishing setup, and talking about the look & interactivity you want.</p>
 		<p>(in other words ...  the more documents you webify, the better the value) </p>
 	</div>
+	<!-- used to be $250 setup + $50/page = $500 for a 5pg doc.  now $250 for a 4pg doc. -->
 
 	<div class="breakdown">
-		<h3><span class="fee">+ $50</span></br>per page of content</h3>
+		<h3><span class="fee">+ $25</span></br>per page of content</h3>
 		<p>This can be spread across numerous documents and includes text and static images. </p>
 	</div>
 
@@ -185,131 +189,110 @@ Don't be left out!
 		<h3><span class="fee">(+ $100)</span></br> (optional add-on) per visual</h3>
 		<p>Interactive charts or maps take your document to the next level of engagement.  Turn on/off layers, labels, & filters ... way better than a static visual.</p>
 
-</div>
+	</div>
 
-<div class="reqs">
-	<p class="reqtitle">A few things we require:</p>
+	<div class="reqs">
+		<p class="reqtitle">A few things we require:</p>
 
-	<div class="bulletpt">
-		<div class="icon"><img src="webify/60 req.png" alt="cone icon"></div>
-		<h4>minimum of 5 pages of content</h4></div>
+		<div class="bulletpt">
+			<div class="icon"><img src="webify/60 req.png" alt="cone icon"></div>
+			<h4>minimum of 4 pages of content</h4></div>
 
-	<div class="bulletpt">
-		<div class="icon"><img src="webify/60 req.png" alt="cone icon"></div>
-		<h4>another style, another base setup</br><span class="detail">stick with one style - one look (usually the look of your existing website) or we'll charge you another $250 per look!</span></h4></div>
+		<div class="bulletpt">
+			<div class="icon"><img src="webify/60 req.png" alt="cone icon"></div>
+			<h4>another style, another base setup</br><span class="detail">stick with one style - one look (usually the look of your existing website) or we'll charge you another $150 per look!</span></h4></div>
 
-	<div class="bulletpt">
-		<div class="icon"><img src="webify/60 req.png" alt="cone icon"></div>
-		<h4>a dedicated staff person to work with us for about 1-2 hours</br><span class="detail">s/he can point us to necessary files are and give us the web hosting information we might need.</span></h4></div>
+		<div class="bulletpt">
+			<div class="icon"><img src="webify/60 req.png" alt="cone icon"></div>
+			<h4>a dedicated staff person to work with us for 1-2 hours</br><span class="detail">s/he can point us to necessary files are and give us the web hosting information we might need.</span></h4></div>
+	</div>
 
-</div>
-</div>
+</div> <!-- end of "pricing"-->
 
 <div id="timeframe" class="time">
-<h2>HOW LONG WILL IT TAKE?</h2>
-<p>For up to 20 pages of content, you can estimate a turnaround of 5-10 business days.</p>
-<p>For more than 20 pages of content, show us your document/s and we'll send you a timeframe along with your quote.  </p>
+	<h2>HOW LONG WILL IT TAKE?</h2>
+	<p>For up to 20 pages of content, you can estimate a turnaround of 5-10 business days.</p>
+	<p>For more than 20 pages of content, show us your document/s and we'll send you a timeframe along with your quote.  </p>
 </div>
 
 <div class="quote" id="start" >
-<h2>HARD TO IMAGINE?  Try it for free!</h2>
-<!--links to live pages-->
-<p>1. We'll create a mini sample document (a page or two) to illustrate our service.  </br>2. We send a price breakdown.  </br>3. Then you can decide if the service is right for you.</p>
-<p>Sound good? </br>Fill out this quick form so we can get started.</p>
+	<h2>HARD TO IMAGINE?  </h2>
+	<!--links to live pages-->
+	<p>Check out this <a href="webify/saapri/immstories.html">sample site</a>, <a href="webify/afire/citizenprocessing.html">this one</a>, or <a href="webify/cnt/nolafreight.html">this one's not so bad either</a>. </p>
 
-<hr>
+	<hr>
 
-<div class="form">
-	<form action="http://www.resusstudio.com/webify.php" method="post" id="request">
-  What's your first name?<br>
-  <input type="text" name="firstname" size="38" placeholder="last name is optional">
-  <br><br>
-  What's your email address?<br>
-  <input type="text" name="email" size="38" placeholder="email@domain.com">
-	<br>
-	<br>
-  How did you hear about WEBIFY?<br>
-	<input type="checkbox" name="colleague">through a professional colleague<br>
-  <input type="checkbox" name="org">through another organization's website<br>
-	<input type="checkbox" name="resus">through RESUSstudio<br>
-	<input type="checkbox" name="gossip">word of mouth<br>
-  other:<br>
-  <input type="text" name="other" size="38">
-	<br>
-	<br>
-  If your document lives on the internet, please copy + paste the URL here:<br>
-  <input type="text" name="docurl" size="38" placeholder=".pdf or .doc">
-	<br>
-  Otherwise, you can email it to us once we are in touch. <br>
-	<!-- seems complicated.  maybe just ask to email it.
-	http://www.w3schools.com/php/php_file_upload.asp
-	-->
-	<!--  <input type="file" name="attachment">
- accepting specific file types
-	http://www.w3schools.com/tags/att_input_accept.asp
-	maybe just do this with JS as a form validator, rather than through html
-		accept="file_extension|.pdf|.doc"
-	-->
+	<h2>Sound Good?</h2>
+	<p>Fill out this quick form so we can send you a quote.</p>
 
-	  <br><br>
-  <input class="submit" type="submit" value="Submit">
-</form>
+	<hr>
 
-	<!-- textareas are different!  can't be put within form.  they are linked by giving the form an id and the text area the same id.  what's the point if it can't be put before the Submit button??  size is not changing for me.  huh.
-
-	<input type="textarea" rows="100" cols="20" name="other" size="60" form="request">
-	-->
-
-	<!--add FORM+ HTML CODE?
-    <iframe allowtransparency="true" src='http://www.formpl.us/form/0B1AeDZt0p9hnNDk3Skk0dTZxVVk/' frameborder="0" style="width:100%; height:800px; border:none;" scrolling="yes">
-    </iframe>
+	<div class="form">
+		<form action="http://www.resusstudio.com/webify.php" method="post" id="request">
+	  <p>What's your name?</p>
+	  <input type="text" name="firstname" size="38" placeholder="last name is optional">
+	  <br>
+	  <p>What's your email address?</p>
+	  <input type="text" name="email" size="38" placeholder="email@domain.com">
+		<br>
+	  <p>How did you hear about WEBIFY?</p>
+		<input type="checkbox" name="colleague">through a professional colleague<br>
+	  <input type="checkbox" name="org">through another organization's website<br>
+		<input type="checkbox" name="resus">through RESUSstudio<br>
+		<input type="checkbox" name="gossip">word of mouth<br>
+	  other:<br>
+	  <input type="text" name="other" size="38">
+		<br>
+		<br>
+	  If your document lives on the internet, please copy + paste the URL here:<br>
+	  <input type="text" name="docurl" size="38" placeholder="http://... .pdf or .doc">
+		<br>
+	  Otherwise, you can email it to us once we are in touch. <br>
+		<!-- REFERENCES:
+			http://www.w3schools.com/php/php_file_upload.asp
+			http://www.w3schools.com/tags/att_input_accept.asp
+			maybe just do this with JS as a form validator, rather than through html
+			accept="file_extension|.pdf|.doc"
 		-->
-</div>
 
+		  <br><br>
+	  <input class="submit" type="submit" value="Submit">
+		</form>
+		<!-- previously tried FORM+ using an iframe -->
 
-
-</div>
+	</div> <!-- end of "form"-->
+</div> <!-- end of "quote"-->
 
 <div id="faq" class="faq">
-<h2>FREQUENTLY ASKED QUESTIONS</h2>
-<hr>
-<h3>why can't our web team do this in-house?</h3>
-<p>They could ... but if we come in, there's no hassle, and we don't disrupt your team's daily workflow.  They're probably stretched thin as it is, and we actually enjoy doing the "grunt work" of sorting through the original document.</p>
-<hr>
-<h3>how many pages of content do we have?</h3>
-<p>Send us your document with the form above and we can give you an estimate.</p>
-<hr>
-<h3>we don't have a dedicated website personnel.  can you still work with us?</h3>
-<p>Absolutely.  </p>
-<hr>
-<h3>wait - does that mean we have to redesign our entire website?</h3>
-<p>Nope. The webified publications stand alone as microsites linked intuitively to your existing website.</p>
+	<h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+	<hr>
+	<h3>why can't our web team do this in-house?</h3>
+	<p>They could ... but if we come in, there's no hassle, and we don't disrupt your team's daily workflow.  They're probably stretched thin as it is, and we actually enjoy doing the "grunt work" of sorting through the original document.</p>
+
+	<hr>
+	<h3>how many pages of content do we have?</h3>
+	<p>Send us your document with the form above and we can give you an estimate.</p>
+
+	<hr>
+	<h3>we don't have a dedicated website personnel.  can you still work with us?</h3>
+	<p>Absolutely.  </p>
+
+	<hr>
+	<h3>wait - does that mean we have to redesign our entire website?</h3>
+	<p>Nope. The webified publications stand alone as microsites linked intuitively to your existing website.</p>
 </div>
 
-
 <footer>
-<p>all icons created by <a href="http://www.thenounproject.com/lemonliuthenounproject.com/lemonliu" target="_blank">Lemon Liu from The Noun Project</a>, Creative Commons - Attribution License</p>
-<p>copyright<a href="http://www.RESUSstudio.com" target="_blank"> RESUSstudio</a> &copy; 2016</p>
-<p>web design: <a href="http://www.sitesforsocialgood.com">Sites for Social Good</a></p>
+	<p>all icons created by <a href="http://www.thenounproject.com/lemonliuthenounproject.com/lemonliu" target="_blank">Lemon Liu from The Noun Project</a>, Creative Commons - Attribution License</p>
+	<p>copyright<a href="http://www.RESUSstudio.com" target="_blank"> RESUSstudio</a> &copy; 2016</p>
+	<p>web design: <a href="http://www.sitesforsocialgood.com">Sites for Social Good</a></p>
 
 </footer>
 
-<script src="jquery.min.js"></script>
 <script src="webify.js"></script>
 <!--<script type="text/javascript">
   alert('JS works!')</script>-->
 </body>
-
-<script> // GOOGLE ANALYTICS TRACKING (STARTS WITH UA-)
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-73028603-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
 
 </html>
