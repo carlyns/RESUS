@@ -1,7 +1,7 @@
 header {
-   border-top: 0.5em solid #1B1B1E;
-    background: url("https://download.unsplash.com/photo-1429371527702-1bfdc0eeea7d");
-    background-size: cover;
+  border-top: 0.5em solid #1B1B1E;
+  background: url("https://download.unsplash.com/photo-1429371527702-1bfdc0eeea7d");
+  background-size: cover;
 	background-position: center;
 	height: 400px;
 	/*startA: to anchor text at bottom of an area*/
@@ -76,13 +76,13 @@ h2 {
 	background-attachment: fixed;
 	background-image: url(https://download.unsplash.com/reserve/MTuhqSiPQbeVnaIYU16X_P1160798_adj.jpg);
 	background-repeat: no-repeat;
-} 
+}
 
 
 .photo {
 	width: 80%;
 	margin: 5% auto;
-	
+
 }
 
 .photo img {
@@ -132,7 +132,7 @@ ul {
 .quotemark {
 	font-size: 4em;
 	font-family: radley;
-	float: left; 
+	float: left;
 	line-height: .5em;
 	padding: 1% 0 0 0;
 }
@@ -148,11 +148,11 @@ blockquote {
 
 
 @media screen and (min-width: 650px) {
-	
+
 	header {
 		height: 600px;
 	}
-	
+
 	h1 {
 		color: white;
 		background-color: black;
@@ -168,24 +168,21 @@ blockquote {
 	.container{
 		padding: 0 10% 5% 10%;
 		margin: 0 auto;
-		/* adding this background color helps highlight padding/margin errors
-		background: #EDEEC0;
-		 */
 	}
-	
+
 	body {
    		font-size: 120%;
 	}
-	
+
 	.logo {
 		max-width: 300px;
 	}
-	
+
 	.liberty {
 		padding: 5em 3em 2em 3em;
 		font-size: 2em;
 	}
-	
+
 	.photo {
 		margin: 5% auto;
 	}

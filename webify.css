@@ -14,7 +14,7 @@ header {
 	text-align: center;
 	background: #D8CFAF;
 	color: #26241f;
-	padding: 15% 5% 5% 5%;
+	padding: 80px 5% 0 5%;
 }
 
 .topbar {
@@ -22,7 +22,7 @@ header {
 	top: 0px;
 	width: 100%;
 	height: 40px;
-	padding: 1% 2%;
+	padding: 8px 2%;
 	background: #476A6F;
 	color: #E4FDE1; /* white beige */
 	box-shadow: 1px 5px 5px rgba(1,1,1,1);

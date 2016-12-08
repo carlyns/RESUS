@@ -36,37 +36,36 @@
   $from="cso@RESUSstudio.com";
   $subject="a new Webify request!";
   $message="Pull the latest .csv file through RESUSstudio FTP.  Please and thank you.";
-
-
 ?>
-
 </head>
+
+
+
 <style>
-body {
-	font-size: 2em;
-	font-family: Lato;
-	margin: 0;
-	background-color: #D8CFAF; /* beige */
-	color: #26241f;/* brown */
-	text-align: center;
-}
+  body {
+  	font-size: 2em;
+  	font-family: Lato;
+  	margin: 0;
+  	background-color: #D8CFAF; /* tan */
+  	color: #26241f;/* brown */
+  	text-align: center;
+  }
 
-.thanks .confirmmsg {
-	background-color: #476A6F; /* blue */
-	border: 3px double #D8CFAF; /* beige */
-	color: #D8CFAF; /* beige */
-	padding: 4%;
-	width: 50%;
-	margin: 3% auto;
-}
-.thanks a {
-	text-decoration: none;
-	color: #26241f; /* brown */
-}
-.thanks a:hover {
-	text-decoration: underline;
-}
-
+  .thanks .confirmmsg {
+  	background-color: #476A6F; /* blue */
+  	border: 3px double #D8CFAF; /* tan */
+  	color: #D8CFAF; /* tan */
+  	padding: 4%;
+  	width: 50%;
+  	margin: 3% auto;
+  }
+  .thanks a {
+  	text-decoration: none;
+  	color: #26241f; /* brown */
+  }
+  .thanks a:hover {
+  	text-decoration: underline;
+  }
 </style>
 
 
@@ -83,9 +82,7 @@ body {
     <a href="webify.html">Go back to the Webify page.</a>
 </div>
 
-<!--
-      LOTS OF FORGOTTEN SEMI-COLONS.
-    -->
+
 
 </body>
 </html>
