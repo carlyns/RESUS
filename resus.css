@@ -549,7 +549,9 @@ footer {
 
 .container {
 	clear: both;
-
+}
+.container h1 {
+	text-transform: lowercase;
 }
 
 .grid4 {
