@@ -1,6 +1,52 @@
 // collapse all sections on page load
 var carlyn = 2;
 
+var currentTime = 0;
+var addtwoseconds = 2000;
+
+// replacing the "scroll" text
+function oneLoop () {
+  setTimeout( function() {
+      $('.scrolltext').html( 'basement millennial');
+    } , currentTime + addtwoseconds
+  );
+  currentTime = currentTime + addtwoseconds;
+  setTimeout( function() {
+      $('.scrolltext').html( 'freelancer');
+    } , currentTime + addtwoseconds
+  );
+  currentTime = currentTime + addtwoseconds;
+
+  setTimeout( function() {
+      $('.scrolltext').html( 'empty nester');
+    } , currentTime + addtwoseconds
+  );
+  currentTime = currentTime + addtwoseconds;
+
+  setTimeout( function() {
+      $('.scrolltext').html( 'middle class');
+    } , currentTime + addtwoseconds
+  );
+  currentTime = currentTime + addtwoseconds;
+
+  setTimeout( function() {
+      $('.scrolltext').html( 'housing burdened');
+    } , currentTime + addtwoseconds
+  );
+  currentTime = currentTime + addtwoseconds;
+  
+  setTimeout( function() {
+      $('.scrolltext').html( 'reliable renter');
+    } , currentTime + addtwoseconds
+  );
+  currentTime = currentTime + addtwoseconds;
+
+}
+
+oneLoop ();
+oneLoop ();
+oneLoop ();
+
 // show a reminder "Start your profile now, and we’ll remind you to complete it once we officially launch. " on hover of first Start Profile anchor tag in Overview.
 
 

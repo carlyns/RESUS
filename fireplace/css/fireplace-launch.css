@@ -1,254 +1,284 @@
-/* nice palette: https://coolors.co/297373-e6e6e6-39393a-fbb13c-undefined */
-
+/* onyx */
+/* platinum */
+/* yellow orange */
+/* darkgrey */
+/* grey */
 * {
   box-sizing: border-box;
-  	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
 body {
   font-family: helvetica neue, sans-serif;
-  margin: 0;
-  color: #39393A; /* onyx */
-}
+  color: #39393A; }
+
 a {
   text-decoration: none;
-  color: #FBB13C; /* yellow orange */
-}
+  color: #FBB13C; }
+
 a:hover {
   text-decoration: underline;
-  color: #39393A; /* onyx */
-}
-.fireplacetitle a:hover{
-  text-decoration: underline;
-}
+  color: #39393A; }
+
+h2 {
+  font-weight: 200; }
+
 h3 {
+  font-size: 1em; }
+
+@media screen and (min-width: 500px) {
+  h3 {
+    font-size: 1.2em; } }
+header {
+  font-size: 0.8em;
+  background-color: white;
+  border-bottom: 3px solid #e6e6e6; }
+
+@media screen and (min-width: 500px) {
+  font-size: 1em; }
+.fireplacetitle h1 {
+  font-weight: 600; }
+
+.tagline {
+  font-size: 0.8em;
+  font-weight: 400; }
+
+nav h3 {
+  text-align: right;
+  margin: 0;
+  color: #FBB13C;
+  font-weight: 200; }
+
+.story h2 {
+  text-align: center;
+  color: #FBB13C; }
+
+button {
+  border: 2px solid #FBB13C;
   font-size: 1em;
-}
-  @media screen and (min-width: 500px) {
-    h3 {
-      font-size: 1.2em;
-    }
-  }
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: white;
+  transition: background-color 0.25s ease-in;
+  color: #39393A; }
+
+button:hover {
+  background-color: #FBB13C; }
+
+button p {
+  text-align: left; }
+
+.bttnsm {
+  font-size: 0.8em; }
+
+.submitbttn {
+  border: 2px solid #FBB13C;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: white;
+  transition: background-color 0.25s ease-in;
+  color: #39393A; }
+
+.submitbttn:hover {
+  background-color: #FBB13C; }
+
+.featuresworking {
+  border: 2px dashed #FBB13C; }
+
+.feature h2 {
+  font-weight: 400; }
+
+.subheading {
+  font-size: 1.7em;
+  text-align: center; }
+
+@media screen and (min-width: 500px) {
+  .subheading {
+    font-size: 3em; } }
+.feat {
+  color: #FBB13C;
+  font-weight: 200; }
+
+.sectionbox {
+  background-color: #E6E6E6; }
+
+.feature {
+  border-bottom: 2px dashed #FBB13C; }
+
+.navicon {
+  font-size: 2em; }
+
+.icon-chevron-with-circle-up {
+  color: #39393A;
+  font-size: 2em;
+  background-color: white;
+  border-radius: 50%; }
+
+.profile-form h2 {
+  font-weight: 600; }
+
+input {
+  border: 1px solid darkgrey;
+  /* height affects checkboxes! */
+  font-size: 1.3em; }
+
+.overview h2 {
+  font-size: 2em; }
+
+.overview button {
+  font-size: 1.5em; }
+
+.overview .benefit {
+  font-size: 1.1em;
+  font-weight: 500; }
+
+.overview h3 {
+  font-size: 1.5em; }
+
+@media screen and (min-width: 700px) {
+  .overview h2 {
+    font-size: 3em; }
+
+  .benefit p {
+    text-align: center; } }
+.normal-weight {
+  font-weight: 400; }
+
+body {
+  margin: 0; }
+
 header {
   margin: 0;
   padding: 10px 5%;
   overflow: auto;
-  font-size: 0.8em;
   z-index: 2;
-  background-color: white;
   width: 100%;
-  height: 90px;
-  border-bottom: 3px solid #e6e6e6;
-}
-  @media screen and (min-width: 500px) {
-    header {
-      font-size: 1em;
-      height: 100px;
-      position: static;
-    }
-  }
+  height: 90px; }
 
-/* do i even want a sticky nav when screen size is so small??
-position: fixed;
-
-.belowstickynav {
-  position: relative;
-  top: 77px;
-}
-  @media screen and (min-width: 500px) {
-    .belowstickynav {
-      top: 0px;
-    }
-  }
----------------- */
-
-
-
+@media screen and (min-width: 500px) {
+  height: 100px;
+  position: static; }
 .housingmatchicon {
   float: left;
   width: 50px;
   overflow: auto;
-  padding-top: 10px;
-}
-  @media screen and (min-width: 500px) {
-    .housingmatchicon {
-      width: 80px;
-      padding-top: 0;
-    }
-  }
+  padding-top: 10px; }
+
+@media screen and (min-width: 500px) {
+  .housingmatchicon {
+    width: 80px;
+    padding-top: 0; } }
 .housingmatchicon img {
   width: 100%;
-  padding-right: 10px;
-}
+  padding-right: 10px; }
+
 .fireplacetitle {
   float: left;
-  width: 50%;
-}
+  width: 50%; }
+
 .fireplacetitle h1 {
-  margin: 0;
-  font-weight: 500;
-}
+  margin: 0; }
+
 .tagline {
-  font-size: 0.8em;
-  font-weight: 400;
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 nav {
   float: right;
   width: 30%;
-  margin-top: 15px;
-}
-  @media screen and (min-width: 500px) {
-    nav {
-      width: 20%;
-    }
-  }
-nav h3 {
-  text-align: right;
-  margin: 0;
-  color: #FBB13C; /* yellow orange */
-  font-weight: 200;
-}
+  margin-top: 15px; }
+
+@media screen and (min-width: 500px) {
+  nav {
+    width: 20%; } }
+.story h2 {
+  padding: 2%; }
+
 .container {
-  margin: 0 5%;
-}
+  margin: 0 5%; }
+
 .summary {
-  margin-bottom: 3%;
-}
+  margin-bottom: 3%; }
 
 button {
   width: 200px;
   padding: 5px;
-  border: 2px solid #FBB13C; /* yellow orange */
-  font-size: 1em;
-  font-weight: 500;
-  border-radius: 20px;
-  clear: both;
-  background-color: white;
-  transition: background-color 0.25s ease-in;
-  color: #39393A; /* onyx */
-  font-family: helvetica neue, sans-serif;
-}
-button:hover {
-  background-color: #FBB13C; /* yellow orange */
-}
+  clear: both; }
+
 button p {
-  margin: 5px 0 0 0;
-  text-align: left;
-}
+  margin: 5px 0 0 0; }
+
 .bttnsm {
-  width: 70px;
-  font-size: 0.8em;
-}
+  width: 70px; }
+
 .submitbttn {
   width: 200px;
   padding: 5px;
-  border: 2px solid #FBB13C; /* yellow orange */
-  font-size: 1em;
-  font-weight: 500;
-  border-radius: 20px;
-  clear: both;
-  background-color: white;
-  transition: background-color 0.25s ease-in;
-  color: #39393A; /* onyx */
-  font-family: helvetica neue, sans-serif;
   margin-top: 30px;
-}
-.submitbttn:hover {
-  background-color: #FBB13C; /* yellow orange */
-}
+  clear: both; }
+
 .featuresworking {
-  border: 2px dashed #FBB13C; /* yellow orange */
-  margin-bottom: 5%;
-}
-.feature h2 {
-  font-weight: 300;
-}
-.subheading {
-  font-size: 1.7em;
-  text-align: center;
-}
-.feat {
-  color: #FBB13C; /* yellow orange */
-  font-weight: 200;
-}
-  @media screen and (min-width: 500px) {
-    .subheading {
-      font-size: 3em;
-    }
-  }
-
-
+  margin-bottom: 5%; }
 
 section {
   clear: both;
   overflow: auto;
-  padding: 1% 0;
-}
+  padding: 1% 0; }
+
 .sectionbox {
-  background-color: #E6E6E6; /* platinum */
-  padding: 0 3% 3% 3%;
-}
+  padding: 0 3% 3% 3%; }
+
 .feature {
-  border-bottom: 2px dashed #FBB13C; /* yellow orange */
   padding-bottom: 50px;
   width: 80%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
+
 .feature:last-child {
   border-bottom: none;
-  padding-bottom: 0;
-}
+  padding-bottom: 0; }
+
 .navicon {
-  font-size: 2em;
   float: right;
   position: relative;
-  bottom: 60px;
-}
+  bottom: 60px; }
+
 .icon-chevron-with-circle-up {
-  color: #39393A; /* onyx */
-  font-size: 2em;
   position: fixed;
   bottom: 5px;
   right: 10px;
-  z-index: 3;
-  background-color: white;
-  border-radius: 50%;
-}
+  z-index: 3; }
+
 .offsetforanchor {
   position: relative;
-  bottom: 500px;
-}
+  bottom: 500px; }
 
-/*------ FORM LAYOUT AND STYLING -----*/
+/*-- FORM --*/
 .row-form {
-  clear: both;
-}
+  clear: both; }
+
 form {
   clear: both;
-  margin-bottom: 3%;
-}
+  margin-bottom: 3%; }
+
 input {
-  border: 1px solid darkgrey;
-  /* height affects checkboxes! */
-  font-size: 1.3em;
-  padding-left: 2%; /* affects checkboxes! */
-}
+  padding-left: 2%;
+  /* affects checkboxes! */ }
+
 .dropdown-style {
   width: 100%;
-  max-width: 700px;
-} /* lookup how to style dropdown, fontsize doesn't render*/
+  max-width: 700px; }
+
+/* lookup how to style dropdown, fontsize doesn't render*/
 .form-basic-info input {
   border: 1px solid blue;
-  margin-bottom: 1%;
-}
+  /* why is this blue? */
+  margin-bottom: 1%; }
 
 .overview {
-  position: relative;
-}
+  position: relative; }
 
-.overview::after { /* snippet from https://css-tricks.com/snippets/css/transparent-background-images/  */
+.overview::after {
+  /* snippet from https://css-tricks.com/snippets/css/transparent-background-images/  */
   content: "";
   background-image: url(https://images.unsplash.com/photo-1422479278902-8cef24992df0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=b3792fa660f10a17b1abfe7109b68a49);
   opacity: 0.5;
@@ -260,198 +290,90 @@ input {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;
-}
-.overview h2 {
-  font-size: 2em;
-  margin-top: 30px;
-}
+  z-index: -1; }
+
 .overview button {
   margin-right: 2%;
   margin-bottom: 2%;
-  width: 80%;
-  font-size: 1.5em;
-}
+  width: 80%; }
+
 .overview .benefit {
-  width: 25%;
-  float: left;
-  overflow: auto;
-  text-align: center;
-  font-size: 0.8em;
-}
+  clear: both;
+  width: 200px;
+  margin: 0 auto; }
+
+.icon-benefit {
+  width: 30px;
+  margin-right: 10px; }
+
 .benefit img {
-  width: 50px;
-  margin: 0 auto;
-}
-.overview h3 {
-  font-size: 1.5em;
-}
-  /* convert this breakpoint to SASS variable!! */
-  @media screen and (min-width: 700px) {
-    .overview h2 {
-      font-size: 3em;
-    }
-    .benefit img {
-      width: 90px; /* move to desktop, reduce for mobile */
-    }
-    .overview .benefit {
-      font-size: normal;
-    }
-  }
-
-
-
-/* browse section styling ----------- */
-
-.light-weight-p {
-  font-weight: 200;
-}
-.browse .avatar-row {
-  clear: both;
-  display: flex;
-  height: 320px;
-  overflow-x: scroll;/* if i don't have these ,it includes the h2 */
-  overflow-y: hidden;
-}
-.right-side-info { /* define the type of avatar box that has buttons or text on the right side */
-  min-width: 200px; /* added this to fix the horizontal scroll probelm!  */
-  height: 300px;
-  border: 2px solid grey;
-  float: left;
-  padding: 5px;
-  margin-right: 50px;
-}
-.right-side-info .avatar {
-  margin: 0;
-}
-.right-side-info img {
-  border-radius: 10px;
-}
-
-/* group section styling ----------- */
-.onegroup {
-  border: 2px solid #FBB13C; /* yellow orange */
-  padding: 0 2%;
-  margin: 2% 2% 2% 0;
-  float: none;
   width: 100%;
-  height: auto;
-}
-.onegroup p {
-  margin: 1%;
-}
+  margin: 0 auto; }
 
-.onegroup:last-child {
-  border: 2px dashed #FBB13C; /* yellow orange */
-}
-  @media screen and (min-width: 700px) {
-    .onegroup {
-      width: 120px;
-      min-height: 120px;
-      float: left;
-    }
-    .onegroup p {
-      margin: 10px;
-    }
-  }
+.icon-benefit {
+  float: left; }
 
+@media screen and (min-width: 700px) {
+  .icon-benefit {
+    float: none;
+    margin: 0 auto;
+    width: 90px; }
 
-/* discover section styling ----------- */
-.discover .avatar-row {
-  border: 2px solid grey;
-  height: 140px;
-  overflow: auto;
-  clear: both;
-  display: flex;
-  padding: 2%;
-}
-.avatar {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto;
-}
-.avatar img {
-  width: 100%;
-  filter: saturate(40%);
-}
-.button-below-avatar {
-  width: 90px;
-  float: left;
-  text-align: center;
-  margin-right: 20px;
+  .overview .benefit {
+    width: 25%;
+    float: left;
+    overflow: auto;
+    clear: none; } }
+.style-bold {
+  font-weight: 600; }
 
-}
-.socialmediaicons .socialicon {
-  padding: 2% 2% 2% 0;;
-}
-
-
-/* analyze section styling ----------- */
-
-.building img {
-  width: 100%;
-  padding-left: 2%;
-}
-.col6 {
-  width: 100%;
-}
-  @media screen and (min-width: 800px) {
-    .col6 {
-      width: 50%;
-      max-width: 500px;
-      float: left;
-    }
-  }
-
-/* rewards section styling ----------- */
-.icon-gift {
-  font-size: 5em;
-  text-align: center;
-  margin: 15% 0;
-}
-
-/* invite section styling ----------- */
-.socialicon { /* the ones in buttons */
-  font-size: 2em;
-  float: left;
-  padding-right: 5px;
-  padding-left: 10px;
-}
-.invite textarea {
-  height: 100px;
-  width: 80%;
-  font-size: 1em;
-}
-.invite button  {
-  width: 100%;
-}
-.bttnbig {
-  margin-bottom: 15px;
-}
-  @media screen and (min-width: 800px) {
-    .invite button  {
-      width: 220px;
-      margin-right: 3%;
-    }
-  }
-.copylink {
-  margin: 30px 0;
-}
-/* follow-contact section styling ----------- */
-.outside-container {
-  padding: 3% 5%;
-}
-.centered-text {
-  text-align: center;
-}
-.icon-heart, .icon-paper-plane {
-  font-size: 1.5em;
+.users {
   display: inline-block;
-  padding: 0 1%;
-}
+  padding-right: 10px; }
 
-footer {
-  margin: 0 5%;
-  padding: 2% 0;
-  font-size: 0.7em;
-}
+.sliding-frame {
+  display: none; }
+
+@media screen and (min-width: 700px) {
+  .appearing-users {
+    display: none; }
+
+  .sliding-frame {
+    display: inline-block;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    width: 70%; }
+
+  .sliding-users {
+    position: relative;
+    animation: scrollwords 20s ease infinite;
+    /* ease is default */
+    animation-delay: 3s;
+    border: 1px solid black; }
+
+  .sliding-users h2 {
+    font-size: 3em; }
+
+  @keyframes scrollwords {
+    /* 7 words, 7 pauses */
+    0% {
+      top: -10%; }
+    5% {
+      top: -10%; }
+    /* added this for more time on repeat */
+    15% {
+      top: -110%; }
+    30% {
+      top: -210%; }
+    45% {
+      top: -310%; }
+    60% {
+      top: -410%; }
+    75% {
+      top: -510%; }
+    100% {
+      top: -610%; } } }
+
+/*# sourceMappingURL=fireplace-launch.css.map */
