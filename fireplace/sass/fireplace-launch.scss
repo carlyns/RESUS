@@ -22,6 +22,12 @@
     	-moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
   }
+  .centered-text {
+    text-align: center;
+  }
+  .normal-weight {
+    font-weight: $weight-medium;
+  }
   body {
     font-family: helvetica neue, sans-serif;
     color: $color-primary;
@@ -60,20 +66,44 @@
   font-size: 0.8em;
   font-weight: 400;
 }
+  @media screen and (min-width: $breakpoint-small-med) {
+    .tagline {
+      font-size: 1.2em;
+    }
+  }
 nav h3 {
   text-align: right;
   margin: 0;
   color: $color-accent;
-  font-weight: 200;
+  font-weight: $weight-light;
 }
+  @media screen and (min-width: $breakpoint-biggest) {
+    nav h3 a {
+      font-size: 1.5em;
+    }
+  }
 .story h2 {
+  font-weight: $weight-light;
   text-align: center;
   color: $color-accent;
 }
+  @media screen and (min-width: $breakpoint-med-big) {
+    .story h2 {
+      font-size: 2em;
+      margin: 5px auto;
+    }
+  }
+  @media screen and (min-width: $breakpoint-biggest) {
+    .story h2 {
+      font-size: 2.5em;
+      margin: 5px auto;
+    }
+  }
+
 button {
   border: 2px solid $color-accent;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: $weight-bold;
   border-radius: 20px;
   background-color: white;
   transition: background-color 0.25s ease-in;
@@ -91,7 +121,7 @@ button p {
 .submitbttn {
   border: 2px solid $color-accent;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: $weight-bold;
   border-radius: 20px;
   background-color: white;
   transition: background-color 0.25s ease-in;
@@ -99,9 +129,6 @@ button p {
 }
 .submitbttn:hover {
   background-color: $color-accent;
-}
-.featuresworking {
-  border: 2px dashed $color-accent;
 }
 .feature h2 {
   font-weight: $weight-medium;
@@ -120,10 +147,11 @@ button p {
   font-weight: $weight-light;
 }
 .sectionbox {
-  background-color: $color-subtle;
-}
-.feature {
-  border-bottom: 2px dashed $color-accent;
+  background-image: url(../imgs/patterns/knitting250px.png);
+  /* Background pattern from Subtle Patterns */
+  background-attachment: fixed;
+  // background-size: 40%;
+  // background-color: $darkgrey;
 }
 .navicon {
   font-size: 2em;
@@ -163,9 +191,62 @@ input {
       text-align: center;
     }
   }
-.normal-weight {
-  font-weight: $weight-medium;
+
+.icon-gift {
+  font-size: 5em;
+  text-align: center;
 }
+/*-- invite section --*/
+.socialicon { /* the ones in buttons */
+  font-size: 2em;
+}
+.invite h2 {
+  font-weight: $weight-bold;
+}
+.invite textarea {
+  font-size: 1em;
+}
+.icon-heart, .icon-paper-plane {
+  font-size: 1.5em;
+}
+footer {
+  font-size: 0.7em;
+}
+
+.great {
+  text-align: center;
+  font-size: 2em;
+  font-weight: $weight-bold;
+  margin: 200px 0;
+}
+  @media screen and (min-width: $breakpoint-med-big) {
+    .great {
+      margin: 0;
+      padding: 5%;
+    }
+    .greatneighbors {
+      padding: 5% 0;
+      text-align: left;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -179,7 +260,6 @@ header {
   overflow: auto;
   z-index: 2;
   width: 100%;
-  height: 90px;
 }
   @media screen and (min-width: $breakpoint-small-med) {
     height: 100px;
@@ -260,13 +340,48 @@ section {
 }
 .feature {
   padding-bottom: 50px;
-  width: 80%;
   margin: 0 auto;
+  background-color: $color-accent;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 40px;
+}
+.feature h4 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2em;
 }
 .feature:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
 }
+  @media screen and (min-width: $breakpoint-med-big) {
+    .feature {
+      float: left;
+    }
+    .feature:first-child {
+      margin-left: 0;
+    }
+    .featuresworking {
+      width: 650px;
+      margin: 0 auto;
+      margin-bottom: 3%;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+
+    }
+  }
+  @media screen and (min-width: $breakpoint-biggest) {
+    .featuresworking {
+      width: 90%;
+    }
+  }
+.icon-gift {
+  margin: 15% 0;
+}
+
 .navicon {
   float: right;
   position: relative;
@@ -287,6 +402,12 @@ section {
 .row-form {
   clear: both;
 }
+.col12 {
+  width: 100%;
+  max-width: 800px;
+  height: 50px;
+  margin-bottom: 10px;
+}
 form {
   clear: both;
   margin-bottom: 3%;
@@ -296,18 +417,22 @@ input{
 }
 .dropdown-style {
   width: 100%;
-  max-width: 700px;
-} /* lookup how to style dropdown, fontsize doesn't render*/
-.form-basic-info input {
-  border: 1px solid blue;/* why is this blue? */
-  margin-bottom: 1%;
+  max-width: 800px;
+}
+select { // styling only renders in Firefox
+  height: 30px;
+  font-size: 1.2em;
+}
+@media screen and (min-width: $breakpoint-med-big) {
+  .col12 {
+  }
 }
 .overview {
   position: relative;
 }
 .overview::after { /* snippet from https://css-tricks.com/snippets/css/transparent-background-images/  */
   content: "";
-  background-image: url(https://images.unsplash.com/photo-1422479278902-8cef24992df0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=b3792fa660f10a17b1abfe7109b68a49);
+  background-image: url(../imgs/unsplash_breather-7169room-sm.jpg);
   opacity: 0.5;
   background-size: cover;
   background-position: center;
@@ -319,6 +444,12 @@ input{
   position: absolute;
   z-index: -1;
 }
+  @media screen and (min-width: $breakpoint-med-big) {
+    .overview::after {
+      background-image: url(../imgs/unsplash_breather-7169room.jpg);
+    }
+  }
+
 .overview button {
   margin-right: 2%;
   margin-bottom: 2%;
@@ -353,6 +484,86 @@ input{
       clear: none;
     }
   }
+.threeparts {
+  font-size: 1.5em;
+}
+@media screen and (min-width: $breakpoint-biggest) {
+  .threeparts {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .threeparts .bttnmed {
+    width: 100%;
+  }
+}
+
+/*-- invite section --*/
+.socialicon { /* the ones in buttons */
+  float: left;
+  padding-right: 5px;
+  padding-left: 10px;
+}
+.invite textarea {
+  height: 100px;
+  width: 80%;
+}
+.invite button  {
+  width: 220px;
+  margin-right: 3%;
+}
+.invite h3 {
+  margin-top: 0;
+}
+.invite h4 {
+  margin-bottom: 0;
+  font-weight: $weight-light
+}
+.bttnbig {
+  margin-bottom: 15px;
+}
+
+.copylink {
+  margin: 30px 0;
+}
+/*-- follow-contact --*/
+.outside-container {
+  padding: 3% 5%;
+}
+.icon-heart, .icon-paper-plane {
+  display: inline-block;
+  padding: 0 1%;
+}
+footer {
+  margin: 0 5%;
+  padding: 2% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -365,11 +576,31 @@ input{
 }
 .users {
   display: inline-block;
-  padding-right: 10px;
+}
+.users h2 {
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+  @media screen and (min-width: 700px) {
+    .offset {
+      float: left;
+      padding-right: 20px;
+    }
+  }
+
+
+.appearing-users {
+}
+.appearing-users h2 {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
 }
 .sliding-frame {
   display: none;
 }
+
   @media screen and (min-width: 700px) {
     .appearing-users {
       display: none;
@@ -377,7 +608,6 @@ input{
     .sliding-frame {
       display: inline-block;
       height: 100px;
-      border: 1px solid black;
       position: relative;
       overflow: hidden;
       width: 70%;
@@ -386,7 +616,6 @@ input{
       position: relative;
       animation: scrollwords 20s ease infinite; /* ease is default */
       animation-delay: 3s;
-      border: 1px solid black;
     }
     .sliding-users h2 {
       font-size: 3em;

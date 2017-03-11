@@ -8,6 +8,12 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
+.centered-text {
+  text-align: center; }
+
+.normal-weight {
+  font-weight: 400; }
+
 body {
   font-family: helvetica neue, sans-serif;
   color: #39393A; }
@@ -43,20 +49,35 @@ header {
   font-size: 0.8em;
   font-weight: 400; }
 
+@media screen and (min-width: 500px) {
+  .tagline {
+    font-size: 1.2em; } }
 nav h3 {
   text-align: right;
   margin: 0;
   color: #FBB13C;
   font-weight: 200; }
 
+@media screen and (min-width: 800px) {
+  nav h3 a {
+    font-size: 1.5em; } }
 .story h2 {
+  font-weight: 200;
   text-align: center;
   color: #FBB13C; }
 
+@media screen and (min-width: 700px) {
+  .story h2 {
+    font-size: 2em;
+    margin: 5px auto; } }
+@media screen and (min-width: 800px) {
+  .story h2 {
+    font-size: 2.5em;
+    margin: 5px auto; } }
 button {
   border: 2px solid #FBB13C;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 20px;
   background-color: white;
   transition: background-color 0.25s ease-in;
@@ -74,7 +95,7 @@ button p {
 .submitbttn {
   border: 2px solid #FBB13C;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 20px;
   background-color: white;
   transition: background-color 0.25s ease-in;
@@ -82,9 +103,6 @@ button p {
 
 .submitbttn:hover {
   background-color: #FBB13C; }
-
-.featuresworking {
-  border: 2px dashed #FBB13C; }
 
 .feature h2 {
   font-weight: 400; }
@@ -101,10 +119,9 @@ button p {
   font-weight: 200; }
 
 .sectionbox {
-  background-color: #E6E6E6; }
-
-.feature {
-  border-bottom: 2px dashed #FBB13C; }
+  background-image: url(../imgs/patterns/knitting250px.png);
+  /* Background pattern from Subtle Patterns */
+  background-attachment: fixed; }
 
 .navicon {
   font-size: 2em; }
@@ -142,9 +159,43 @@ input {
 
   .benefit p {
     text-align: center; } }
-.normal-weight {
-  font-weight: 400; }
+.icon-gift {
+  font-size: 5em;
+  text-align: center; }
 
+/*-- invite section --*/
+.socialicon {
+  /* the ones in buttons */
+  font-size: 2em; }
+
+.invite h2 {
+  font-weight: 600; }
+
+.invite textarea {
+  font-size: 1em; }
+
+.icon-heart, .icon-paper-plane {
+  font-size: 1.5em; }
+
+footer {
+  font-size: 0.7em; }
+
+.great {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  margin: 200px 0; }
+
+@media screen and (min-width: 700px) {
+  .great {
+    margin: 0;
+    padding: 5%; }
+
+  .greatneighbors {
+    padding: 5% 0;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto; } }
 body {
   margin: 0; }
 
@@ -153,8 +204,7 @@ header {
   padding: 10px 5%;
   overflow: auto;
   z-index: 2;
-  width: 100%;
-  height: 90px; }
+  width: 100%; }
 
 @media screen and (min-width: 500px) {
   height: 100px;
@@ -230,12 +280,39 @@ section {
 
 .feature {
   padding-bottom: 50px;
-  width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #FBB13C;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 40px; }
 
-.feature:last-child {
-  border-bottom: none;
-  padding-bottom: 0; }
+.feature h4 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2em; }
+
+@media screen and (min-width: 700px) {
+  .feature {
+    float: left; }
+
+  .feature:first-child {
+    margin-left: 0; }
+
+  .featuresworking {
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    overflow: auto;
+    display: flex;
+    justify-content: center; } }
+@media screen and (min-width: 800px) {
+  .featuresworking {
+    width: 90%; } }
+.icon-gift {
+  margin: 15% 0; }
 
 .navicon {
   float: right;
@@ -256,6 +333,12 @@ section {
 .row-form {
   clear: both; }
 
+.col12 {
+  width: 100%;
+  max-width: 800px;
+  height: 50px;
+  margin-bottom: 10px; }
+
 form {
   clear: both;
   margin-bottom: 3%; }
@@ -266,13 +349,11 @@ input {
 
 .dropdown-style {
   width: 100%;
-  max-width: 700px; }
+  max-width: 800px; }
 
-/* lookup how to style dropdown, fontsize doesn't render*/
-.form-basic-info input {
-  border: 1px solid blue;
-  /* why is this blue? */
-  margin-bottom: 1%; }
+select {
+  height: 30px;
+  font-size: 1.2em; }
 
 .overview {
   position: relative; }
@@ -280,7 +361,7 @@ input {
 .overview::after {
   /* snippet from https://css-tricks.com/snippets/css/transparent-background-images/  */
   content: "";
-  background-image: url(https://images.unsplash.com/photo-1422479278902-8cef24992df0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=b3792fa660f10a17b1abfe7109b68a49);
+  background-image: url(../imgs/unsplash_breather-7169room-sm.jpg);
   opacity: 0.5;
   background-size: cover;
   background-position: center;
@@ -292,6 +373,9 @@ input {
   position: absolute;
   z-index: -1; }
 
+@media screen and (min-width: 700px) {
+  .overview::after {
+    background-image: url(../imgs/unsplash_breather-7169room.jpg); } }
 .overview button {
   margin-right: 2%;
   margin-bottom: 2%;
@@ -324,12 +408,74 @@ input {
     float: left;
     overflow: auto;
     clear: none; } }
+.threeparts {
+  font-size: 1.5em; }
+
+@media screen and (min-width: 800px) {
+  .threeparts {
+    max-width: 600px;
+    margin: 0 auto; }
+
+  .threeparts .bttnmed {
+    width: 100%; } }
+/*-- invite section --*/
+.socialicon {
+  /* the ones in buttons */
+  float: left;
+  padding-right: 5px;
+  padding-left: 10px; }
+
+.invite textarea {
+  height: 100px;
+  width: 80%; }
+
+.invite button {
+  width: 220px;
+  margin-right: 3%; }
+
+.invite h3 {
+  margin-top: 0; }
+
+.invite h4 {
+  margin-bottom: 0;
+  font-weight: 200; }
+
+.bttnbig {
+  margin-bottom: 15px; }
+
+.copylink {
+  margin: 30px 0; }
+
+/*-- follow-contact --*/
+.outside-container {
+  padding: 3% 5%; }
+
+.icon-heart, .icon-paper-plane {
+  display: inline-block;
+  padding: 0 1%; }
+
+footer {
+  margin: 0 5%;
+  padding: 2% 0; }
+
 .style-bold {
   font-weight: 600; }
 
 .users {
-  display: inline-block;
-  padding-right: 10px; }
+  display: inline-block; }
+
+.users h2 {
+  margin-bottom: 0;
+  margin-top: 30px; }
+
+@media screen and (min-width: 700px) {
+  .offset {
+    float: left;
+    padding-right: 20px; } }
+.appearing-users h2 {
+  margin: 0;
+  padding: 0;
+  overflow: auto; }
 
 .sliding-frame {
   display: none; }
@@ -341,7 +487,6 @@ input {
   .sliding-frame {
     display: inline-block;
     height: 100px;
-    border: 1px solid black;
     position: relative;
     overflow: hidden;
     width: 70%; }
@@ -350,8 +495,7 @@ input {
     position: relative;
     animation: scrollwords 20s ease infinite;
     /* ease is default */
-    animation-delay: 3s;
-    border: 1px solid black; }
+    animation-delay: 3s; }
 
   .sliding-users h2 {
     font-size: 3em; }

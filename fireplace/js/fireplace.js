@@ -1,6 +1,3 @@
-// collapse all sections on page load
-var carlyn = 2;
-
 var currentTime = 0;
 var addtwoseconds = 2000;
 
@@ -30,13 +27,13 @@ function oneLoop () {
   currentTime = currentTime + addtwoseconds;
 
   setTimeout( function() {
-      $('.scrolltext').html( 'housing burdened');
+      $('.scrolltext').html( 'reliable renter');
     } , currentTime + addtwoseconds
   );
   currentTime = currentTime + addtwoseconds;
-  
+
   setTimeout( function() {
-      $('.scrolltext').html( 'reliable renter');
+      $('.scrolltext').html( 'housing burdened');
     } , currentTime + addtwoseconds
   );
   currentTime = currentTime + addtwoseconds;
@@ -45,16 +42,6 @@ function oneLoop () {
 
 oneLoop ();
 oneLoop ();
-oneLoop ();
-
-// show a reminder "Start your profile now, and we’ll remind you to complete it once we officially launch. " on hover of first Start Profile anchor tag in Overview.
-
-
-
-
-
-// show "it's free" to appear on hover of button when submitting the form
-
 
 
 
@@ -99,10 +86,10 @@ $('.submitbttn').on("click",function(){
 
 
 
-// stop refresh on submit click
-$('form').submit(function(e) {
-  e.preventDefault();
-});
+// stop refresh on submit click (eliminating this seems to fix Formspree problem)
+// $('form').submit(function(e) {
+//   e.preventDefault();
+// });
 
 
 
