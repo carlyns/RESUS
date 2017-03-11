@@ -1,30 +1,7 @@
 body {
   font-family: helvetica neue, sans-serif;
   margin: 0;
-}
-html {
-  margin: 0;
-
-}
-.home {
-  color: white;
-}
-.topsticky {
-  background-color: black;
-  position: fixed;
-  width: 100%;
-  border-bottom: 3px solid white;
-  box-shadow: 1px 5px 5px rgba(1,1,1,0.5);
-}
-.heading {
-  width: 85%;
-  float: left;
-  text-align: left;
-  padding-left: 3%;
-  font-size: 0.7em;
-}
-.heading a {
-  color: white;
+  text-align: center;
 }
 a {
   text-decoration: none;
@@ -32,164 +9,17 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.tagline {
-  color: rgba(236,164,0, 1);
-  font-size: 1.2em;
-}
-.tagline a {
-  color: white;
-}
-.tagline a:hover {
-}
-.tagline a:visited {
-  color: white;
-}
-
 
 .container {
-  padding: 0 6%;
-  clear: both;
-  padding-top: 130px;
+  padding: 10%;
 }
-.title {
-  text-align: center;
-}
-img {
-  width: 100%;
-  height: 75px;
-  object-fit: none;
-}
-.profiles {
-  font-weight: 200;
-}
-.pricing {
-  font-size: 1.3em;
-}
-.discount {
-  text-decoration: line-through;
-
-}
-.button {
-  font-size: 1.5em;
-  padding: 1%;
-}
-.container .button {
-  border: 1px solid black;
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-}
-.option {
-  border: 1px solid grey;
-  padding: 4%;
-  margin: 4% 0;
-}
-.option h2 {
-  margin-top: 0;
-}
-.option a {
-  color: white;
-}
-.start {
-  background-color: grey;
-  box-shadow: 5px 5px 15px 5px;
-  width: 125px;
-  padding: 2%;
-  text-transform: uppercase;
-  font-family: helvetica neue;
-  font-weight: 600;
-  text-align: center;
-}
-
-.newsletter .button {
-  text-transform: uppercase;
-}
-.newsletter {
-  clear: both;
-  text-align: center;
-  padding: 3%;
-}
-.newsletter a {
-  color: black;
-}
-
 footer {
-  clear:both;
   background-color: black;
   color: white;
-  padding: 2% 0 5% 0;
-  text-align: center;
+  padding: 5%;
   line-height: 0.8em;
-  height: 120px;
-  margin-top: 3%;
+  margin: 0;
 }
 footer a {
   color: white;
-}
-.contactinfo {
-}
-.credits {
-}
-
-
-/* ------ PROFILE PAGE STYLING -----*/
-.samples h2 {
-  font-weight: 200;
-}
-.unit-info h4 {
-  background-color: rgba(242,242,242,1);
-  padding: 3%;
-  margin: 5% 0;
-}
-.coop-info h4 {
-  background-color: rgba(242,242,242,1);
-  padding: 3%;
-  margin: 5% 0;
-}
-.mainfact {
-  font-weight: 500;
-}
-.infofield {
-  font-weight: 200;
-}
-.infoicon {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-  color: grey;
-  font-size: 3em;
-}
-
-
-
-
-
-/* ------ MEDIA QUERIES START HERE -----*/
-
-
-@media screen and (min-width: 700px) {
-  .heading {
-    font-size: 1em;
-  }
-  .container {
-    padding-top: 150px;
-  }
-  /* ------ PROFILE PAGE STYLING -----*/
-  .infoicon {
-    float: left;
-    margin-bottom: 5%;
-  }
-  .infoblock {
-    width: 500px;
-    float: left;
-    margin-top: 0; /* helps align to top */
-    margin-left: 30px;
-  }
-  .profileblock {
-    clear: both;
-  }
-  img {
-    width: 150px;
-    height: 150px;
-  }
 }
