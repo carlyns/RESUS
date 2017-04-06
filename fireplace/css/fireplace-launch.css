@@ -272,7 +272,6 @@ button p {
 
 section {
   clear: both;
-  overflow: auto;
   padding: 1% 0; }
 
 .sectionbox {
@@ -356,12 +355,13 @@ select {
   font-size: 1.2em; }
 
 .overview {
-  position: relative; }
+  position: relative;
+  overflow: auto; }
 
 .overview::after {
   /* snippet from https://css-tricks.com/snippets/css/transparent-background-images/  */
   content: "";
-  background-image: url(../imgs/unsplash_breather-7169room-sm.jpg);
+  background-image: url(../imgs/unsplash_apt-med.jpg);
   opacity: 0.5;
   background-size: cover;
   background-position: center;
@@ -373,9 +373,6 @@ select {
   position: absolute;
   z-index: -1; }
 
-@media screen and (min-width: 700px) {
-  .overview::after {
-    background-image: url(../imgs/unsplash_breather-7169room.jpg); } }
 .overview button {
   margin-right: 2%;
   margin-bottom: 2%;

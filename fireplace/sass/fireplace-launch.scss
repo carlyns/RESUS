@@ -332,7 +332,6 @@ button p {
 }
 section {
   clear: both;
-  overflow: auto;
   padding: 1% 0;
 }
 .sectionbox {
@@ -429,10 +428,11 @@ select { // styling only renders in Firefox
 }
 .overview {
   position: relative;
+  overflow: auto;  // NOT REGISTERING IN WEB INSPECTOR!
 }
 .overview::after { /* snippet from https://css-tricks.com/snippets/css/transparent-background-images/  */
   content: "";
-  background-image: url(../imgs/unsplash_breather-7169room-sm.jpg);
+  background-image: url(../imgs/unsplash_apt-med.jpg);
   opacity: 0.5;
   background-size: cover;
   background-position: center;
@@ -445,8 +445,7 @@ select { // styling only renders in Firefox
   z-index: -1;
 }
   @media screen and (min-width: $breakpoint-med-big) {
-    .overview::after {
-      background-image: url(../imgs/unsplash_breather-7169room.jpg);
+    .overview {
     }
   }
 
