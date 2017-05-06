@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+
+
+.funfact {
+  font-weight: 300;
+  text-align: center;
+  color: #705d56; }
+
+@media screen and (min-width: 700px) {
+  .funfact {
+    font-size: 2em; } }
+.row-stepicons {
+  display: none; }
+
+.row-stepicons h2, .steptitle {
+  font-size: 0.8em; }
+
+
+.mobileicon {
+  background-color: #705d56;
+  border: 3px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.mobileicon img {
+  width: 100%;
+  padding: 10%;
+}
+
+.step {
+  clear: both; }
+
+.steptitle {
+  float: left;
+  padding-left: 10px;
+  font-size: 1em;}
+
+.stepcontent {
+  clear: both;
+  padding-left: 60px;
+  border-bottom: 1px solid #705d56;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  overflow: auto; }
+
+.stepcontent h3 {
+  margin-bottom: 0;
+}
+.stepcontent p {
+  margin-top: 0;
+}
+
+.nouncredit {
+  font-size: 0.8em;
+}
+
+.steps-tool {
+  max-width: 800px; }
+
+.steps-tool img {
+  max-width: 100%; }
+
+.groupdiagram {
+  margin: 5% auto;
+  text-align: center; }
+
+.groupdiagram img {
+  width: 100%;
+  max-width: 1000px;
+  border: 1px solid rgba(112, 171, 175, 0.5); }
+
+.allexploreposts {
+  clear: both; }
+.container h1 {
+  text-transform: capitalize;
+}
+h4 {
+  text-transform: capitalize; }
+
+.formation-button {
+  background-color: #705d56;
+  text-align: center;
+  margin-bottom: 1%; }
+
+.formation-button a {
+  color: white; }
+
+.formation-button h4 {
+  padding: 2%; }
+
+@media screen and (min-width: 700px) {
+  .formation-button {
+    width: 50%;
+    margin: 0 auto; }
+
+  .row-stepicons {
+    display: block;
+    overflow: auto; }
+
+  .stepicon {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto; }
+
+  .active-step {
+    background-color: #705d56; }
+
+  .stepicon img {
+    width: 100%;
+    padding: 10%; }
+
+  .desktop-stepframe {
+    clear: both;
+    overflow: auto;
+    border-bottom: 2px solid rgba(112, 171, 175, 0.5);
+    border-left: 2px solid rgba(112, 171, 175, 0.5);
+    border-right: 2px solid rgba(112, 171, 175, 0.5); }
+
+  .mobileicon {
+    display: none; }
+
+  .step1, .step2, .step3, .step4, .step5 {
+    float: left;
+    width: 20%;
+    border-top: 2px solid rgba(112, 171, 175, 0.5);
+    padding-top: 2%;
+    border-left: 2px solid rgba(112, 171, 175, 0.5);
+    border-bottom: 2px solid rgba(112, 171, 175, 0.5);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    transition: background-color 0.25s ease-in;
+  }
+
+  .step5 {
+    border-right: 2px solid rgba(112, 171, 175, 0.5); }
+
+  .step1:hover, .step2:hover, .step3:hover, .step4:hover, .step5:hover {
+    background-color: #705d56;
+    position: relative;
+    top: 2px;
+    left: 2px; }
+
+  .active-tab {
+    /* add this class w/ JS: raised and gold fill */
+    border-bottom: none; }
+
+  .steptitle {
+    /* mobile only */
+    display: none; }
+
+  .icontitle {
+    text-align: center;
+  }
+
+  .stepcontent {
+    padding-left: 0;
+    border-bottom: none; }
+
+  .desktopcontent1, .desktopcontent2, .desktopcontent3, .desktopcontent4, .desktopcontent5 {
+    display: none;
+    padding: 3% 3% 0 3%; }
+
+  .showdesktopstep {
+    display: block; } }
+
+/*# sourceMappingURL=curated.css.map */
