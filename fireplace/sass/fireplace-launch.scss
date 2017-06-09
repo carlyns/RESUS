@@ -15,7 +15,7 @@
   // breakpoints, still need to specify min or max
   $breakpoint-small-med: 500px;
   $breakpoint-med-big: 700px;
-  $breakpoint-biggest: 800px;
+  $breakpoint-biggest: 1000px;
 
   * {
     box-sizing: border-box;
@@ -29,7 +29,7 @@
     font-weight: $weight-medium;
   }
   body {
-    font-family: helvetica neue, sans-serif;
+    font-family: 'Libre Franklin', 'helvetica neue', sans-serif;
     color: $color-primary;
   }
   a {
@@ -64,7 +64,7 @@
 }
 .tagline {
   font-size: 0.8em;
-  font-weight: 400;
+  font-weight: $weight-medium;
 }
   @media screen and (min-width: $breakpoint-small-med) {
     .tagline {
@@ -80,23 +80,6 @@ nav h3 {
   @media screen and (min-width: $breakpoint-biggest) {
     nav h3 a {
       font-size: 1.5em;
-    }
-  }
-.story h2 {
-  font-weight: $weight-light;
-  text-align: center;
-  color: $color-accent;
-}
-  @media screen and (min-width: $breakpoint-med-big) {
-    .story h2 {
-      font-size: 2em;
-      margin: 5px auto;
-    }
-  }
-  @media screen and (min-width: $breakpoint-biggest) {
-    .story h2 {
-      font-size: 2.5em;
-      margin: 5px auto;
     }
   }
 
@@ -133,19 +116,7 @@ button p {
 .feature h2 {
   font-weight: $weight-medium;
 }
-.subheading {
-  font-size: 1.7em;
-  text-align: center;
-}
-  @media screen and (min-width: $breakpoint-small-med) {
-    .subheading {
-      font-size: 3em;
-    }
-  }
-.feat {
-  color: $color-accent;
-  font-weight: $weight-light;
-}
+
 .sectionbox {
   background-image: url(../imgs/patterns/knitting250px.png);
   /* Background pattern from Subtle Patterns */
@@ -172,13 +143,14 @@ input {
 }
 .overview h2 {
   font-size: 2em;
+  font-weight: $weight-bold;
+
 }
 .overview button {
   font-size: 1.5em;
 }
 .overview .benefit {
   font-size: 1.1em;
-  font-weight: 500;
 }
 .overview h3 {
   font-size: 1.5em;
@@ -191,6 +163,136 @@ input {
       text-align: center;
     }
   }
+#sharedbenefits {
+  font-size: 0.8em;
+  background-color: white;
+  border: 1px dashed $color-primary;
+  border-radius: 25px;
+  padding-left: 25px;
+  margin-top: 25px;
+  width: 250px;
+}
+#sharedbenefits h3 {
+  font-weight: $weight-light;
+}
+.achieve {
+  background-color: $color-subtle;
+  border: 1px dashed $color-primary;
+  border-radius: 25px;
+  width: 80%;
+  margin: 5% auto 0 auto;
+  padding: 3%;
+  overflow: auto;
+}
+#popout { // background
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: auto; /* Enable scroll if needed */
+
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container h2, .invite h2 {
+  color: $color-primary;
+  font-weight: $weight-bold;
+  text-align: center;
+  font-size: 2em;
+  text-transform: capitalize;
+
+}
+  @media screen and (min-width: $breakpoint-small-med) {
+    .container h2, .invite h2 {
+      font-size: 2.5em;
+    }
+  }
+.container h3 {
+  color: $color-accent;
+  font-weight: $weight-light;
+  font-size: 1.5em;
+}
+  @media screen and (min-width: $breakpoint-small-med) {
+    .container h3 {
+      font-size: 2em;
+    }
+  }
+
+.box-left {
+  border-left: 3px solid $color-accent;
+  padding-left: 3%;
+  overflow: auto;
+  margin-bottom: 3%;
+
+}
+.box-right {
+  border-right: 3px solid $color-accent;
+  padding-right: 3%;
+  overflow: auto;
+  text-align: right;
+  margin-bottom: 5%;
+}
+@media screen and (min-width: $breakpoint-biggest) {
+  .box-right {
+    text-align: left;
+    border-right: none;
+    padding-right: 0;
+    border-left: 3px solid $color-accent;
+    padding-left: 3%;
+
+
+  }
+}
+
+.story {
+}
+.story img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+.story p {
+}
+
+@media screen and (min-width: $breakpoint-med-big) {
+  .story {
+    width: 30%;
+    padding: 1%;
+    float: left;
+    overflow: hidden;
+  }
+  .story img {
+    height: auto;
+    max-height: 200px;
+  }
+  .success {
+    overflow: auto;
+  }
+}
+@media screen and (min-width: $breakpoint-biggest) {
+  .story {
+  }
+}
+
+
+.process {
+  clear: both;
+  margin-top: 5%;
+}
 
 .icon-gift {
   font-size: 5em;
@@ -199,9 +301,6 @@ input {
 /*-- invite section --*/
 .socialicon { /* the ones in buttons */
   font-size: 2em;
-}
-.invite h2 {
-  font-weight: $weight-bold;
 }
 .invite textarea {
   font-size: 1em;
@@ -301,9 +400,6 @@ nav {
       width: 20%;
     }
   }
-.story h2 {
-  padding: 2%;
-}
 .container {
   margin: 0 5%;
 }
@@ -322,7 +418,6 @@ button p {
   width: 70px;
 }
 .submitbttn {
-  width: 200px;
   padding: 5px;
   margin-top: 30px;
   clear: both;
@@ -397,15 +492,54 @@ section {
   bottom: 500px;
 }
 
+.purpose h1 {
+  font-size: 2em;
+}
+  @media screen and (min-width: $breakpoint-med-big) {
+    .purpose h1 {
+      font-size: 3em;
+    }
+  }
+@media screen and (min-width: $breakpoint-biggest) {
+  .sliding-frame {
+    min-width: 500px;
+  }
+  .purpose {
+    width: 75%;
+    float: left;
+    padding-right: 20px;
+  }
+}
+
 /*-- FORM --*/
+.overview .profile-form {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 50px;
+  background-color: rgba(230,230,230,0.5);
+}
+@media screen and (min-width: $breakpoint-biggest) {
+  .overview .profile-form {
+    width: 25%;
+    float: right;
+  }
+}
+
+
+
 .row-form {
   clear: both;
+}
+.col6 {
+  width: 50%;
+  float: left;
 }
 .col12 {
   width: 100%;
   max-width: 800px;
+}
+input .col6, input .col12 {
   height: 50px;
-  margin-bottom: 10px;
 }
 form {
   clear: both;
@@ -413,6 +547,21 @@ form {
 }
 input{
   padding-left: 2%; /* affects checkboxes! */
+  height: 40px;
+}
+@media screen and (min-width: $breakpoint-biggest) {
+  .col6, .col12 {
+    font-size: 0.8em;
+  }
+  input {
+    height: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col6, .col12 {
+    font-size: 1.2em;
+    height: 50px;
+  }
 }
 .dropdown-style {
   width: 100%;
@@ -422,18 +571,21 @@ select { // styling only renders in Firefox
   height: 30px;
   font-size: 1.2em;
 }
-@media screen and (min-width: $breakpoint-med-big) {
-  .col12 {
-  }
-}
+
 .overview {
-  position: relative;
-  overflow: auto;  // NOT REGISTERING IN WEB INSPECTOR!
+  // position: relative;
+  width: 100%;
+  background-image: url(../imgs/unsplash_room-sm.jpg);
+  background-size: cover;
+  overflow: auto;
+  background-position: center;
+
 }
-.overview::after { /* snippet from https://css-tricks.com/snippets/css/transparent-background-images/  */
+
+/* .overview::after {  snippet from https://css-tricks.com/snippets/css/transparent-background-images/
   content: "";
-  background-image: url(../imgs/unsplash_apt-med.jpg);
-  opacity: 0.5;
+  width: 100%; // this fixed the scaling issue
+  background-image: url(../imgs/unsplash_room-sm.jpg); // takes a VERY long time to load up new image.  30+ min
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -443,10 +595,22 @@ select { // styling only renders in Firefox
   right: 0;
   position: absolute;
   z-index: -1;
-}
-  @media screen and (min-width: $breakpoint-med-big) {
+  opacity: 0.5;
+}*/
+  @media screen and (min-width: $breakpoint-biggest) {
     .overview {
+      background-image: url(../imgs/unsplash_room.jpg);
     }
+
+    .overview h1,   {
+      background-color: rgba(230,230,230,0.5);
+      padding: 1%;
+    }
+
+    .overview h2 {
+      text-shadow: 2px 2px 3px white;
+    }
+
   }
 
 .overview button {
@@ -456,12 +620,50 @@ select { // styling only renders in Firefox
 }
 .overview .benefit {
   clear: both;
+  width: 250px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+h3  {
+}
+.process p {
+  font-size: 1.2em;
+}
+.process h3 .sub {
+  color: $color-accent;
+}
+.process h2 {
+  font-size: 1.7em;
+  margin: 20px;
+  display: block;
+}
+.process .bolder {
+  font-weight: $weight-bold
+
+}
+@media screen and (min-width: $breakpoint-med-big) {
+  .process h2 {
+    font-size: 2.5em;
+  }
+}
+.fears .benefit{
+  clear: both;
   width: 200px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.fearsexpanded {
+  display: none;
+}
+@media screen and (min-width: $breakpoint-med-big) {
+  .fearsexpanded {
+    display: inline;
+  }
 }
 .icon-benefit {
   width: 30px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .benefit img {
   width: 100%;
@@ -477,6 +679,12 @@ select { // styling only renders in Firefox
       width: 90px;
     }
     .overview .benefit {
+      width: 25%;
+      float: left;
+      overflow: auto;
+      clear: none;
+    }
+    .fears .benefit {
       width: 25%;
       float: left;
       overflow: auto;
@@ -579,6 +787,8 @@ footer {
 .users h2 {
   margin-bottom: 0;
   margin-top: 30px;
+  font-weight: 200;
+
 }
   @media screen and (min-width: 700px) {
     .offset {

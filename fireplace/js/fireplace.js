@@ -45,55 +45,29 @@ oneLoop ();
 
 
 
-// on click of Submit button,
-$('.submitbttn').on("click",function(){
-  // save all inputs in variables
-  firstN = $('#firstname').val();
-  lastN = $('#lastname').val();
-  lastinitial = lastN.charAt(0); // DOES VAR NEED TO BE WRAPPED IN () ??
-  email = $('#email').val();
-  password = $('#password').val();
-  housingtype = $('#housingtype').val();
-  if ($('#savescreds').is(":checked")) {
-    savescreds = true;
-  }
-  else {
-    savescreds = false;
-  }
+// Get the modal
+var modal = document.getElementById('popout');
 
+// Get the button that opens the modal
+var btn = document.getElementById('sharedbenefits');
 
-  // hide form
-  $('#profileform form').hide(function() {
-      $(this).animate({height: 'auto'});
-  }, function() {
-      $(this).animate({height: 'auto'});
-  });
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-
-  // show popout button?
-  function displayThanks() {
-    $('#profileform h2').html(
-      'you\'ve started a profile'
-    );
-    $('#profileform h3').html(
-      '<p>' + 'Thanks, ' + firstN + '!  </p>'
-      + '<p>' + lastinitial + '</p>'
-      + '<p>Ooh, ' + housingtype + '... nice choice.  We\'re excited for you to get started. <br> We\'ll notify you when the tool is up and running. </p>'
-    );
-  }
-  displayThanks();
-});
-
-
-
-// stop refresh on submit click (eliminating this seems to fix Formspree problem)
-// $('form').submit(function(e) {
-//   e.preventDefault();
-// });
-
-
-
-
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 
   // smooth scrolling to anchors on page
