@@ -347,6 +347,29 @@ footer a:hover {
 
 
 /*-----------PROJECT PAGES--------------------*/
+
+.phase {
+	border-top: 1px solid #464C51;
+}
+.phase h2 {
+	margin-top: 0;
+	cursor: pointer;
+}
+.proposal .phasecontent, .first .phasecontent, .second .phasecontent, .third .phasecontent, .fourth .phasecontent, .last .phasecontent {
+	display: none;
+}
+.last {
+	border-bottom:1px solid #464C51;
+}
+.chevron {
+	width: 30px;
+	float: left;
+	padding-top: 5px;
+	padding-right: 10px;
+	cursor: pointer;
+
+}
+
 .equity {
 	display: none;
 	margin: 0 5%;
@@ -426,7 +449,9 @@ footer a:hover {
 
 .projectimg img {
 	width: 100%;
+	max-width: 800px;
 	padding: 3% 0;
+	/* wish i could write an if statement ... if image is portrait then max-height is 500px.  */
 }
 
 
@@ -452,207 +477,207 @@ iframe {
 /*-----------MEDIA QUERIES START HERE--------------------*/
 @media screen and (min-width: 650px) {
 
-.logo {
-	margin: 5% auto 3% 3%;
-	float: left;
+	.logo {
+		margin: 5% auto 3% 3%;
+		float: left;
+	}
+
+	#logoheader {
+		display: block;
+		float: right;
+		margin: 1% 5% 0 0;
+	}
+
+	#logoheader img {
+		width: 100px;
+	}
+
+	.tagline {
+		font-size: 2em;
+		clear: both;
+	}
+
+	h1 {
+	}
+
+	h2 {
+		margin-top: 5%;
+	}
+
+	.resusabout {
+		width: 26%;
+		float: left;
+		margin:0 2% 0 2%;
+	}
+
+	.about {
+		width: 100%;
+		line-height: 1.8em;
+		text-align: left;
+	}
+
+	.about img {
+		max-width: 125px;
+
+	}
+
+	.summary {
+		font-size: 80%
+	}
+
+
+	.initiatives {
+		clear: none;
+		float: right;
+		width: 64%;
+		padding: 0 0 0 2%;
+		margin:0 2%;
+	}
+
+	.initiatives .description {
+		font-size: 0.7em;
+	}
+
+	.quotes {
+		clear: both;
+		padding-top: 10%;
+		display: block;
+		font-style: italic;
+		font-size: 0.9em;
+	}
+
+	#morequotes {
+		display: none;
+	}
+
+	.source {
+		font-style: normal;
+	}
+
+	.news{
+		clear: both;
+		margin: 3% auto 5% auto;
+		max-width: 600px;
+		font-size: 1em;
+
+	}
+
+	#logofooter {
+		display:none;
+	}
+
+	footer {
+		clear: both;
+	}
+
+
+	/*-----------DESKTOP: ABOUT PAGES--------------------*/
+
+	.container {
+		clear: both;
+	}
+	.container h1 {
+	}
+
+	.grid4 {
+		width: 29%;
+		margin-right: 4%;
+		float: left;
+	}
+
+	.grid4:last-child {
+		margin-right: 0;
+	}
+
+	.grid4 img{
+		width: 100%;
+	}
+
+	.grid2 {
+		width: 44%;
+		margin-right: 4%;
+		float: left;
+	}
+
+	.grid2 img{
+		margin: 0 25%;
+	}
+
+	#carlyn {
+		width: 40%;
+		float: left;
+		margin: 0 4%;
+	}
+
+	#taylor {
+		width: 40%;
+		float: right;
+		margin: 0 4%;
+	}
+
+	#getinvolved{
+		clear: both;
+		padding-top: 3%;
+	}
+
+	#idols {
+		clear: both;
+	}
+
+
+	/*-----------DESKTOP: PROJECT PAGES--------------------*/
+
+	.equity {
+		display: block;
+		width: 22%;
+		float: left;
+		margin: 8% 3% 5% 1%;
+		padding: 0 2%;
+	}
+
+	iframe {
+		width: 150px;
+		margin-left: 0;
+	}
+	.questions {
+		float: right;
+		width: 60%;
+		margin: 0 1% 5% 3%;
+
+	}
+
+	.maincolumn {
+		clear: none;
+		float: right;
+		width: 66%;
+		margin: 0 1% 0 3%;
+	}
+
+	.projectnews {
+		clear: both;
+		margin: 5% 1%;
+		border: solid #821479 1px;
+		border-radius: 20px;
+		padding: 2% 5%;
+	}
 }
-
-#logoheader {
-	display: block;
-	float: right;
-	margin: 1% 5% 0 0;
-}
-
-#logoheader img {
-	width: 100px;
-}
-
-.tagline {
-	font-size: 2em;
-	clear: both;
-}
-
-h1 {
-}
-
-h2 {
-	margin-top: 5%;
-}
-
-.resusabout {
-	width: 26%;
-	float: left;
-	margin:0 2% 0 2%;
-}
-
-.about {
-	width: 100%;
-	line-height: 1.8em;
-	text-align: left;
-}
-
-.about img {
-	max-width: 125px;
-
-}
-
-.summary {
-	font-size: 80%
-}
-
-
-.initiatives {
-	clear: none;
-	float: right;
-	width: 64%;
-	padding: 0 0 0 2%;
-	margin:0 2%;
-}
-
-.initiatives .description {
-	font-size: 0.7em;
-}
-
-.quotes {
-	clear: both;
-	padding-top: 10%;
-	display: block;
-	font-style: italic;
-	font-size: 0.9em;
-}
-
-#morequotes {
-	display: none;
-}
-
-.source {
-	font-style: normal;
-}
-
-.news{
-	clear: both;
-	margin: 3% auto 5% auto;
-	max-width: 600px;
-	font-size: 1em;
-
-}
-
-#logofooter {
-	display:none;
-}
-
-footer {
-	clear: both;
-}
-
-
-/*-----------DESKTOP: ABOUT PAGES--------------------*/
-
-.container {
-	clear: both;
-}
-.container h1 {
-	text-transform: lowercase;
-}
-
-.grid4 {
-	width: 29%;
-	margin-right: 4%;
-	float: left;
-}
-
-.grid4:last-child {
-	margin-right: 0;
-}
-
-.grid4 img{
-	width: 100%;
-}
-
-.grid2 {
-	width: 44%;
-	margin-right: 4%;
-	float: left;
-}
-
-.grid2 img{
-	margin: 0 25%;
-}
-
-#carlyn {
-	width: 40%;
-	float: left;
-	margin: 0 4%;
-}
-
-#taylor {
-	width: 40%;
-	float: right;
-	margin: 0 4%;
-}
-
-#getinvolved{
-	clear: both;
-	padding-top: 3%;
-}
-
-#idols {
-	clear: both;
-}
-
-
-/*-----------DESKTOP: PROJECT PAGES--------------------*/
-
-.equity {
-	display: block;
-	width: 22%;
-	float: left;
-	margin: 8% 3% 5% 1%;
-	padding: 0 2%;
-}
-
-iframe {
-	width: 150px;
-	margin-left: 0;
-}
-.questions {
-	float: right;
-	width: 60%;
-	margin: 0 1% 5% 3%;
-
-}
-
-.maincolumn {
-	clear: none;
-	float: right;
-	width: 66%;
-	margin: 0 1% 0 3%;
-}
-
-.projectnews {
-	clear: both;
-	margin: 5% 1%;
-	border: solid #821479 1px;
-	border-radius: 20px;
-	padding: 2% 5%;
-}
-
 /*-----------MORE QUOTES--------------------*/
 
 @media screen and (min-width: 900px) {
 
-#morequotes {
-	display: block;
-}
+	#morequotes {
+		display: block;
+	}
 
-.questions {
-	clear: both;
-}
+	.questions {
+		clear: both;
+	}
 
-.questions {
-	width: 22%;
-	float: left;
-	margin: 0 3% 5% 1%;
-	padding: 0 2%;
-	clear: left;
+	.questions {
+		width: 22%;
+		float: left;
+		margin: 0 3% 5% 1%;
+		padding: 0 2%;
+		clear: left;
+	}
 }
