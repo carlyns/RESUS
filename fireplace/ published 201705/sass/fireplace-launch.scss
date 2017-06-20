@@ -1,0 +1,841 @@
+//////// overrides anything in .css file
+
+//////// STYLE ////////
+  $color-primary: #39393A; /* onyx */
+  $color-subtle: #E6E6E6; /* platinum */
+  $color-accent: #FBB13C; /* yellow orange */
+  $darkgrey: darkgrey; /* darkgrey */
+  $regulargrey: grey; /* grey */
+
+  // font weights
+  $weight-bold: 600;
+  $weight-medium: 400;
+  $weight-light: 200;
+
+  // breakpoints, still need to specify min or max
+  $breakpoint-small-med: 500px;
+  $breakpoint-med-big: 700px;
+  $breakpoint-biggest: 1000px;
+
+  * {
+    box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+  }
+  .centered-text {
+    text-align: center;
+  }
+  .normal-weight {
+    font-weight: $weight-medium;
+  }
+  body {
+    font-family: 'Libre Franklin', 'helvetica neue', sans-serif;
+    color: $color-primary;
+  }
+  a {
+    text-decoration: none;
+    color: $color-accent;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: $color-primary;
+  }
+  h2 {
+    font-weight: $weight-light;
+  }
+  h3 {
+    font-size: 1em;
+  }
+    @media screen and (min-width: $breakpoint-small-med) {
+      h3 {
+        font-size: 1.2em;
+      }
+    }
+  header {
+    font-size: 0.8em;
+    background-color: white;
+    border-bottom: 3px solid #e6e6e6;
+  }
+  @media screen and (min-width: $breakpoint-small-med) {
+    font-size: 1em;
+  }
+.fireplacetitle h1 {
+  font-weight: $weight-bold;
+}
+.tagline {
+  font-size: 0.8em;
+  font-weight: $weight-medium;
+}
+  @media screen and (min-width: $breakpoint-small-med) {
+    .tagline {
+      font-size: 1.2em;
+    }
+  }
+nav h3 {
+  text-align: right;
+  margin: 0;
+  color: $color-accent;
+  font-weight: $weight-light;
+}
+  @media screen and (min-width: $breakpoint-biggest) {
+    nav h3 a {
+      font-size: 1.5em;
+    }
+  }
+
+button {
+  border: 2px solid $color-accent;
+  font-size: 1em;
+  font-weight: $weight-bold;
+  border-radius: 20px;
+  background-color: white;
+  transition: background-color 0.25s ease-in;
+  color: $color-primary;
+}
+button:hover {
+  background-color: $color-accent;
+  cursor: pointer;
+}
+button p {
+  text-align: left;
+}
+.bttnsm {
+  font-size: 0.8em;
+}
+.submitbttn {
+  border: 2px solid $color-accent;
+  font-size: 1em;
+  font-weight: $weight-bold;
+  border-radius: 20px;
+  background-color: white;
+  transition: background-color 0.25s ease-in;
+  color: $color-primary;
+}
+.submitbttn:hover {
+  background-color: $color-accent;
+}
+.feature h2 {
+  font-weight: $weight-medium;
+}
+
+.sectionbox {
+  background-image: url(../imgs/patterns/knitting250px.png);
+  /* Background pattern from Subtle Patterns */
+  background-attachment: fixed;
+  // background-size: 40%;
+  // background-color: $darkgrey;
+}
+.navicon {
+  font-size: 2em;
+}
+.icon-chevron-with-circle-up {
+  color: $color-primary;
+  font-size: 2em;
+  background-color: white;
+  border-radius: 50%;
+}
+.profile-form h2 {
+  font-weight: $weight-bold;
+}
+input {
+  border: 1px solid $darkgrey;
+  /* height affects checkboxes! */
+  font-size: 1.3em;
+}
+.overview h2 {
+  font-size: 2em;
+  font-weight: $weight-bold;
+
+}
+.overview button {
+  font-size: 1.5em;
+}
+.overview .benefit {
+  font-size: 1.1em;
+}
+.overview h3 {
+  font-size: 1.5em;
+}
+  @media screen and (min-width: $breakpoint-med-big) {
+    .overview h2 {
+      font-size: 3em;
+    }
+    .benefit p {
+      text-align: center;
+    }
+  }
+#sharedbenefits {
+  font-size: 0.8em;
+  border-radius: 25px;
+  padding-left: 15px;
+  margin-top: 25px;
+  width: 250px;
+}
+#sharedbenefits h3 {
+  font-weight: $weight-light;
+}
+.achieve {
+  background-color: $color-subtle;
+  border: 1px dashed $color-primary;
+  border-radius: 25px;
+  width: 80%;
+  margin: 5% auto 0 auto;
+  padding: 3%;
+  overflow: auto;
+}
+#popout { // background
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: auto; /* Enable scroll if needed */
+
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container h2, .invite h2 {
+  color: $color-primary;
+  font-weight: $weight-bold;
+  text-align: center;
+  font-size: 2em;
+  text-transform: capitalize;
+
+}
+  @media screen and (min-width: $breakpoint-small-med) {
+    .container h2, .invite h2 {
+      font-size: 2.5em;
+    }
+  }
+.container h3 {
+  color: $color-accent;
+  font-weight: $weight-light;
+  font-size: 1.5em;
+}
+  @media screen and (min-width: $breakpoint-small-med) {
+    .container h3 {
+      font-size: 2em;
+    }
+  }
+
+.box-left {
+  border-left: 3px solid $color-accent;
+  padding-left: 3%;
+  overflow: auto;
+  margin-bottom: 3%;
+
+}
+.box-right {
+  border-right: 3px solid $color-accent;
+  padding-right: 3%;
+  overflow: auto;
+  text-align: right;
+  margin-bottom: 5%;
+}
+@media screen and (min-width: $breakpoint-biggest) {
+  .box-right {
+    text-align: left;
+    border-right: none;
+    padding-right: 0;
+    border-left: 3px solid $color-accent;
+    padding-left: 3%;
+
+
+  }
+}
+
+.story {
+}
+.story img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+.story p {
+}
+
+@media screen and (min-width: $breakpoint-med-big) {
+  .story {
+    width: 30%;
+    padding: 1%;
+    float: left;
+    overflow: hidden;
+  }
+  .story img {
+    height: auto;
+    max-height: 200px;
+  }
+  .success {
+    overflow: auto;
+  }
+}
+@media screen and (min-width: $breakpoint-biggest) {
+  .story {
+  }
+}
+
+
+.process {
+  clear: both;
+  margin-top: 5%;
+}
+
+.icon-gift {
+  font-size: 5em;
+  text-align: center;
+}
+/*-- invite section --*/
+.socialicon { /* the ones in buttons */
+  font-size: 2em;
+}
+.invite textarea {
+  font-size: 1em;
+}
+.icon-heart, .icon-paper-plane {
+  font-size: 1.5em;
+}
+footer {
+  font-size: 0.7em;
+}
+
+.great {
+  text-align: center;
+  font-size: 2em;
+  font-weight: $weight-bold;
+  margin: 200px 0;
+}
+  @media screen and (min-width: $breakpoint-med-big) {
+    .great {
+      margin: 0;
+      padding: 5%;
+    }
+    .greatneighbors {
+      padding: 5% 0;
+      text-align: left;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////// SPACING-POSITIONING ////////
+body {
+  margin: 0;
+}
+header {
+  margin: 0;
+  padding: 10px 5%;
+  overflow: auto;
+  z-index: 2;
+  width: 100%;
+}
+  @media screen and (min-width: $breakpoint-small-med) {
+    height: 100px;
+    position: static;
+  }
+.housingmatchicon {
+  float: left;
+  width: 50px;
+  overflow: auto;
+  padding-top: 10px;
+}
+  @media screen and (min-width: $breakpoint-small-med) {
+    .housingmatchicon {
+      width: 80px;
+      padding-top: 0;
+    }
+  }
+.housingmatchicon img {
+  width: 100%;
+  padding-right: 10px;
+}
+.fireplacetitle {
+  float: left;
+  width: 50%;
+}
+.fireplacetitle h1 {
+  margin: 0;
+}
+.tagline {
+  margin-top: 0;
+}
+nav {
+  float: right;
+  width: 30%;
+  margin-top: 15px;
+}
+  @media screen and (min-width: $breakpoint-small-med) {
+    nav {
+      width: 20%;
+    }
+  }
+.container {
+  margin: 0 5%;
+}
+.summary {
+  margin-bottom: 3%;
+}
+button {
+  width: 200px;
+  padding: 5px;
+  clear: both;
+}
+button p {
+  margin: 5px 0 0 0;
+}
+.bttnsm {
+  width: 70px;
+}
+.submitbttn {
+  padding: 5px;
+  margin-top: 30px;
+  clear: both;
+}
+.featuresworking {
+  margin-bottom: 5%;
+}
+section {
+  clear: both;
+  padding: 1% 0;
+}
+.sectionbox {
+  padding: 0 3% 3% 3%;
+}
+.feature {
+  padding-bottom: 50px;
+  margin: 0 auto;
+  background-color: $color-accent;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 40px;
+}
+.feature h4 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+.feature:last-child {
+}
+  @media screen and (min-width: $breakpoint-med-big) {
+    .feature {
+      float: left;
+    }
+    .feature:first-child {
+      margin-left: 0;
+    }
+    .featuresworking {
+      width: 650px;
+      margin: 0 auto;
+      margin-bottom: 3%;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+
+    }
+  }
+  @media screen and (min-width: $breakpoint-biggest) {
+    .featuresworking {
+      width: 90%;
+    }
+  }
+.icon-gift {
+  margin: 15% 0;
+}
+
+.navicon {
+  float: right;
+  position: relative;
+  bottom: 60px;
+}
+.icon-chevron-with-circle-up {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  z-index: 3;
+}
+.offsetforanchor {
+  position: relative;
+  bottom: 500px;
+}
+
+.purpose h1 {
+  font-size: 2em;
+}
+  @media screen and (min-width: $breakpoint-med-big) {
+    .purpose h1 {
+      font-size: 3em;
+    }
+  }
+@media screen and (min-width: $breakpoint-biggest) {
+  .sliding-frame {
+    min-width: 500px;
+  }
+  .purpose {
+    width: 75%;
+    float: left;
+    padding-right: 20px;
+  }
+}
+
+/*-- FORM --*/
+.overview .profile-form {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 50px;
+  background-color: rgba(230,230,230,0.5);
+}
+@media screen and (min-width: $breakpoint-biggest) {
+  .overview .profile-form {
+    width: 25%;
+    float: right;
+  }
+}
+
+
+
+.row-form {
+  clear: both;
+}
+.col6 {
+  width: 50%;
+  float: left;
+}
+.col12 {
+  width: 100%;
+  max-width: 800px;
+}
+input .col6, input .col12 {
+  height: 50px;
+}
+form {
+  clear: both;
+  margin-bottom: 3%;
+}
+input{
+  padding-left: 2%; /* affects checkboxes! */
+  height: 40px;
+}
+@media screen and (min-width: $breakpoint-biggest) {
+  .col6, .col12 {
+    font-size: 0.8em;
+  }
+  input {
+    height: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col6, .col12 {
+    font-size: 1.2em;
+    height: 50px;
+  }
+}
+.dropdown-style {
+  width: 100%;
+  max-width: 800px;
+}
+select { // styling only renders in Firefox
+  height: 30px;
+  font-size: 1.2em;
+}
+
+.overview {
+  // position: relative;
+  width: 100%;
+  background-image: url(../imgs/unsplash_room-sm.jpg);
+  background-size: cover;
+  overflow: auto;
+  background-position: center;
+
+}
+
+/* .overview::after {  snippet from https://css-tricks.com/snippets/css/transparent-background-images/
+  content: "";
+  width: 100%; // this fixed the scaling issue
+  background-image: url(../imgs/unsplash_room-sm.jpg); // takes a VERY long time to load up new image.  30+ min
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+}*/
+  @media screen and (min-width: $breakpoint-biggest) {
+    .overview {
+      background-image: url(../imgs/unsplash_room.jpg);
+    }
+
+    .overview h1,   {
+      background-color: rgba(230,230,230,0.5);
+      padding: 1%;
+    }
+
+    .overview h2 {
+      text-shadow: 2px 2px 3px white;
+    }
+
+  }
+
+.overview button {
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 80%;
+}
+.overview .benefit {
+  clear: both;
+  width: 250px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+h3  {
+}
+.process p {
+  font-size: 1.2em;
+}
+.process h3 .sub {
+  color: $color-accent;
+}
+.process h2 {
+  font-size: 1.7em;
+  margin: 20px;
+  display: block;
+}
+.process .bolder {
+  font-weight: $weight-bold
+
+}
+@media screen and (min-width: $breakpoint-med-big) {
+  .process h2 {
+    font-size: 2.5em;
+  }
+}
+.fears .benefit{
+  clear: both;
+  width: 200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.fearsexpanded {
+  display: none;
+}
+@media screen and (min-width: $breakpoint-med-big) {
+  .fearsexpanded {
+    display: inline;
+  }
+}
+.icon-benefit {
+  width: 30px;
+  margin-right: 5px;
+}
+.benefit img {
+  width: 100%;
+  margin: 0 auto;
+}
+.icon-benefit {
+  float: left;
+}
+  @media screen and (min-width: $breakpoint-med-big) {
+    .icon-benefit {
+      float: none;
+      margin: 0 auto;
+      width: 90px;
+    }
+    .overview .benefit {
+      width: 25%;
+      float: left;
+      overflow: auto;
+      clear: none;
+    }
+    .fears .benefit {
+      width: 25%;
+      float: left;
+      overflow: auto;
+      clear: none;
+    }
+  }
+.threeparts {
+  font-size: 1.5em;
+}
+@media screen and (min-width: $breakpoint-biggest) {
+  .threeparts {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .threeparts .bttnmed {
+    width: 100%;
+  }
+}
+
+/*-- invite section --*/
+.socialicon { /* the ones in buttons */
+  float: left;
+  padding-right: 5px;
+  padding-left: 10px;
+}
+.invite textarea {
+  height: 100px;
+  width: 80%;
+}
+.invite button  {
+  width: 220px;
+  margin-right: 3%;
+}
+.invite h3 {
+  margin-top: 0;
+}
+.invite h4 {
+  margin-bottom: 0;
+  font-weight: $weight-light
+}
+.bttnbig {
+  margin-bottom: 15px;
+}
+
+.copylink {
+  margin: 30px 0;
+}
+/*-- follow-contact --*/
+.outside-container {
+  padding: 3% 5%;
+}
+.icon-heart, .icon-paper-plane {
+  display: inline-block;
+  padding: 0 1%;
+}
+footer {
+  margin: 0 5%;
+  padding: 2% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////// SLIDING FRAME OBJECT-ORIENTED EXPERIMENT AND ANIMATION ////////
+.style-bold {
+  font-weight: 600;
+}
+.users {
+  display: inline-block;
+}
+.users h2 {
+  margin-bottom: 0;
+  margin-top: 30px;
+  font-weight: 200;
+
+}
+  @media screen and (min-width: 700px) {
+    .offset {
+      float: left;
+      padding-right: 20px;
+    }
+  }
+
+
+.appearing-users {
+}
+.appearing-users h2 {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+}
+.sliding-frame {
+  display: none;
+}
+
+  @media screen and (min-width: 700px) {
+    .appearing-users {
+      display: none;
+    }
+    .sliding-frame {
+      display: inline-block;
+      height: 100px;
+      position: relative;
+      overflow: hidden;
+      width: 70%;
+    }
+    .sliding-users {
+      position: relative;
+      animation: scrollwords 20s ease infinite; /* ease is default */
+      animation-delay: 3s;
+    }
+    .sliding-users h2 {
+      font-size: 3em;
+    }
+    @keyframes scrollwords { /* 7 words, 7 pauses */
+      0%    { top: -10%; }
+      5%    { top: -10%; } /* added this for more time on repeat */
+      15%   { top: -110%; }
+      30%   { top: -210%; }
+      45%   { top: -310%; }
+      60%   { top: -410%; }
+      75%   { top: -510%; }
+      100%   { top: -610%; }
+    }
+  }
