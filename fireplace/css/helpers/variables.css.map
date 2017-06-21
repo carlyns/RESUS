@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAG8C,WAAW",
+"sources": ["../../sass/helpers/variables.scss"],
 "names": [],
 "file": "variables.css"
 }

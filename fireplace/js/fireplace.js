@@ -1,3 +1,5 @@
+var main = function () {
+
 var currentTime = 0;
 var addtwoseconds = 2000;
 
@@ -86,3 +88,7 @@ window.onclick = function(event) {
       }
     });
   });
+
+} // end of 'main' function
+
+$(document).ready(main);

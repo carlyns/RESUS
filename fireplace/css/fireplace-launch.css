@@ -14,6 +14,9 @@
 .normal-weight {
   font-weight: 400; }
 
+.bold-weight {
+  font-weight: 600; }
+
 body {
   font-family: 'Libre Franklin', 'helvetica neue', sans-serif;
   color: #39393A; }
@@ -36,14 +39,13 @@ h3 {
   h3 {
     font-size: 1.2em; } }
 header {
-  font-size: 0.8em;
-  background-color: white;
+  background-color: #39393A;
   border-bottom: 3px solid #e6e6e6; }
 
 @media screen and (min-width: 500px) {
   font-size: 1em; }
-.fireplacetitle h1 {
-  font-weight: 600; }
+header a:hover {
+  color: #E6E6E6; }
 
 .tagline {
   font-size: 0.8em;
@@ -52,15 +54,6 @@ header {
 @media screen and (min-width: 500px) {
   .tagline {
     font-size: 1.2em; } }
-nav h3 {
-  text-align: right;
-  margin: 0;
-  color: #FBB13C;
-  font-weight: 200; }
-
-@media screen and (min-width: 1000px) {
-  nav h3 a {
-    font-size: 1.5em; } }
 button {
   border: 2px solid #FBB13C;
   font-size: 1em;
@@ -71,7 +64,8 @@ button {
   color: #39393A; }
 
 button:hover {
-  background-color: #FBB13C; }
+  background-color: #FBB13C;
+  cursor: pointer; }
 
 button p {
   text-align: left; }
@@ -116,38 +110,36 @@ input {
   /* height affects checkboxes! */
   font-size: 1.3em; }
 
-.overview h2 {
-  font-size: 2em;
-  font-weight: 600; }
-
 .overview button {
   font-size: 1.5em; }
 
-.overview .benefit {
-  font-size: 1.1em; }
+.achieve .benefit {
+  font-size: 0.8em; }
 
+@media screen and (min-width: 700px) {
+  .benefit p {
+    text-align: center; } }
 .overview h3 {
   font-size: 1.5em; }
 
-@media screen and (min-width: 700px) {
-  .overview h2 {
-    font-size: 3em; }
+.users h2 {
+  font-size: 2em;
+  font-weight: 600; }
 
-  .benefit p {
-    text-align: center; } }
+@media screen and (min-width: 700px) {
+  .users h2 {
+    font-size: 3em; } }
 #sharedbenefits {
   font-size: 0.8em;
-  background-color: white;
-  border: 1px dashed #39393A;
   border-radius: 25px;
-  padding-left: 25px;
+  padding-left: 15px;
   margin-top: 25px;
   width: 250px; }
 
 #sharedbenefits h3 {
   font-weight: 200; }
 
-.achieve {
+.benefits {
   background-color: #E6E6E6;
   border: 1px dashed #39393A;
   border-radius: 25px;
@@ -237,13 +229,22 @@ input {
 
   .success {
     overflow: auto; } }
-.process {
+.content {
   clear: both;
   margin-top: 5%; }
 
-.icon-gift {
-  font-size: 5em;
-  text-align: center; }
+/*-- other pages --*/
+.signup {
+  font-size: 1.5em; }
+
+.sample {
+  max-width: 500px;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 25px; }
+
+.sample img {
+  width: 100%; }
 
 /*-- invite section --*/
 .socialicon {
@@ -257,7 +258,13 @@ input {
   font-size: 1.5em; }
 
 footer {
-  font-size: 0.7em; }
+  background-color: #39393A;
+  font-size: 0.7em;
+  color: white;
+  width: 100%; }
+
+footer a:hover {
+  color: #E6E6E6; }
 
 .great {
   text-align: center;
@@ -283,7 +290,8 @@ header {
   padding: 10px 5%;
   overflow: auto;
   z-index: 2;
-  width: 100%; }
+  width: 100%;
+  color: white; }
 
 @media screen and (min-width: 500px) {
   height: 100px;
@@ -303,23 +311,64 @@ header {
   padding-right: 10px; }
 
 .fireplacetitle {
-  float: left;
-  width: 50%; }
+  clear: both; }
 
 .fireplacetitle h1 {
-  margin: 0; }
+  margin: 0;
+  color: white;
+  font-weight: 600; }
 
-.tagline {
-  margin-top: 0; }
+.fireplacetitle h3 {
+  clear: both;
+  font-size: 1.5em;
+  font-weight: 200;
+  padding-top: 20px; }
 
+@media screen and (min-width: 700px) {
+  .fireplacetitle h1 {
+    font-size: 3em; }
+
+  .fireplacetitle h2 {
+    font-size: 3em; }
+
+  .fireplacetitle h3 {
+    font-size: 2em; }
+
+  .fireplacetitle p {
+    font-size: 1.5em; } }
 nav {
   float: right;
-  width: 30%;
-  margin-top: 15px; }
+  padding-top: 10px;
+  width: 80%; }
 
-@media screen and (min-width: 500px) {
+nav ul {
+  margin: 0;
+  padding: 0; }
+
+nav li {
+  display: inline-block;
+  text-decoration: none;
+  color: #FBB13C;
+  font-weight: 200;
+  padding-left: 30px;
+  float: right; }
+
+@media screen and (min-width: 1000px) {
+  nav li {
+    font-size: 1.5em;
+    padding-left: 10%; } }
+@media screen and (max-width: 500px) {
   nav {
-    width: 20%; } }
+    width: 200px;
+    padding-top: 0px; }
+
+  nav li {
+    width: 150px;
+    text-align: right; } }
+@media screen and (min-width: 1000px) {
+  .achieve {
+    width: 85%;
+    margin: 0 auto; } }
 .container {
   margin: 0 5%; }
 
@@ -352,39 +401,6 @@ section {
 .sectionbox {
   padding: 0 3% 3% 3%; }
 
-.feature {
-  padding-bottom: 50px;
-  margin: 0 auto;
-  background-color: #FBB13C;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  text-align: center;
-  padding-top: 40px; }
-
-.feature h4 {
-  text-align: center;
-  margin: 0 auto;
-  font-size: 1.2em; }
-
-@media screen and (min-width: 700px) {
-  .feature {
-    float: left; }
-
-  .feature:first-child {
-    margin-left: 0; }
-
-  .featuresworking {
-    width: 650px;
-    margin: 0 auto;
-    margin-bottom: 3%;
-    overflow: auto;
-    display: flex;
-    justify-content: center; } }
-@media screen and (min-width: 1000px) {
-  .featuresworking {
-    width: 90%; } }
 .icon-gift {
   margin: 15% 0; }
 
@@ -404,10 +420,20 @@ section {
   bottom: 500px; }
 
 .purpose h1 {
-  font-size: 2em; }
+  font-size: 2.5em; }
+
+.purpose h2 {
+  font-size: 2.5em; }
 
 @media screen and (min-width: 700px) {
+  .purpose h1, .purpose h2 {
+    background-color: rgba(230, 230, 230, 0.5);
+    padding: 1%; }
+
   .purpose h1 {
+    font-size: 3em; }
+
+  .purpose h2 {
     font-size: 3em; } }
 @media screen and (min-width: 1000px) {
   .sliding-frame {
@@ -495,39 +521,38 @@ select {
   .overview {
     background-image: url(../imgs/unsplash_room.jpg); }
 
-  .overview h1 {
-    background-color: rgba(230, 230, 230, 0.5);
-    padding: 1%; }
-
-  .overview h2 {
+  .users h2 {
     text-shadow: 2px 2px 3px white; } }
 .overview button {
   margin-right: 2%;
   margin-bottom: 2%;
   width: 80%; }
 
-.overview .benefit {
+.benefits .benefit, header .benefit {
   clear: both;
   width: 250px;
   padding-left: 10px;
   margin: 0 auto; }
 
-.process p {
+.content p {
   font-size: 1.2em; }
 
-.process h3 .sub {
+.content h3 .sub {
   color: #FBB13C; }
 
-.process h2 {
+.content h2 {
   font-size: 1.7em;
   margin: 20px;
   display: block; }
 
-.process .bolder {
+.content .bolder {
   font-weight: 600; }
 
+.content h4 {
+  font-size: 1.3em; }
+
 @media screen and (min-width: 700px) {
-  .process h2 {
+  .content h2 {
     font-size: 2.5em; } }
 .fears .benefit {
   clear: both;
@@ -559,7 +584,7 @@ select {
     margin: 0 auto;
     width: 90px; }
 
-  .overview .benefit {
+  .benefits .benefit, header .benefit {
     width: 25%;
     float: left;
     overflow: auto;
@@ -617,16 +642,18 @@ select {
   padding: 0 1%; }
 
 footer {
-  margin: 0 5%;
-  padding: 2% 0; }
+  padding: 2% 5%; }
 
 .style-bold {
   font-weight: 600; }
 
 .users {
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
 
-.users h2 {
+@media screen and (min-width: 700px) {
+  float: left; }
+.offset h2 {
   margin-bottom: 0;
   margin-top: 30px;
   font-weight: 200; }
@@ -647,13 +674,19 @@ footer {
   .appearing-users {
     display: none; }
 
+  .users {
+    width: 100%; }
+
   .sliding-frame {
     display: inline-block;
     height: 100px;
     position: relative;
     overflow: hidden;
-    width: 70%; }
-
+    width: 70%; } }
+@media screen and (min-width: 700px) and (min-width: 1000px) {
+  .sliding-frame {
+    width: 70%; } }
+@media screen and (min-width: 700px) {
   .sliding-users {
     position: relative;
     animation: scrollwords 20s ease infinite;
