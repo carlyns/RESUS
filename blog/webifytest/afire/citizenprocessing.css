@@ -1,0 +1,29 @@
+header {
+	margin: 5%;
+	text-align: center;
+}
+
+#partners {
+	border: 3px double rgba(40,70,75,.2);
+	border-radius: 25px;
+}
+
+.logo {
+	width: 20%;
+	max-width: 150px;
+}
+
+
+#statue{
+}
+
+#contact {
+	clear: both;
+}
+
+footer {
+	text-align: center;
+	border-top: 1px dotted #28464B;
+	margin: 3% 0;
+	padding: 2% 10% 0 10%;
+}

@@ -1,0 +1,329 @@
+body {
+	background: rgba(7,76,117,.1);
+	font-family: "Lato";
+    font-size: 100%;
+	line-height:1.5;
+	color: rgba(1,1,1,1);
+	text-align: left;
+	margin: 0;
+}
+
+.container {
+	margin: 0 5%;
+	clear: both;
+
+}
+
+a {
+	color: rgba(3,128,165,1);
+	text-decoration: none
+}
+a:hover {
+	text-decoration: underline
+}
+
+header {
+    background: url("https://farm5.staticflickr.com/4055/4293055067_102c992777_o.jpg");
+    background-size: cover;
+}
+
+
+h1 {
+	margin: 0;
+	font-family: raleway;
+	color: rgba(255,255,255,1);
+	text-shadow: 2px 2px rgba(7,76,117,1);
+	font-size: 2em;
+	padding: 2%;
+}
+
+h2 a{
+	color: rgba(1,1,1,1);
+}
+
+h2 a:hover{
+	text-decoration: none;
+}
+
+.toc {
+	float: none;
+}
+.toc h2{
+	font-size: 1.1em;
+	font-weight: 200;
+	padding: 0 2%
+}
+
+.toc ul{
+	font-size: 1em;
+    background-color: rgba(62,42,9,1);
+	padding: 2%;
+	padding-bottom: 0;
+	line-height: 1.3;
+	margin-top: 0;
+}
+
+.toc ul a{
+	color: rgba(255,255,255,1);
+}
+
+.toc li{
+	list-style-type: none;
+	padding: 2%;
+	border: none; 	
+	padding-bottom: 0;
+}
+.clearfix {
+    background-color: rgba(62,42,9,1);
+    padding-bottom: 5%;
+}
+#logo img {
+	width: 100%;
+}
+
+#logo {
+    background-color: rgba(62,42,9,1);
+	float: none;
+	width: 20%;
+	margin: 0 auto;
+}
+
+.share {
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgba(255,255,255,1);
+}
+
+.share img{
+	width: 25px;
+}
+
+/*chapters*/
+h2 {
+	font-size: 1.4em;
+}
+
+/*sub-chapters*/
+h3 {
+	font-size: 1.1em;
+}
+
+/*image title & description*/
+h4,h5,.credit{
+    margin: 0;
+}
+
+/*image credit*/
+.credit {
+	font-weight: 300;
+    font-size: 80%;
+	font-family: raleway;
+} 
+
+img{
+	width: 100%;
+}
+
+.visual {
+	width: 80%;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.clickenlarge {
+	font-size: 0.9em;
+}
+
+
+table {
+	display: none;
+}
+
+/*endnotes*/
+.endnote{
+	font-family: raleway;
+	font-weight: 400;
+	font-size: 0.95em;
+	line-height: 1.5;
+	padding-bottom: 2%;
+	}
+.endnote a {
+	color: #066;
+	text-decoration: none;
+}
+.endnote a:hover {
+	color: #066;
+	text-decoration: underline;
+}
+
+
+
+
+
+blockquote{
+	border-left: 1.5em solid rgba(252,180,17,1);
+	font-family: raleway;
+	padding-top: 2%;
+	padding-right: 5%;
+	padding-bottom: 2%;
+	padding-left: 5%;	
+}
+
+blockquote a{
+	color: rgba(3,128,165,1);
+	text-decoration: none;
+}
+blockquote a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+ul{
+	font-size: 0.9em;
+}
+
+li{
+	margin-right: 20%;
+	margin-left: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-top-width: 0em;
+	border-right-width: 0em;
+	border-bottom-width: 0.025em;
+	border-left-width: 0em;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+	list-style-type: none;
+}
+
+
+
+#locationbanner {
+	background-color: rgba(7,76,117,1);
+	text-align: center;
+	color: rgba(255,255,255,1);
+	font-size: 1.2em;
+	font-weight: 300;
+	padding: 1% 0;
+	margin-top: 3%;
+}
+
+#morespacing{
+	letter-spacing: 1em;
+	padding: 1%;
+}
+
+footer {
+	background-color: rgba(1,1,1,.75);
+	font-size: 0.75em;
+	text-align: center;
+	color: rgba(255,255,255,1);
+	padding: 2%;
+}
+
+footer a {
+	color: rgba(252,180,17,1);
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+
+
+/*-----------
+MEDIA QUERIES FOR LARGER BREAKPOINTS BEGIN HERE
+	
+	
+--------------*/
+
+@media screen and (min-width: 800px) {
+	header {
+		height: 400px;
+	}
+
+	h1 {
+		font-size: 3em;
+		padding: 2%;
+	}
+	h2 {
+	font-size: 1.6em;
+	}
+	h3 {
+	font-size: 1.2em;
+	}
+
+	body{
+		background: rgba(7,76,117,.15);
+		font-size: 110%;
+	}
+
+	.clearfix {
+		overflow: auto;
+	}
+
+	.toc {
+		width: 70%;
+		float: left;
+	
+	}
+	.toc ul {
+		line-height: 2;
+	}
+
+	.toc li {	
+		padding: 0 2%;
+	}
+
+	.toc ul,h2 {
+		font-size: 1.3em;
+	}
+	
+	#logo {
+		float: right;
+		max-width: 200px;
+		padding: 10% 5%;
+	}
+
+
+	.visual {
+		margin: 0 auto;
+		max-width: 700px;
+	}
+
+	.clickenlarge{
+		display: none;
+	}
+	
+	/*image title & description*/
+	h4,h5,.credit{
+	    margin: 0 0 0 5%;
+	}
+
+	table {
+		border-collapse:collapse;
+		margin: 50px;
+		font-family: raleway;
+		font-weight: 600;
+	}
+
+	tr {
+		border-bottom: thin solid #930;
+	}
+
+	th {
+		font-size: 85%;
+		font-weight: 400;
+		color: #930;
+	}
+	.rowhead  {
+		font-size: 85%;
+		font-weight: 600;
+		color: #930;
+	}
+
+}

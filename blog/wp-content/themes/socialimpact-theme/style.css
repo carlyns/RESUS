@@ -1,0 +1,424 @@
+/*
+Theme Name: Social Impact Thoughts
+Theme URI: http://www.resusstudio.com/
+Author: Carlyn So
+Author URI: http://www.resusstudio.com/
+Description: A test theme for a potential blog about social impact.
+Version: 1.0
+*/
+
+/**
+ * Table of Contents
+ * 1.0 -
+
+*/
+
+/*  PRETTY SURE I'VE BEEN EDITING THIS FILE AND NOT THE BLOG.CSS FILE
+*/
+
+html {
+	box-sizing: border-box;
+	}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: Oxygen, sans-serif;
+	margin: 0;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+.title h1 {
+	font-size: 3em;
+}
+.logo img {
+	width: 100%;
+}
+.logo {
+	width: 25%;
+	margin: 0 auto;
+	max-width: 200px;
+	margin-top: -40px; /* DON'T KNOW HOW ELSE TO DECREASE THE BUFFER SPACE ABOVE THE LOGO.  CHANGING THE body TAG DOESN'T AFFECT ANYTHING.  AGAIN, STATIC SITE IS FINE.  THE EXACT VALUE IS -46px. */
+}
+header {
+	text-align: center;
+}
+header ul{
+	list-style: none;
+	padding-left: 0;
+}
+.menu a {
+	color: grey;
+	text-decoration: none;
+}
+.menu a:hover {
+	text-decoration: underline;
+}
+.menu li {
+	display: inline;
+	padding: 0 3%;
+}
+.tagline h2 {
+	font-family: Oxygen, sans-serif;
+	font-size: 1.5em;
+	background-color: black;
+	color: pink;
+	padding: 2% 5%;
+	font-weight: 200;
+}
+
+
+
+h1, h2, h3 {
+	font-family: Crete Round, sans-serif;
+	font-weight: 400;
+}
+h2 {
+	font-size: 2em;
+}
+
+p {
+	font-size: 1.3em;
+	font-weight: 200;
+}
+.introduction {
+	margin: 0 5% 5% 5%;
+
+}
+.introduction h2 {
+	text-align: center;
+}
+.introduction p {
+	border-top: solid 3px black;
+	border-bottom: solid 3px black;
+	padding: 2% 10%;
+	font-size: 1em;
+}
+
+
+.col-md-6 {
+	margin: 1% auto;
+	color: grey;
+	font-size: .8em;
+	display: flex;
+	align-items: center;
+}
+.subscribe {
+	margin-left: 10%;
+}
+.subscribe p {
+	display: inline;
+}
+.subscribe a {
+	color: grey;
+}
+.subscribe img {
+	padding: 0 2% 0 0;
+}
+
+
+.container {
+	margin: 5%;
+	clear: both;
+}
+.entry {
+	padding: 2% 8% 8% 8%;
+	outline: solid 1px black;
+	outline-offset: -15px;
+	margin-bottom: 5%;
+	position: relative;
+}
+.entry .button {
+	/* not sure why margin-top isn't giving me more space above the button ???! */
+}
+
+/* MAYBE ODD, EVEN, AND NTH CHILDS DON'T REGISTER WITH A TEMPLATE TAG ... */
+.row .entrycontain:nth-child(n+1) {
+	background-color: rgba(1, 1, 1, 0.15);
+}
+.row .entrycontain:nth-child(2n+1) {
+	background-color: rgba(1, 1, 1, 0.2);
+}
+
+
+
+.date {
+	font-family: Crete Round, sans-serif;
+	font-size: 1em;
+}
+.button {
+	background-color: black;
+	color: white;
+	padding: 2%;
+	font-family: Crete Round, sans-serif;
+	display: inline; /* INLINE VS BLOCK!  Helps if you want to the background-color to not highlight the whole line of text across the page.  By default, text is a "block"--*/
+}
+.button a{
+	color: white;
+	text-decoration: none;
+}
+.button a:hover {
+	color: pink;
+}
+.entry .taglist {
+	width: 90%;
+	margin-top: 50px;
+}
+
+footer {
+	background-color: black;
+	color: pink;
+	padding: 2% 5%;
+	clear: both;
+}
+
+/*-- STYTLING THE SEARCH WIDGET
+https://codex.wordpress.org/Styling_Theme_Forms
+DOESN'T DISPLAY ON SAFARI--*/
+#searchform input {
+	font-family: Oxygen, sans-serif;
+	font-size: 120%;
+	margin-right: 2%;
+	margin-bottom: 10px;
+}
+label {
+	display: none;
+}
+
+
+
+.container article {
+}
+
+.condenseheader .logo {
+	width: 10%;
+	min-width: 50px;
+	max-width: 100px;
+	float: left;
+	margin: 2%;
+}
+.condenseheader {
+	display: flex;
+	align-items: center;
+}
+.condenseheader .title {
+	font-size: .5em;
+	margin-top: 3%;
+}
+.tagline {
+	clear: both;
+}
+
+/*--- SINGLE.PHP STYLING ---*/
+
+article h2 {
+	border-bottom: solid 3px black;
+	padding: 2% 0;
+}
+article .date {
+	font-size: 1.3em;
+}
+
+/* PADDING AROUND INLINE ELEMENTS AND HIGHLIGHTING ON HOVER IS A DOOZY.  The Top/Bottom padding has to be set in the List Class, the Right/Left padding has to be set in the Link Class itself, and the Hover Class needs to match these both.*/
+
+article .taglist {
+	background-color: rgba(1, 1, 1, 0.15);
+	padding: 3%;
+}
+
+.alltags {
+	background-color: rgba(1, 1, 1, 0.3);
+	padding: 3%;
+	margin-top: 3%;
+}
+.alltags h3 {
+	margin-top: 0;
+}
+
+.taglist ul {
+	list-style: none;
+	padding-left: 0;
+	display: inline;
+}
+.tags {
+	display: inline;
+}
+.tags li {
+	background-color: white;
+	color: black;
+	display: inline;
+	padding: 1% 0;
+	margin-left: 2%;
+}
+.tags li a {
+	text-decoration: none;
+	color: black;
+	padding: 1% 2%;
+}
+.tags li a:hover {
+	background-color: black;
+	color: white;
+	padding: 1% 2%;
+}
+
+
+
+/* ---- CUSTOM STYLING FOR UNIQUE PAGE, SLUG = "CONTRIBUTORS" --*/
+.authors {
+}
+
+/* ---- CUSTOM STYLING FOR CATEGORY ARCHIVE PAGE "EVENTS" --*/
+.datebox {
+	border: 1px solid black;
+	border-radius: 25px;
+	font-size: 3em;
+	float: left;
+	font-family: Crete Round;
+	padding: 1% 3%;
+	margin: 3% 0;
+}
+.datebox .month {
+	font-size: 1em;
+}
+.eventinfo {
+	float: left;
+	margin: 2%;
+	width: 70%;
+}
+.eventinfo h2 {
+}
+.clear { /* WISH I DIDN'T NEED THIS DIV */
+	clear: both;
+}
+
+/* ---- CUSTOM STYLING FOR UNIQUE POST, categorySLUG = "EVENTS" --*/
+article .event {
+}
+article .datebox {
+}
+article h2 {
+	clear: both;
+}
+
+/* ---- CUSTOM FIELDS STYLING FOR ERROR PAGE --*/
+.container h1 {
+	text-align: center;
+}
+.container h2 {
+	font-size: 1.5em;
+}
+.container #searchform input {
+	padding-right: 70px;
+}
+
+/* ---- CUSTOM FIELDS STYLING FOR SEARCH RESULTS --*/
+.results {
+	border-bottom: 1px solid black;
+	margin: 3% 10%;
+}
+.recents {
+	border-bottom: 1px solid black;
+	margin: 3% 10%;
+}
+.searchword {
+	font-weight: bold;
+}
+.noresults {
+}
+
+
+/* ---- CUSTOM FIELDS STYLING FOR TEXT --*/
+.post-meta {
+	color: pink;
+}
+.post-meta-key {
+	background-color: black;
+}
+/* ---- POST FORMAT STYLING FOR VIDEO ... seems as if functions need to be defined to add classes --*/
+.format-video {
+	background-color: blue;
+}
+
+
+
+
+/* ------ MEDIA QUERIES START HERE -----*/
+@media screen and (min-width: 700px) {
+
+	.introduction p {
+		font-size: 1.2em;
+	}
+
+
+	/* --- SMALLHER HEADER FOR ALL PGS EXCEPT HOME ---*/
+	.condenseheader .title {
+		float: left;
+		font-size: 1em;
+		margin-top: 1%;
+	}
+/* adding floats makes my boxes lose its colors.  the container qualities are probably bleeding into the entry qualities because of the collapsing during floats.  TO FIX: I had to add the background-color back to the odd/even entry selectors separately. And now I don't have any odd/even entries, so it doesn't matter.  */
+	.button {
+		position: absolute;
+		bottom: 30px;
+
+	}
+}
+
+
+
+@media screen and (min-width: 900px) {
+
+	.introduction {
+		margin-bottom: 0;
+	}
+
+	/* --- SUBSCRIBE ICONS ON PAGE-HOME.PHP ---*/
+	.col-md-6 {
+		float: right;
+		width: 45%;
+	}
+
+	/* --- the main grid ---*/
+	.container {
+		/* border: 1px dashed black; */
+	}
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.entrycontain {
+		margin: 2%;
+	}
+
+	.entry {
+		float: left;
+		width: 300px;
+		height: 400px;
+
+	}
+	.entry h2 {
+		font-size: 1.5em;
+	}
+	.entry p {
+		font-size: 1em;
+
+	}
+
+
+	/* --- ODD/EVEN COLORING.  works when .row is wrapping the WP loop! --*/
+	.row .entrycontain:nth-child(2n+0) {
+		background-color: rgba(1, 1, 1, 0.1);
+	}
+	.row .entrycontain:nth-child(3n+0) {
+		background-color: rgba(1, 1, 1, 0.15);
+	}
+}
