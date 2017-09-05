@@ -466,7 +466,6 @@ footer a:hover {
 iframe {
 	width: 100%;
 	text-align: center;
-	margin-left: 5%;
 }
 
 .projectnews {
@@ -636,8 +635,8 @@ iframe {
 	}
 
 	iframe {
-		width: 150px;
-		margin-left: 0;
+		/*width: 150px;
+		margin-left: 0;*/
 	}
 	.questions {
 		float: right;
