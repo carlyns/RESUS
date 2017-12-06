@@ -1,0 +1,34 @@
+/* line 15, scss/custom.scss */
+.text-brand-accent { color: orange; }
+
+/* line 19, scss/custom.scss */
+.text-underline { text-decoration: underline; }
+
+/* line 23, scss/custom.scss */
+.text-highlight { background-color: rgba(255, 255, 255, 0.8); line-height: 1.3em; }
+
+/* line 28, scss/custom.scss */
+.bg-image { background-image: url(assets/imgs/artur-pokusin-742sm.jpg); background-size: cover; }
+
+/* line 33, scss/custom.scss */
+.hero-image-height { height: 400px; }
+
+/* line 37, scss/custom.scss */
+.section-mt { margin-top: 30px; }
+
+/* line 40, scss/custom.scss */
+.border-bottom-brand { border-bottom: dotted 2px grey; }
+
+/* line 44, scss/custom.scss */
+.justify-content-right { text-align: right; }
+
+/* line 48, scss/custom.scss */
+.icon-restrict-size { height: 150px; }
+
+/* line 51, scss/custom.scss */
+.icon-centered { text-align: center; }
+
+/* line 57, scss/custom.scss */
+html { font-size: 1em; }
+
+/*# sourceMappingURL=custom.css.map */
