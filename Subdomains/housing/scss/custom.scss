@@ -1,30 +1,39 @@
-// ALL OF THIS IS ACTUALLY UNNEESSARY SINCE I'M LINKING TO THE BOOTSTRAP URL.  WITHOUT THIS, FONT STYLES ARE STRIPPED.
+@import "customvariables";
+@import "../bootstrap-source/scss/bootstrap"; // 'bootstrap-source' is the entire folder of Source Files that were downloaded. this specific file is the bootstrap.scss file.
+// it includes the scss files within the parent folder but not sure about the mixins or utilities folers.  this option was chosen rather than linking to the CDN, which doesn't allow referencing of native variables.
+// could possibly eliminate the unused files
 
-// Required
-// @import "../node_modules/bootstrap/scss/functions";
-// @import "../node_modules/bootstrap/scss/variables";
-// @import "../node_modules/bootstrap/scss/mixins";
-// @import "../node_modules/bootstrap/scss/utilities";
-//
-//
-// // Optional
-// @import "../node_modules/bootstrap/scss/grid";
-// @import "../node_modules/bootstrap/scss/navbar";
 
-.bg-brand-dark { // "dark slate grey" #294c4F
-  background-color: rgba(41,76,79,1);
+body {
+// font-family: 'EB Garamond', serif;
+// font-family: 'Amiri', serif;
+font-family: $font-body, $font-family-base, sans-serif;
+// to test if Bootstrap varaibles are properly linked, the Bootstrap variable $font-family-base can be added back to see if the native font stack loads.
+// font-size: 1.2em;
+}
+h1, h2 {
+  font-family: $font-heading, $font-family-base, sans-serif;
+  text-transform: uppercase;
+}
+
+
+a {
+  color: $color-links;
+}
+
+.bg-brand-dark {
+  background-color: $color-bg-dark;
 }
 
 
 // MAKE THESE VARIABLES
 .text-brand-accent {
-  color: rgba(186,86,36,1); // "ruddy brown" #ba5624
+  color: $color-accent;
 }
 .text-brand-light {
-  color: rgba(250,235,235,1); //"linen" #FAEBEB
+  color: $color-light;
 }
 .text-brand-dark {
-  color: rgba(9,9,9,1); //"smoky black" #090909
 }
 
 
@@ -33,7 +42,7 @@
 }
 .text-highlight {
   background-color: rgba(255,255,255,0.8);
-  line-height: 1.3em;
+  line-height: 1.6em;
 }
 .text-smaller {
   font-size: 0.8em;
