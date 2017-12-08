@@ -11,25 +11,39 @@
 // @import "../node_modules/bootstrap/scss/grid";
 // @import "../node_modules/bootstrap/scss/navbar";
 
-
-.text-brand-accent {
-  color: orange;
+.bg-brand-dark { // "dark slate grey" #294c4F
+  background-color: rgba(41,76,79,1);
 }
+
+
+// MAKE THESE VARIABLES
+.text-brand-accent {
+  color: rgba(186,86,36,1); // "ruddy brown" #ba5624
+}
+.text-brand-light {
+  color: rgba(250,235,235,1); //"linen" #FAEBEB
+}
+.text-brand-dark {
+  color: rgba(9,9,9,1); //"smoky black" #090909
+}
+
 
 .text-underline {
   text-decoration: underline;
 }
-
 .text-highlight {
   background-color: rgba(255,255,255,0.8);
   line-height: 1.3em;
 }
+.text-smaller {
+  font-size: 0.8em;
+}
+
 
 .bg-image {
   background-image: url(assets/imgs/artur-pokusin-742sm.jpg);
   background-size: cover;
 }
-
 .hero-image-height {
   height: 400px;
 }
@@ -37,6 +51,17 @@
 .section-mt {
   margin-top: 30px;
 }
+.section-mb-0 {
+  margin-bottom: 0;
+}
+
+
+// .image-restrict-height {
+//   @media
+//   max-height: 600px;
+// }
+
+
 .border-bottom-brand {
   border-bottom: dotted 2px grey;
 }
@@ -51,6 +76,7 @@
 .icon-centered {
   text-align: center;
 }
+
 
 
 // ADD RESPONSIVE TYPOGRAPHY

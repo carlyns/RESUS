@@ -1,34 +1,49 @@
-/* line 15, scss/custom.scss */
-.text-brand-accent { color: orange; }
+/* line 14, scss/custom.scss */
+.bg-brand-dark { background-color: #294c4f; }
 
-/* line 19, scss/custom.scss */
-.text-underline { text-decoration: underline; }
+/* line 20, scss/custom.scss */
+.text-brand-accent { color: #ba5624; }
 
 /* line 23, scss/custom.scss */
+.text-brand-light { color: #faebeb; }
+
+/* line 26, scss/custom.scss */
+.text-brand-dark { color: #090909; }
+
+/* line 31, scss/custom.scss */
+.text-underline { text-decoration: underline; }
+
+/* line 34, scss/custom.scss */
 .text-highlight { background-color: rgba(255, 255, 255, 0.8); line-height: 1.3em; }
 
-/* line 28, scss/custom.scss */
+/* line 38, scss/custom.scss */
+.text-smaller { font-size: 0.8em; }
+
+/* line 43, scss/custom.scss */
 .bg-image { background-image: url(assets/imgs/artur-pokusin-742sm.jpg); background-size: cover; }
 
-/* line 33, scss/custom.scss */
+/* line 47, scss/custom.scss */
 .hero-image-height { height: 400px; }
 
-/* line 37, scss/custom.scss */
+/* line 51, scss/custom.scss */
 .section-mt { margin-top: 30px; }
 
-/* line 40, scss/custom.scss */
+/* line 54, scss/custom.scss */
+.section-mb-0 { margin-bottom: 0; }
+
+/* line 65, scss/custom.scss */
 .border-bottom-brand { border-bottom: dotted 2px grey; }
 
-/* line 44, scss/custom.scss */
+/* line 69, scss/custom.scss */
 .justify-content-right { text-align: right; }
 
-/* line 48, scss/custom.scss */
+/* line 73, scss/custom.scss */
 .icon-restrict-size { height: 150px; }
 
-/* line 51, scss/custom.scss */
+/* line 76, scss/custom.scss */
 .icon-centered { text-align: center; }
 
-/* line 57, scss/custom.scss */
+/* line 83, scss/custom.scss */
 html { font-size: 1em; }
 
 /*# sourceMappingURL=custom.css.map */
