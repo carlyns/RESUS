@@ -3896,57 +3896,76 @@ a.text-dark:focus, a.text-dark:hover { color: #1d2124 !important; }
 .invisible { visibility: hidden !important; }
 
 /* line 7, scss/custom.scss */
-body { font-family: "Crimson Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; }
+body { font-family: "Crimson Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; font-size: 1.2em; }
 
 /* line 14, scss/custom.scss */
 h1, h2 { font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; text-transform: uppercase; }
 
-/* line 20, scss/custom.scss */
+/* line 18, scss/custom.scss */
+h2 { font-size: 2.5em; }
+
+/* line 21, scss/custom.scss */
 a { color: #294c4f; }
 
-/* line 24, scss/custom.scss */
+/* line 25, scss/custom.scss */
 .bg-brand-dark { background-color: #294c4f; }
 
-/* line 30, scss/custom.scss */
+/* line 31, scss/custom.scss */
 .text-brand-accent { color: #ba5624; }
 
-/* line 33, scss/custom.scss */
+/* line 34, scss/custom.scss */
 .text-brand-light { color: #faebeb; }
 
-/* line 40, scss/custom.scss */
+/* line 41, scss/custom.scss */
 .text-underline { text-decoration: underline; }
 
-/* line 43, scss/custom.scss */
+/* line 44, scss/custom.scss */
 .text-highlight { background-color: rgba(255, 255, 255, 0.8); line-height: 1.6em; }
 
-/* line 47, scss/custom.scss */
+/* line 48, scss/custom.scss */
 .text-smaller { font-size: 0.8em; }
 
-/* line 52, scss/custom.scss */
+/* line 53, scss/custom.scss */
 .bg-image { background-image: url(assets/imgs/artur-pokusin-742sm.jpg); background-size: cover; }
 
-/* line 56, scss/custom.scss */
+/* line 57, scss/custom.scss */
 .hero-image-height { height: 400px; }
 
-/* line 60, scss/custom.scss */
+/* line 61, scss/custom.scss */
 .section-mt { margin-top: 30px; }
 
-/* line 63, scss/custom.scss */
+/* line 64, scss/custom.scss */
 .section-mb-0 { margin-bottom: 0; }
 
-/* line 74, scss/custom.scss */
-.border-bottom-brand { border-bottom: dotted 2px grey; }
+/* line 77, scss/custom.scss */
+.fl-cr { color: blue; text-align: center; }
 
-/* line 78, scss/custom.scss */
-.justify-content-right { text-align: right; }
+/* line 81, scss/custom.scss */
+.fl-cr img { width: 100%; }
 
-/* line 82, scss/custom.scss */
-.icon-restrict-size { height: 150px; }
+@media (max-width: 575px) { /* line 85, scss/custom.scss */
+  .fl-cr { color: orange; text-align: left; margin: 10px; }
+  /* line 90, scss/custom.scss */
+  .fl-cr img { width: 100px; float: left; } }
+/* line 99, scss/custom.scss */
+.sm-down-ht img { width: 100%; }
 
-/* line 85, scss/custom.scss */
+@media (max-width: 767px) { /* line 103, scss/custom.scss */
+  .sm-down-ht { clear: both; }
+  /* line 106, scss/custom.scss */
+  .sm-down-ht-frame { height: 70px; overflow: hidden; display: flex; align-items: center; }
+  /* line 112, scss/custom.scss */
+  .sm-down-ht img { width: 100%; height: auto; align-self: center; } }
+/* line 125, scss/custom.scss */
 .icon-centered { text-align: center; }
 
-/* line 92, scss/custom.scss */
+/* line 131, scss/custom.scss */
+.border-bottom-brand { border-bottom: dotted 2px grey; }
+
+/* line 135, scss/custom.scss */
+.justify-content-right { text-align: right; }
+
+/* line 142, scss/custom.scss */
 html { font-size: 1em; }
 
 /*# sourceMappingURL=custom.css.map */
