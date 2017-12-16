@@ -18,6 +18,9 @@ h1, h2 {
 h2 {
   font-size: 2.5em;
 }
+h3 {
+  font-size: 1.8em;
+}
 a {
   color: $color-links;
 }
@@ -65,7 +68,7 @@ a {
   margin-bottom: 0;
 }
 
-// IMAGE SIZING --------------------//
+// -------------------- IMAGE SIZING --------------------//
 // @media screen and (min-width: 700px ) { // use my own breakpoint
 //   .fl-cr {
 //     color: red;
@@ -116,11 +119,19 @@ a {
   }
 }
 
+// same height, centered on mobile // ------------- numbers diagrams
+.img-ht-fixed img {
+  height: 100px;
+}
+@include media-breakpoint-down(sm) { // opposite!  (sm screens and below)
+  // if it wasn't opposite, otherwise could use bootstrap class text-center
+  .text-center-sm-down {
+    text-align: center;
+  }
 
+}
 
-
-
-// IMAGE/ICON POSITIONING --------------------//
+//-------------------- IMAGE/ICON POSITIONING --------------------//
 
 .icon-centered {
   text-align: center;
