@@ -23,6 +23,10 @@ h3 {
 }
 a {
   color: $color-links;
+  font-weight: 700;
+}
+a:hover {
+  color: $color-accent;
 }
 
 .bg-brand-dark {
@@ -147,9 +151,17 @@ a {
   text-align: right;
 }
 
+//-------------------- IMAGE/ICON POSITIONING --------------------//
+.icon {
+  fill: $color-links;
+}
+.icon-light {
+  fill: $color-light;
+}
 
 
-// ADD RESPONSIVE TYPOGRAPHY
+
+//-------------------- ADD RESPONSIVE TYPOGRAPHY --------------------//
 html {
   font-size: 1em;
 }
