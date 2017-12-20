@@ -1,35 +1,66 @@
-// ALL OF THIS IS ACTUALLY UNNEESSARY SINCE I'M LINKING TO THE BOOTSTRAP URL.  WITHOUT THIS, FONT STYLES ARE STRIPPED.
-
-// Required
-// @import "../node_modules/bootstrap/scss/functions";
-// @import "../node_modules/bootstrap/scss/variables";
-// @import "../node_modules/bootstrap/scss/mixins";
-// @import "../node_modules/bootstrap/scss/utilities";
-//
-//
-// // Optional
-// @import "../node_modules/bootstrap/scss/grid";
-// @import "../node_modules/bootstrap/scss/navbar";
+@import "customvariables";
+@import "../bootstrap-source/scss/bootstrap"; // 'bootstrap-source' is the entire folder of Source Files that were downloaded. this specific file is the bootstrap.scss file.
+// it includes the scss files within the parent folder but not sure about the mixins or utilities folers.  this option was chosen rather than linking to the CDN, which doesn't allow referencing of native variables.
+// could possibly eliminate the unused files
 
 
-.text-brand-accent {
-  color: orange;
+body {
+// font-family: 'EB Garamond', serif;
+// font-family: 'Amiri', serif;
+font-family: $font-body, $font-family-base, sans-serif;
+// to test if Bootstrap varaibles are properly linked, the Bootstrap variable $font-family-base can be added back to see if the native font stack loads.
+font-size: 1.2em;
 }
+h1, h2 {
+  font-family: $font-heading, $font-family-base, sans-serif;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 1.8em;
+}
+a {
+  color: $color-links;
+  font-weight: 700;
+}
+a:hover {
+  color: $color-accent;
+}
+
+.bg-brand-dark {
+  background-color: $color-bg-dark;
+}
+
+
+// MAKE THESE VARIABLES
+.text-brand-accent {
+  color: $color-accent;
+}
+.text-brand-light {
+  color: $color-light;
+}
+.text-brand-dark {
+}
+
 
 .text-underline {
   text-decoration: underline;
 }
-
 .text-highlight {
   background-color: rgba(255,255,255,0.8);
-  line-height: 1.3em;
+  line-height: 1.6em;
 }
+.text-smaller {
+  font-size: 0.8em;
+}
+
 
 .bg-image {
   background-image: url(assets/imgs/artur-pokusin-742sm.jpg);
   background-size: cover;
 }
-
 .hero-image-height {
   height: 400px;
 }
@@ -37,6 +68,81 @@
 .section-mt {
   margin-top: 30px;
 }
+.section-mb-0 {
+  margin-bottom: 0;
+}
+
+// -------------------- IMAGE SIZING --------------------//
+// @media screen and (min-width: 700px ) { // use my own breakpoint
+//   .fl-cr {
+//     color: red;
+//   }
+// }
+
+
+// float left, caption right // ------------- benefits icons
+.fl-cr {
+  color: blue;
+  text-align: center;
+}
+.fl-cr img {
+  width: 100%;
+}
+  @include media-breakpoint-down(xs) { // opposite!  (sm screens and below)
+    .fl-cr {
+      color: orange;
+      text-align: left;
+      margin: 10px;
+    }
+    .fl-cr img {
+      width: 100px;
+      float: left;
+    }
+  }
+
+// cat eye image, centered // ------------- success stories
+// this centering trick from: https://codepen.io/adamchenwei/pen/BRNxJr
+
+.sm-down-ht img {
+  width: 100%;
+}
+@include media-breakpoint-down(sm) { // opposite!  (sm screens and below)
+  .sm-down-ht {
+    clear: both;
+  }
+  .sm-down-ht-frame {
+    height: 70px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .sm-down-ht img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+}
+
+// same height, centered on mobile // ------------- numbers diagrams
+.img-ht-fixed img {
+  height: 100px;
+}
+@include media-breakpoint-down(sm) { // opposite!  (sm screens and below)
+  // if it wasn't opposite, otherwise could use bootstrap class text-center
+  .text-center-sm-down {
+    text-align: center;
+  }
+
+}
+
+//-------------------- IMAGE/ICON POSITIONING --------------------//
+
+.icon-centered {
+  text-align: center;
+}
+
+
+
 .border-bottom-brand {
   border-bottom: dotted 2px grey;
 }
@@ -45,15 +151,17 @@
   text-align: right;
 }
 
-.icon-restrict-size {
-  height: 150px;
+//-------------------- IMAGE/ICON POSITIONING --------------------//
+.icon {
+  fill: $color-links;
 }
-.icon-centered {
-  text-align: center;
+.icon-light {
+  fill: $color-light;
 }
 
 
-// ADD RESPONSIVE TYPOGRAPHY
+
+//-------------------- ADD RESPONSIVE TYPOGRAPHY --------------------//
 html {
   font-size: 1em;
 }
