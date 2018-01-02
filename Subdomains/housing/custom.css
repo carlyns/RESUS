@@ -3943,46 +3943,50 @@ a:hover { color: #972d07; }
 /* line 71, scss/custom.scss */
 .section-mb-0 { margin-bottom: 0; }
 
-/* line 84, scss/custom.scss */
-.fl-cr { color: blue; text-align: center; }
+/* line 86, scss/custom.scss */
+.fl-cr img { width: 100%; margin: 10px; }
 
-/* line 88, scss/custom.scss */
-.fl-cr img { width: 100%; }
-
-@media (max-width: 575px) { /* line 92, scss/custom.scss */
-  .fl-cr { color: orange; text-align: left; margin: 10px; }
-  /* line 97, scss/custom.scss */
-  .fl-cr img { width: 100px; float: left; } }
-/* line 106, scss/custom.scss */
+@media (max-width: 575px) { /* line 93, scss/custom.scss */
+  .fl-cr img { width: 100px; float: left; }
+  /* line 98, scss/custom.scss */
+  .fl-cr svg { float: left; margin: 10px; } }
+/* line 112, scss/custom.scss */
 .sm-down-ht img { width: 100%; }
 
-@media (max-width: 767px) { /* line 110, scss/custom.scss */
+@media (max-width: 767px) { /* line 116, scss/custom.scss */
   .sm-down-ht { clear: both; }
-  /* line 113, scss/custom.scss */
-  .sm-down-ht-frame { height: 70px; overflow: hidden; display: flex; align-items: center; }
   /* line 119, scss/custom.scss */
+  .sm-down-ht-frame { height: 70px; overflow: hidden; display: flex; align-items: center; }
+  /* line 125, scss/custom.scss */
   .sm-down-ht img { width: 100%; height: auto; align-self: center; } }
-/* line 127, scss/custom.scss */
+/* line 133, scss/custom.scss */
 .img-ht-fixed img { height: 100px; }
 
-@media (max-width: 767px) { /* line 132, scss/custom.scss */
+@media (max-width: 767px) { /* line 138, scss/custom.scss */
   .text-center-sm-down { text-align: center; } }
-/* line 140, scss/custom.scss */
+/* line 146, scss/custom.scss */
 .icon-centered { text-align: center; }
 
-/* line 146, scss/custom.scss */
+/* line 152, scss/custom.scss */
 .border-bottom-brand { border-bottom: dotted 2px grey; }
 
-/* line 150, scss/custom.scss */
+/* line 156, scss/custom.scss */
 .justify-content-right { text-align: right; }
 
-/* line 155, scss/custom.scss */
+/* line 161, scss/custom.scss */
 .icon { fill: #02626e; }
 
-/* line 158, scss/custom.scss */
+/* line 164, scss/custom.scss */
 .icon-light { fill: #faebeb; }
 
-/* line 165, scss/custom.scss */
+@media (max-width: 575px) { /* line 169, scss/custom.scss */
+  .d-xs-down-inline-block { display: inline-block; }
+  /* line 172, scss/custom.scss */
+  .d-xs-down-flex { display: flex; } }
+/* line 177, scss/custom.scss */
+.fixed-bottom-right { bottom: 30px; right: 30px; }
+
+/* line 183, scss/custom.scss */
 html { font-size: 1em; }
 
 /*# sourceMappingURL=custom.css.map */

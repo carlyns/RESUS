@@ -82,21 +82,27 @@ a:hover {
 
 // float left, caption right // ------------- benefits icons
 .fl-cr {
-  color: blue;
-  text-align: center;
 }
 .fl-cr img {
   width: 100%;
+  margin: 10px;
+
 }
   @include media-breakpoint-down(xs) { // opposite!  (sm screens and below)
-    .fl-cr {
-      color: orange;
-      text-align: left;
-      margin: 10px;
-    }
+
     .fl-cr img {
       width: 100px;
       float: left;
+
+    }
+    .fl-cr svg {
+      float: left;
+      margin: 10px;
+
+    }
+  }
+  @include media-breakpoint-up(xs) { // opposite!  (sm screens and below)
+    .fl-cr {
     }
   }
 
@@ -152,14 +158,26 @@ a:hover {
 }
 
 //-------------------- IMAGE/ICON POSITIONING --------------------//
-.icon {
+.icon { // these are the 4 featured CTAs
   fill: $color-links;
 }
 .icon-light {
   fill: $color-light;
 }
 
-
+  @include media-breakpoint-down(xs) { // opposite!  (sm screens and below)
+    .d-xs-down-inline-block {
+      display: inline-block;
+    }
+    .d-xs-down-flex {
+      display: flex;
+    }
+  }
+  
+.fixed-bottom-right {
+  bottom: 30px;
+  right: 30px;
+}
 
 //-------------------- ADD RESPONSIVE TYPOGRAPHY --------------------//
 html {
