@@ -1,12 +1,12 @@
 @import "customvariables";
+// @import "structure-layout";
+// @import "colors-fonts";
 @import "../bootstrap-source/scss/bootstrap"; // 'bootstrap-source' is the entire folder of Source Files that were downloaded. this specific file is the bootstrap.scss file.
 // it includes the scss files within the parent folder but not sure about the mixins or utilities folers.  this option was chosen rather than linking to the CDN, which doesn't allow referencing of native variables.
-// could possibly eliminate the unused files
+// does it matter if this is first or last?
 
 
 body {
-// font-family: 'EB Garamond', serif;
-// font-family: 'Amiri', serif;
 font-family: $font-body, $font-family-base, sans-serif;
 // to test if Bootstrap varaibles are properly linked, the Bootstrap variable $font-family-base can be added back to see if the native font stack loads.
 font-size: 1.2em;
@@ -34,7 +34,6 @@ a:hover {
 }
 
 
-// MAKE THESE VARIABLES
 .text-brand-accent {
   color: $color-accent;
 }
@@ -73,12 +72,6 @@ a:hover {
 }
 
 // -------------------- IMAGE SIZING --------------------//
-// @media screen and (min-width: 700px ) { // use my own breakpoint
-//   .fl-cr {
-//     color: red;
-//   }
-// }
-
 
 // float left, caption right // ------------- benefits icons
 .fl-cr {
@@ -173,7 +166,7 @@ a:hover {
       display: flex;
     }
   }
-  
+
 .fixed-bottom-right {
   bottom: 30px;
   right: 30px;

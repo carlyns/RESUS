@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Owning Property with Community</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css"> <!-- this file imports the Bootstrap Source Files, then custom styling. -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600i,700,700i|Oswald:400,600" rel="stylesheet">
+
+
+  </head>
+
+
+  <body>
+
+  <div class="container-fluid">
+
+    <div class="border-bottom-brand mt-3">
+      <h6 class="text-brand-accent">In a world of high-stakes development, we believe better housing is possible.
+      </h6>
+      <h5 class="lead">Go in on property with your community.</h5>
+
+
+    </div>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+
+      <div class="navbar-brand">
+        <!-- add a logo maybe only on mobile -->
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHousing" aria-controls="navbarHousing" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarHousing" mx-auto>
+        <div class="navbar-nav font-italic">
+          <a class="nav-item nav-link active" href="index.html">Home</a>
+          <!-- TO DO: On larger screens, hide this element.  On smaller screens, show this element. -->
+          <a class="nav-item nav-link" href="#">Limited Equity</a>
+          <a class="nav-item nav-link" href="#">Get Started</a>
+          <a class="nav-item nav-link" href="#">About</a>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+
+
+
+
+
+  <div class="container">
+
+      <h2 class="display-4 border-bottom-brand">Create Your Profile</h2>
+      <p>Get added to our database and matched with potential neighbors/owners. </p>
+
+      <form action="https://formspree.io/cso@RESUSstudio.com" method="POST">
+
+        <h4 class="mt-3 mb-0">First Name</h4>
+        <input class="w-100" type="text" name="firstname" id="firstname">
+
+        <h4 class="mt-3 mb-0">Last Name</h4>
+        <input class="w-100" type="text" name="lastname" id="lastname">
+
+        <h4 class="mt-3 mb-0">Email Address</h4>
+        <input class="w-100" type="text" name="email" id="email" placeholder="someone@email.com">
+
+        <h4 class="mt-3 mb-0">Preferred neighborhood/s</h4>
+        <input class="w-100" type="text" name="neighborhood" id="neighborhood">
+
+        <h4 class="mt-3 mb-0">Do you have a specific property in mind?</h4>
+        <label for="propertyyes"><input type="radio" name="propertyinmind" value="yes" id="propertyyes">Yes</label>
+        <label class="ml-3" for="propertyno"><input type="radio" name="propertyinmind" value="no" id="propertyno">No</label>
+
+        <h4 class="mt-3 mb-0">What kind of housing community do you prefer?</h4>
+        <select class="w-100" name="housing-type" id="housingtype" >
+          <!-- option tag will take what's btwn as 'value' -->
+          <option>2 unit building</option>
+          <option>3-8 unit building</option>
+          <option>9-15 unit building</option>
+          <option>15+ unit building</option>
+          <option>25+ unit building</option>
+          <option>100+ unit building</option>
+          <option>single family homes scattered across more than one site</option>
+          <option>multi-family buildings scattered across more than one site</option>
+          <option>share a single free-standing house</option>
+          <option>dorm-style units with shared common spaces (like kitchen, bathrooms, living)</option>
+        </select>
+
+        <h4 class="mt-3 mb-0">How did you hear about us?</h4>
+        <select class="w-100" name="refer" id="refer" >
+          <!-- option tag will take what's btwn as 'value' -->
+          <option>social media</option>
+          <option>RESUS</option>
+          <option>a personal friend</option>
+          <option>Cooperative Communities of Chicago</option>
+          <option>an online search</option>
+        </select>
+        <p class="mt-1 mb-0">Other / What did you search for?</p>
+        <input class="w-100" type="text" name="other" id="other">
+
+
+        <div class="my-3">
+          <input class="w-100" type="submit" value="Submit My Profile">
+        </div>
+
+      </form>
+
+  </div> <!-- end of "container" -->
+
+
+
+
+
+  <footer class="mt-5 p-3 bg-dark text-white text-smaller">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-9 text-right">
+          <h3 class="border-bottom-brand">About this project</h3>
+          <p>Why are we doing this?  </p>
+
+          <p>We are not pleased with the two dominant options for housing in America: renting and owning ... and we think a lot of people would agree. We believe there is room for a third option.</p>
+          <p>We've been working on housing initiatives for a while, and we genuinely think Shared Equity / Property Ownership has potential to provide decent, affordable housing for all.</p>
+          <p>This was built and compiled by Carlyn So, with the help of a few key advisors.  </p>
+        </div>
+
+        <div class="col-sm-3">
+          <!-- on smaller screens, display icons inline -->
+          <!-- on bigger screens, vertically stack icons -->
+          <p>Home</p>
+          <p>Back to Top</p>
+
+          <p>Email us. </p>
+          <p>Facebook icon</p>
+          <p>twitter icon</p>
+          <p>instagram icon</p>
+          <p>Newsletter icon</p>
+
+        </div>
+
+
+      </div>
+
+      <p class="mb-0 text-center">Copyright &copy; 2017 RESUS</p>
+      <p class="mb-0 text-center">Web Design by Sites for Social Good</p>
+    </div>
+
+  </footer>
+
+
+
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
