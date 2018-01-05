@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Owning Property with Community</title>
+    <title>Owning Property with Community | Housing that Maintains Affordability for Neighborhoods, Cooperatives and Limited Equity | Chicago</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A free resource page for groups considering shared property ownership.  Learn about success stories, financing, and tools to connect with others.">
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="custom.css"> <!-- this file imports the Bootstrap Source Files, then custom styling. -->
@@ -13,14 +15,17 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600i,700,700i|Oswald:400,600" rel="stylesheet">
 
 
+
   </head>
 
 
   <body>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="top">
+    <!-- class="container" is default for Bootstrap's breakpoint properties.  class="container-fluid" is class for 100% width all the time. -->
 
     <div class="border-bottom-brand mt-3">
+      <!-- if this is not included in the navbar-brand, it won't be sticky on mobile -->
       <h6 class="text-brand-accent">In a world of high-stakes development, we believe better housing is possible.
       </h6>
       <h5 class="lead">Go in on property with your community.</h5>
@@ -28,31 +33,33 @@
 
     </div>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-
-      <div class="navbar-brand">
-        <!-- add a logo maybe only on mobile -->
-      </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-end">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHousing" aria-controls="navbarHousing" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarHousing" mx-auto>
+      <div class="collapse navbar-collapse justify-content-end text-right" id="navbarHousing" mx-auto>
         <div class="navbar-nav font-italic">
           <a class="nav-item nav-link active" href="index.html">Home</a>
-          <!-- TO DO: On larger screens, hide this element.  On smaller screens, show this element. -->
-          <a class="nav-item nav-link" href="#">Limited Equity</a>
-          <a class="nav-item nav-link" href="#">Get Started</a>
-          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="index.html#benefits">Benefits</a>
+          <a class="nav-item nav-link" href="index.html#success">Success Stories</a>
+          <a class="nav-item nav-link" href="index.html#limitedequity">Limited Equity</a>
+          <a class="nav-item nav-link" href="index.html#connect">Get Connected</a>
         </div>
       </div>
 
     </nav>
+
+    <nav class="position-fixed fixed-bottom-right">
+      <a href="#top">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+        <title>Back to Top</title>
+        <path d="M10.359 7.785c-0.199-0.196-0.52-0.196-0.717 0l-2.864 2.807c-0.199 0.195-0.198 0.514 0 0.71 0.197 0.196 0.518 0.196 0.717 0l2.505-2.302 2.506 2.302c0.198 0.196 0.518 0.196 0.718 0 0.197-0.196 0.197-0.515 0-0.71l-2.865-2.807zM10 0.4c-5.302 0-9.6 4.298-9.6 9.6 0 5.303 4.298 9.6 9.6 9.6s9.6-4.297 9.6-9.6c0-5.302-4.298-9.6-9.6-9.6zM10 18.354c-4.615 0-8.354-3.74-8.354-8.354s3.739-8.354 8.354-8.354c4.613 0 8.354 3.74 8.354 8.354s-3.741 8.354-8.354 8.354z"></path>
+      </svg>
+      </a>
+    </nav>
   </div>
-
-
-
 
 
 
@@ -106,10 +113,7 @@
         <p class="mt-1 mb-0">Other / What did you search for?</p>
         <input class="w-100" type="text" name="other" id="other">
 
-
-        <div class="my-3">
-          <input class="w-100" type="submit" value="Submit My Profile">
-        </div>
+        <button type="button submit" value="submit" class="btn btn-secondary btn-lg btn-block my-3">Submit My Profile</button>
 
       </form>
 
@@ -163,5 +167,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+
   </body>
 </html>

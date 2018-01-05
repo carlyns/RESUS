@@ -3914,7 +3914,7 @@ a { color: #02626e; font-weight: 700; }
 a:hover { color: #972d07; }
 
 /* line 32, scss/custom.scss */
-.bg-brand-dark { background-color: #dcc48e; }
+.bg-brand-dark { background-color: #a1b5b4; }
 
 /* line 37, scss/custom.scss */
 .text-brand-accent { color: #972d07; }
@@ -3984,7 +3984,7 @@ a:hover { color: #972d07; }
   /* line 165, scss/custom.scss */
   .d-xs-down-flex { display: flex; } }
 /* line 170, scss/custom.scss */
-.fixed-bottom-right { bottom: 30px; right: 30px; }
+.fixed-bottom-right { bottom: 15px; right: 15px; }
 
 /* line 176, scss/custom.scss */
 html { font-size: 1em; }
