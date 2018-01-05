@@ -52,7 +52,7 @@
 
     <nav class="position-fixed fixed-bottom-right">
       <a href="#top">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+      <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
         <title>Back to Top</title>
         <path d="M10.359 7.785c-0.199-0.196-0.52-0.196-0.717 0l-2.864 2.807c-0.199 0.195-0.198 0.514 0 0.71 0.197 0.196 0.518 0.196 0.717 0l2.505-2.302 2.506 2.302c0.198 0.196 0.518 0.196 0.718 0 0.197-0.196 0.197-0.515 0-0.71l-2.865-2.807zM10 0.4c-5.302 0-9.6 4.298-9.6 9.6 0 5.303 4.298 9.6 9.6 9.6s9.6-4.297 9.6-9.6c0-5.302-4.298-9.6-9.6-9.6zM10 18.354c-4.615 0-8.354-3.74-8.354-8.354s3.739-8.354 8.354-8.354c4.613 0 8.354 3.74 8.354 8.354s-3.741 8.354-8.354 8.354z"></path>
       </svg>
@@ -64,7 +64,7 @@
 
   <div>
     <div class="bg-image hero-image-height clearfix">
-      <h1 class="display-4 text-right p-5 text-uppercase font-weight-light">
+      <h1 class="text-right text-uppercase font-weight-light">
         <span class="text-highlight">This is a free resource page for groups considering
           <span class="font-weight-normal">Shared Property Ownership</span> that
           <span class="text-brand-accent">benefits their community</span>.
@@ -94,19 +94,15 @@
 
 
     <div class="row">
-      <!-- 2col should collapse to 1col on mobile -->
 
-      <div class="col">
+      <div class="col6">
         <h4 class="border-bottom-brand">Better than Renting</h2>
-          <!-- on mobile screens, linebreak or clearfix after "better than" -->
         <p>instead of 100% of your monthly payments going to your landlord, you invest in ownership over time.</p>
       </div>
-      <div class="col justify-content-right">
+      <div class="col6 justify-content-right">
         <h4 class="border-bottom-brand">Better than Owning a Condo/Home</h2>
-          <!-- on mobile screens, linebreak or clearfix after "better than" -->
         <p>instead of random neighbors and heated condo association meetings, you gain a support network with values and a vision that you help define.</p>
       </div>
-
 
     </div>
 
@@ -180,15 +176,15 @@
         <!-- on smaller screens, show Read More toggle. -->
 
         <div class="col-lg-4">
-          <h4 class="item">Option A.  <a data-toggle="collapse" data-parent="#structures" href="#structureA" aria-expanded="false">Your group could form a Nonprofit Corporation.</a></h4>
+          <h5 class="item">Option A.  <a data-toggle="collapse" data-parent="#structures" href="#structureA" aria-expanded="false">Your group could form a Nonprofit Corporation.</a></h5>
           <div id="structureA" class="collapse" role="tabpanel">The corporation (a cooperative) holds the title, but each member has a vote and a right to occupy a unit.  This popular structure has been used for a wide range of properties, from market-rate high-rise units to scattered-site single family homes.  Having a formal decision-making system in place is convenient when managing something as important as property ownership.</div>
         </div>
         <div class="col-lg-4">
-          <h4 class="item">Option B.  <a data-toggle="collapse" data-parent="#structures" href="#structureB" aria-expanded="false">Your group could setup Tenants in Common.</a></h4>
+          <h5 class="item">Option B.  <a data-toggle="collapse" data-parent="#structures" href="#structureB" aria-expanded="false">Your group could setup Tenants in Common.</a></h5>
           <div id="structureB" class="collapse" role="tabpanel">Members could have equal or unequal ownership stakes in the property, but you're still all on the title together.  Making group decisions is less formal.  If you decide to move, you still hold title.  But upon death, whomever you designate in your will takes over ownership of your stake.  This option is popular if your group believes units with varying sizes or amenities should be valued differently.</div>
         </div>
         <div class="col-lg-4">
-          <h4 class="item">Option C.  <a data-toggle="collapse" data-parent="#structures" href="#structureC" aria-expanded="false">Your group could setup Joint Tenancy.</a></h4>
+          <h5 class="item">Option C.  <a data-toggle="collapse" data-parent="#structures" href="#structureC" aria-expanded="false">Your group could setup Joint Tenancy.</a></h5>
           <div id="structureC" class="collapse" role="tabpanel">Members all hold title and your ownership stakes are all equal.  If you decide to move, you still hold title.  But upon death, the other tenants will divvy up your stake equally - it doesn't get passed on to your heirs. This structure is appropriate if you'd rather not burden your group with dealing with a new random neighbor.</div>
         </div>
       </div>
@@ -236,20 +232,20 @@
         <div class="img-ht-fixed col-sm-4 mb-3 text-center-sm-down">
           <a href="costs.html">
             <img src="assets/imgs/thumbnail-building.png" alt="hypothetical building">
-            <h4>A hypothetical 6-unit building</h4>
+            <h5>A hypothetical 6-unit building</h5>
           </a>
         </div>
         <div class="img-ht-fixed col-sm-4 mb-3 text-center-sm-down">
           <a href="monthlyfee.html"=>
             <img src="assets/imgs/thumbnail-monthly.png" alt="monthly fee">
-            <h4>What do I pay monthly?</h4>
+            <h5>What do I pay monthly?</h5>
           </a>
         </div>
         <div class="img-ht-fixed col-sm-4">
           <!-- a tags don't support disabled attribute per: https://getbootstrap.com/docs/4.0/components/list-group/#disabled-items -->
             <div class="text-center-sm-down"> <!-- replace this div wrapper with an a tag when ready -->
               <img src="assets/imgs/thumbnail-equity.png" alt="equity building">
-              <h4>How much equity will I build?</h4>
+              <h5>How much equity will I build?</h5>
               <p>(Coming soon)</p>
             </div>
         </div>

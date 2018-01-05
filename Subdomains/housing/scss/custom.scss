@@ -11,15 +11,26 @@ font-family: $font-body, $font-family-base, sans-serif;
 // to test if Bootstrap varaibles are properly linked, the Bootstrap variable $font-family-base can be added back to see if the native font stack loads.
 font-size: 1.2em;
 }
+
 h1, h2 {
   font-family: $font-heading, $font-family-base, sans-serif;
   text-transform: uppercase;
 }
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 h3 {
-  font-size: 1.8em;
+  // font-size: 1.8em;
+}
+
+@include media-breakpoint-down(sm) { // opposite!  (sm screens and below)
+  // h2 {
+  //   font-size: 1.5em;
+  // }
+  // h3 {
+  //   font-size: 1.3em;
+  //
+  // }
 }
 a {
   color: $color-links;
@@ -60,9 +71,29 @@ a:hover {
   background-image: url(assets/imgs/artur-pokusin-742sm.jpg);
   background-size: cover;
 }
-.hero-image-height {
-  height: 400px;
+
+.hero-image-height h1 {
+  padding: 10%;
 }
+@include media-breakpoint-down(sm) { // opposite!  (sm screens and below)
+  .hero-image-height h1 {
+    font-size: 1.3em;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .hero-image-height h1 {
+    font-size: 2em;
+  }
+}
+@include media-breakpoint-up(md) {
+  .hero-image-height {
+    height: 400px;
+  }
+  .hero-image-height h1 {
+    padding: 5%;
+  }
+}
+
 
 .section-mt {
   margin-top: 30px;
@@ -171,26 +202,37 @@ a:hover {
   bottom: 15px;
   right: 15px;
 }
-
-//-------------------- ADD RESPONSIVE TYPOGRAPHY --------------------//
-html {
-  font-size: 1em;
+  @include media-breakpoint-up(lg) {
+    .fixed-bottom-right {
+      bottom: 30px;
+      right: 30px;
+    }
+  }
+@include media-breakpoint-up(lg) {
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
 }
-//
-// @include media-breakpoint-up(sm) {
-//   html {
-//     font-size: 1.2em;
-//   }
-// }
-//
-// @include media-breakpoint-up(md) {
-//   html {
-//     font-size: 1.4em;
-//   }
-// }
-//
-// @include media-breakpoint-up(lg) {
-//   html {
-//     font-size: 1.6em;
-//   }
-// }
+
+
+
+//-------------------- RESPONSIVE TYPOGRAPHY --------------------//
+html {
+  font-size: 1rem;
+}
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.3rem;
+  }
+}
