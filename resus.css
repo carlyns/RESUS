@@ -292,6 +292,18 @@ footer a:hover {
 	text-align: center;
 }
 
+#carlyn {
+	width: 100%;
+	float: none;
+	margin: 0 auto;
+}
+
+#taylor {
+	width: 100%;
+	float: none;
+	margin: 0 auto;
+}
+
 #reach a {
 	color: black;
 	text-decoration: none;
@@ -446,7 +458,6 @@ footer a:hover {
 
 .caption {
 	font-family: helvetica neue;
-	text-align: center;
 	font-size: 0.9em;
 	padding-bottom: 5%;
 }
