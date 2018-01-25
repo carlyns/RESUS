@@ -3895,94 +3895,114 @@ a.text-dark:focus, a.text-dark:hover { color: #1d2124 !important; }
 /* line 9, bootstrap-source/scss/utilities/_visibility.scss */
 .invisible { visibility: hidden !important; }
 
-/* line 7, scss/custom.scss */
+/* line 9, scss/custom.scss */
 body { font-family: "Crimson Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; font-size: 1.2em; }
 
-/* line 14, scss/custom.scss */
+/* line 15, scss/custom.scss */
 h1, h2 { font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; text-transform: uppercase; }
 
-/* line 18, scss/custom.scss */
-h2 { font-size: 2.5em; }
+/* line 19, scss/custom.scss */
+h2 { font-size: 2em; }
 
-/* line 21, scss/custom.scss */
-h3 { font-size: 1.8em; }
-
-/* line 24, scss/custom.scss */
+/* line 35, scss/custom.scss */
 a { color: #02626e; font-weight: 700; }
 
-/* line 28, scss/custom.scss */
+/* line 39, scss/custom.scss */
 a:hover { color: #972d07; }
 
-/* line 32, scss/custom.scss */
-.bg-brand-dark { background-color: #dcc48e; }
-
-/* line 38, scss/custom.scss */
-.text-brand-accent { color: #972d07; }
-
-/* line 41, scss/custom.scss */
-.text-brand-light { color: #faebeb; }
+/* line 43, scss/custom.scss */
+.bg-brand-dark { background-color: #a1b5b4; }
 
 /* line 48, scss/custom.scss */
-.text-underline { text-decoration: underline; }
+.text-brand-accent { color: #972d07; }
 
 /* line 51, scss/custom.scss */
+.text-brand-light { color: #faebeb; }
+
+/* line 58, scss/custom.scss */
+.text-underline { text-decoration: underline; }
+
+/* line 61, scss/custom.scss */
 .text-highlight { background-color: rgba(255, 255, 255, 0.8); line-height: 1.6em; }
 
-/* line 55, scss/custom.scss */
+/* line 65, scss/custom.scss */
 .text-smaller { font-size: 0.8em; }
 
-/* line 60, scss/custom.scss */
+/* line 70, scss/custom.scss */
 .bg-image { background-image: url(assets/imgs/artur-pokusin-742sm.jpg); background-size: cover; }
 
-/* line 64, scss/custom.scss */
-.hero-image-height { height: 400px; }
+/* line 75, scss/custom.scss */
+.hero-image-height h1 { padding: 10%; }
 
-/* line 68, scss/custom.scss */
+@media (max-width: 767px) { /* line 79, scss/custom.scss */
+  .hero-image-height h1 { font-size: 1.3em; } }
+@media (min-width: 576px) { /* line 84, scss/custom.scss */
+  .hero-image-height h1 { font-size: 2em; } }
+@media (min-width: 768px) { /* line 89, scss/custom.scss */
+  .hero-image-height { height: 400px; }
+  /* line 92, scss/custom.scss */
+  .hero-image-height h1 { padding: 5%; } }
+/* line 98, scss/custom.scss */
 .section-mt { margin-top: 30px; }
 
-/* line 71, scss/custom.scss */
+/* line 101, scss/custom.scss */
 .section-mb-0 { margin-bottom: 0; }
 
-/* line 84, scss/custom.scss */
-.fl-cr { color: blue; text-align: center; }
+/* line 110, scss/custom.scss */
+.fl-cr img { width: 100%; margin: 10px; }
 
-/* line 88, scss/custom.scss */
-.fl-cr img { width: 100%; }
-
-@media (max-width: 575px) { /* line 92, scss/custom.scss */
-  .fl-cr { color: orange; text-align: left; margin: 10px; }
-  /* line 97, scss/custom.scss */
-  .fl-cr img { width: 100px; float: left; } }
-/* line 106, scss/custom.scss */
+@media (max-width: 575px) { /* line 117, scss/custom.scss */
+  .fl-cr img { width: 100px; float: left; }
+  /* line 122, scss/custom.scss */
+  .fl-cr svg { float: left; margin: 10px; } }
+/* line 136, scss/custom.scss */
 .sm-down-ht img { width: 100%; }
 
-@media (max-width: 767px) { /* line 110, scss/custom.scss */
+@media (max-width: 767px) { /* line 140, scss/custom.scss */
   .sm-down-ht { clear: both; }
-  /* line 113, scss/custom.scss */
+  /* line 143, scss/custom.scss */
   .sm-down-ht-frame { height: 70px; overflow: hidden; display: flex; align-items: center; }
-  /* line 119, scss/custom.scss */
+  /* line 149, scss/custom.scss */
   .sm-down-ht img { width: 100%; height: auto; align-self: center; } }
-/* line 127, scss/custom.scss */
+/* line 157, scss/custom.scss */
 .img-ht-fixed img { height: 100px; }
 
-@media (max-width: 767px) { /* line 132, scss/custom.scss */
+@media (max-width: 767px) { /* line 162, scss/custom.scss */
   .text-center-sm-down { text-align: center; } }
-/* line 140, scss/custom.scss */
+/* line 170, scss/custom.scss */
 .icon-centered { text-align: center; }
 
-/* line 146, scss/custom.scss */
+/* line 176, scss/custom.scss */
 .border-bottom-brand { border-bottom: dotted 2px grey; }
 
-/* line 150, scss/custom.scss */
+/* line 180, scss/custom.scss */
 .justify-content-right { text-align: right; }
 
-/* line 155, scss/custom.scss */
+/* line 185, scss/custom.scss */
 .icon { fill: #02626e; }
 
-/* line 158, scss/custom.scss */
+/* line 188, scss/custom.scss */
 .icon-light { fill: #faebeb; }
 
-/* line 165, scss/custom.scss */
-html { font-size: 1em; }
+@media (max-width: 575px) { /* line 193, scss/custom.scss */
+  .d-xs-down-inline-block { display: inline-block; }
+  /* line 196, scss/custom.scss */
+  .d-xs-down-flex { display: flex; } }
+/* line 201, scss/custom.scss */
+.fixed-bottom-right { bottom: 15px; right: 15px; }
+
+@media (min-width: 992px) { /* line 206, scss/custom.scss */
+  .fixed-bottom-right { bottom: 30px; right: 30px; } }
+@media (min-width: 992px) { /* line 212, scss/custom.scss */
+  .icon { width: 40px; height: 40px; } }
+/* line 221, scss/custom.scss */
+html { font-size: 1rem; }
+
+@media (min-width: 576px) { /* line 225, scss/custom.scss */
+  html { font-size: 1.1rem; } }
+@media (min-width: 768px) { /* line 230, scss/custom.scss */
+  html { font-size: 1.2rem; } }
+@media (min-width: 992px) { /* line 235, scss/custom.scss */
+  html { font-size: 1.3rem; } }
 
 /*# sourceMappingURL=custom.css.map */

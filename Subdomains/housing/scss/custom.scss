@@ -1,25 +1,36 @@
 @import "customvariables";
+// @import "structure-layout";
+// @import "colors-fonts";
 @import "../bootstrap-source/scss/bootstrap"; // 'bootstrap-source' is the entire folder of Source Files that were downloaded. this specific file is the bootstrap.scss file.
 // it includes the scss files within the parent folder but not sure about the mixins or utilities folers.  this option was chosen rather than linking to the CDN, which doesn't allow referencing of native variables.
-// could possibly eliminate the unused files
+// does it matter if this is first or last?
 
 
 body {
-// font-family: 'EB Garamond', serif;
-// font-family: 'Amiri', serif;
 font-family: $font-body, $font-family-base, sans-serif;
 // to test if Bootstrap varaibles are properly linked, the Bootstrap variable $font-family-base can be added back to see if the native font stack loads.
 font-size: 1.2em;
 }
+
 h1, h2 {
   font-family: $font-heading, $font-family-base, sans-serif;
   text-transform: uppercase;
 }
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 h3 {
-  font-size: 1.8em;
+  // font-size: 1.8em;
+}
+
+@include media-breakpoint-down(sm) { // opposite!  (sm screens and below)
+  // h2 {
+  //   font-size: 1.5em;
+  // }
+  // h3 {
+  //   font-size: 1.3em;
+  //
+  // }
 }
 a {
   color: $color-links;
@@ -34,7 +45,6 @@ a:hover {
 }
 
 
-// MAKE THESE VARIABLES
 .text-brand-accent {
   color: $color-accent;
 }
@@ -61,9 +71,29 @@ a:hover {
   background-image: url(assets/imgs/artur-pokusin-742sm.jpg);
   background-size: cover;
 }
-.hero-image-height {
-  height: 400px;
+
+.hero-image-height h1 {
+  padding: 10%;
 }
+@include media-breakpoint-down(sm) { // opposite!  (sm screens and below)
+  .hero-image-height h1 {
+    font-size: 1.3em;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .hero-image-height h1 {
+    font-size: 2em;
+  }
+}
+@include media-breakpoint-up(md) {
+  .hero-image-height {
+    height: 400px;
+  }
+  .hero-image-height h1 {
+    padding: 5%;
+  }
+}
+
 
 .section-mt {
   margin-top: 30px;
@@ -73,30 +103,30 @@ a:hover {
 }
 
 // -------------------- IMAGE SIZING --------------------//
-// @media screen and (min-width: 700px ) { // use my own breakpoint
-//   .fl-cr {
-//     color: red;
-//   }
-// }
-
 
 // float left, caption right // ------------- benefits icons
 .fl-cr {
-  color: blue;
-  text-align: center;
 }
 .fl-cr img {
   width: 100%;
+  margin: 10px;
+
 }
   @include media-breakpoint-down(xs) { // opposite!  (sm screens and below)
-    .fl-cr {
-      color: orange;
-      text-align: left;
-      margin: 10px;
-    }
+
     .fl-cr img {
       width: 100px;
       float: left;
+
+    }
+    .fl-cr svg {
+      float: left;
+      margin: 10px;
+
+    }
+  }
+  @include media-breakpoint-up(xs) { // opposite!  (sm screens and below)
+    .fl-cr {
     }
   }
 
@@ -152,34 +182,57 @@ a:hover {
 }
 
 //-------------------- IMAGE/ICON POSITIONING --------------------//
-.icon {
+.icon { // these are the 4 featured CTAs
   fill: $color-links;
 }
 .icon-light {
   fill: $color-light;
 }
 
+  @include media-breakpoint-down(xs) { // opposite!  (sm screens and below)
+    .d-xs-down-inline-block {
+      display: inline-block;
+    }
+    .d-xs-down-flex {
+      display: flex;
+    }
+  }
 
-
-//-------------------- ADD RESPONSIVE TYPOGRAPHY --------------------//
-html {
-  font-size: 1em;
+.fixed-bottom-right {
+  bottom: 15px;
+  right: 15px;
 }
-//
-// @include media-breakpoint-up(sm) {
-//   html {
-//     font-size: 1.2em;
-//   }
-// }
-//
-// @include media-breakpoint-up(md) {
-//   html {
-//     font-size: 1.4em;
-//   }
-// }
-//
-// @include media-breakpoint-up(lg) {
-//   html {
-//     font-size: 1.6em;
-//   }
-// }
+  @include media-breakpoint-up(lg) {
+    .fixed-bottom-right {
+      bottom: 30px;
+      right: 30px;
+    }
+  }
+@include media-breakpoint-up(lg) {
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+
+//-------------------- RESPONSIVE TYPOGRAPHY --------------------//
+html {
+  font-size: 1rem;
+}
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.3rem;
+  }
+}
