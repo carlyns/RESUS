@@ -106,6 +106,9 @@ button p {
 .profile-form h2 {
   font-weight: 600; }
 
+.profile-form h4 {
+  margin-bottom: 0; }
+
 input {
   border: 1px solid darkgrey;
   /* height affects checkboxes! */
