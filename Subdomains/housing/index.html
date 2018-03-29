@@ -8,6 +8,26 @@
     <meta name="description" content="A free resource page for groups considering shared property ownership.  Learn about success stories, financing, and tools to connect with others.">
 
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MDF2399');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- favicon generator 10 files -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#972d07">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="custom.css"> <!-- this file imports the Bootstrap Source Files, then custom styling. -->
 
@@ -16,12 +36,20 @@
 
     <!-- Mailchimp popup (on exit) -->
     <!-- After you embed the code to your site, any changes you make to your form can be published directly from the editor. -->
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us2.list-manage.com","uuid":"c488241182245ea4437e294a1","lid":"bdd0662085"}) })</script>
+    <!-- (commented bc it's not really popping up on exit.  it's coming up when scrolled to end of page)
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us2.list-manage.com","uuid":"c488241182245ea4437e294a1","lid":"bdd0662085"}) })</script> -->
+
+
 
   </head>
 
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDF2399"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
 
   <div class="container-fluid" id="top">
     <!-- class="container" is default for Bootstrap's breakpoint properties.  class="container-fluid" is class for 100% width all the time. -->
@@ -179,15 +207,15 @@
         <!-- on smaller screens, show Read More toggle. -->
 
         <div class="col-lg-4">
-          <h5 class="item">Option A.  <a data-toggle="collapse" data-parent="#structures" href="#structureA" aria-expanded="false">Your group could form a Nonprofit Corporation.</a></h5>
+          <h5 class="item" id="optionA">Option A.  <a data-toggle="collapse" data-parent="#structures" href="#structureA" aria-expanded="false">Your group could form a Nonprofit Corporation.</a></h5>
           <div id="structureA" class="collapse" role="tabpanel">The corporation (a cooperative) holds the title, but each member has a vote and a right to occupy a unit.  This popular structure has been used for a wide range of properties, from market-rate high-rise units to scattered-site single family homes.  Having a formal decision-making system in place is convenient when managing something as important as property ownership.</div>
         </div>
         <div class="col-lg-4">
-          <h5 class="item">Option B.  <a data-toggle="collapse" data-parent="#structures" href="#structureB" aria-expanded="false">Your group could setup Tenants in Common.</a></h5>
+          <h5 class="item" id="optionB">Option B.  <a data-toggle="collapse" data-parent="#structures" href="#structureB" aria-expanded="false">Your group could setup Tenants in Common.</a></h5>
           <div id="structureB" class="collapse" role="tabpanel">Members could have equal or unequal ownership stakes in the property, but you're still all on the title together.  Making group decisions is less formal.  If you decide to move, you still hold title.  But upon death, whomever you designate in your will takes over ownership of your stake.  This option is popular if your group believes units with varying sizes or amenities should be valued differently.</div>
         </div>
         <div class="col-lg-4">
-          <h5 class="item">Option C.  <a data-toggle="collapse" data-parent="#structures" href="#structureC" aria-expanded="false">Your group could setup Joint Tenancy.</a></h5>
+          <h5 class="item" id="optionC">Option C.  <a data-toggle="collapse" data-parent="#structures" href="#structureC" aria-expanded="false">Your group could setup Joint Tenancy.</a></h5>
           <div id="structureC" class="collapse" role="tabpanel">Members all hold title and your ownership stakes are all equal.  If you decide to move, you still hold title.  But upon death, the other tenants will divvy up your stake equally - it doesn't get passed on to your heirs. This structure is appropriate if you'd rather not burden your group with dealing with a new random neighbor.</div>
         </div>
       </div>
@@ -210,7 +238,7 @@
 
       <p>It incentivizes residents to stick around instead of using it as a revenue generator.  It essentially removes the property from the speculative real-estate market.  </p>
 
-      <div class="item">
+      <div class="item" id="morelimeq">
         <a data-toggle="collapse" data-parent="#limitedequity" href="#limeq" aria-expanded="false">More about Limited Equity ></a>
 
         <!-- on all screens, show content below only when Learn More link is clicked  -->
@@ -286,7 +314,7 @@
                <title>Connect on Social Media</title>
                <path d="M23 0h-14c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 1.5h8v1h-8v-1zM16 30c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM24 24h-16v-20h16v20z"></path>
              </svg>
-             <p>Follow us on Facebook</a>, <a href="https://twitter.com/goodhousing4all" target="_blank">Twitter</a>, or <a href="https://www.instagram.com/goodhousingforall/" target="_blank">Instagram</a>.  Tell friends that are neighbor-material. </p>
+             <p>Follow us on Facebook</a>, <a href="https://twitter.com/goodhousing4all" target="_blank">Twitter</a>, or <a href="https://www.instagram.com/goodhousingforall/" target="_blank">Instagram</a>.  Tell friends who are neighbor-material about the idea. </p>
         </div>
         <div class="col-md-6 fl-cr">
           <!-- Generated by IcoMoon.io -->
@@ -399,19 +427,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
     <!-- Custom JavaScript -->
+    <!-- <script src="jquery.min.js"></script> adding jquery disables bootstrap native jquery -->
     <script src="main.js"></script>
-
-    <script> // GOOGLE ANALYTICS TRACKING
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-36487733-1', 'auto'); // same as RESUS main page
-      ga('send', 'pageview');
-
-    </script>
 
 
   </body>

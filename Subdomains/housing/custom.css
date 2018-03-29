@@ -3929,80 +3929,80 @@ a:hover { color: #972d07; }
 .text-smaller { font-size: 0.8em; }
 
 /* line 70, scss/custom.scss */
-.bg-image { background-image: url(assets/imgs/artur-pokusin-742sm.jpg); background-size: cover; }
+.bg-image { background-image: url(assets/imgs/bosley-snow-sm.jpg); background-size: cover; background-position: center; }
 
-/* line 75, scss/custom.scss */
+/* line 77, scss/custom.scss */
 .hero-image-height h1 { padding: 10%; }
 
-@media (max-width: 767px) { /* line 79, scss/custom.scss */
+@media (max-width: 767px) { /* line 81, scss/custom.scss */
   .hero-image-height h1 { font-size: 1.3em; } }
-@media (min-width: 576px) { /* line 84, scss/custom.scss */
+@media (min-width: 576px) { /* line 86, scss/custom.scss */
   .hero-image-height h1 { font-size: 2em; } }
-@media (min-width: 768px) { /* line 89, scss/custom.scss */
+@media (min-width: 768px) { /* line 91, scss/custom.scss */
   .hero-image-height { height: 400px; }
-  /* line 92, scss/custom.scss */
+  /* line 94, scss/custom.scss */
   .hero-image-height h1 { padding: 5%; } }
-/* line 98, scss/custom.scss */
+/* line 100, scss/custom.scss */
 .section-mt { margin-top: 30px; }
 
-/* line 101, scss/custom.scss */
+/* line 103, scss/custom.scss */
 .section-mb-0 { margin-bottom: 0; }
 
-/* line 110, scss/custom.scss */
+/* line 112, scss/custom.scss */
 .fl-cr img { width: 100%; margin: 10px; }
 
-@media (max-width: 575px) { /* line 117, scss/custom.scss */
+@media (max-width: 575px) { /* line 119, scss/custom.scss */
   .fl-cr img { width: 100px; float: left; }
-  /* line 122, scss/custom.scss */
+  /* line 124, scss/custom.scss */
   .fl-cr svg { float: left; margin: 10px; } }
-/* line 136, scss/custom.scss */
+/* line 138, scss/custom.scss */
 .sm-down-ht img { width: 100%; }
 
-@media (max-width: 767px) { /* line 140, scss/custom.scss */
+@media (max-width: 767px) { /* line 142, scss/custom.scss */
   .sm-down-ht { clear: both; }
-  /* line 143, scss/custom.scss */
+  /* line 145, scss/custom.scss */
   .sm-down-ht-frame { height: 70px; overflow: hidden; display: flex; align-items: center; }
-  /* line 149, scss/custom.scss */
+  /* line 151, scss/custom.scss */
   .sm-down-ht img { width: 100%; height: auto; align-self: center; } }
-/* line 157, scss/custom.scss */
+/* line 159, scss/custom.scss */
 .img-ht-fixed img { height: 100px; }
 
-@media (max-width: 767px) { /* line 162, scss/custom.scss */
+@media (max-width: 767px) { /* line 164, scss/custom.scss */
   .text-center-sm-down { text-align: center; } }
-/* line 170, scss/custom.scss */
+/* line 172, scss/custom.scss */
 .icon-centered { text-align: center; }
 
-/* line 176, scss/custom.scss */
+/* line 178, scss/custom.scss */
 .border-bottom-brand { border-bottom: dotted 2px grey; }
 
-/* line 180, scss/custom.scss */
+/* line 182, scss/custom.scss */
 .justify-content-right { text-align: right; }
 
-/* line 185, scss/custom.scss */
+/* line 187, scss/custom.scss */
 .icon { fill: #02626e; }
 
-/* line 188, scss/custom.scss */
+/* line 190, scss/custom.scss */
 .icon-light { fill: #faebeb; }
 
-@media (max-width: 575px) { /* line 193, scss/custom.scss */
+@media (max-width: 575px) { /* line 195, scss/custom.scss */
   .d-xs-down-inline-block { display: inline-block; }
-  /* line 196, scss/custom.scss */
+  /* line 198, scss/custom.scss */
   .d-xs-down-flex { display: flex; } }
-/* line 201, scss/custom.scss */
+/* line 203, scss/custom.scss */
 .fixed-bottom-right { bottom: 15px; right: 15px; }
 
-@media (min-width: 992px) { /* line 206, scss/custom.scss */
+@media (min-width: 992px) { /* line 208, scss/custom.scss */
   .fixed-bottom-right { bottom: 30px; right: 30px; } }
-@media (min-width: 992px) { /* line 212, scss/custom.scss */
+@media (min-width: 992px) { /* line 214, scss/custom.scss */
   .icon { width: 40px; height: 40px; } }
-/* line 221, scss/custom.scss */
+/* line 223, scss/custom.scss */
 html { font-size: 1rem; }
 
-@media (min-width: 576px) { /* line 225, scss/custom.scss */
+@media (min-width: 576px) { /* line 227, scss/custom.scss */
   html { font-size: 1.1rem; } }
-@media (min-width: 768px) { /* line 230, scss/custom.scss */
+@media (min-width: 768px) { /* line 232, scss/custom.scss */
   html { font-size: 1.2rem; } }
-@media (min-width: 992px) { /* line 235, scss/custom.scss */
+@media (min-width: 992px) { /* line 237, scss/custom.scss */
   html { font-size: 1.3rem; } }
 
 /*# sourceMappingURL=custom.css.map */
